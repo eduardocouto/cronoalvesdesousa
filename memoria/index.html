@@ -216,8 +216,7 @@
   .tp-photo img {
     display: block;
     width: 100%;
-    max-height: 46vh;
-    object-fit: cover;
+    height: auto;
     filter: saturate(0.92) contrast(1.01);
   }
   .tp-photo figcaption {
@@ -286,7 +285,7 @@
     }
     .hdr-space, .ftr-space { display: table-cell; height: 0.85in; }
     .titlepage { min-height: 9.2in; break-after: page; }
-    .tp-photo img { max-height: 4.3in; }
+    .tp-photo img { max-height: 4.3in; width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
     .fleuron, .feature, .verse, .dialogo, .condicoes, .datemark, .closing { break-inside: avoid; }
     h1, h2, h3 { break-after: avoid; }
     .body-text p { orphans: 3; widows: 3; }
