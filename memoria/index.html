@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memória de Hydra Alves de Sousa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #e7e2d7;
+    color: #221e18;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.66;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .doc {
+    box-sizing: border-box;
+    max-width: 45rem;
+    margin: 40px auto;
+    background: #faf8f2;
+    box-shadow: 0 2px 48px rgba(40, 30, 15, 0.14);
+    padding: 0 clamp(26px, 6vw, 78px);
+  }
+  .doc-frame { width: 100%; border-collapse: collapse; }
+  .doc-frame td { padding: 0; }
+  .hdr-space, .ftr-space { display: none; }
+
+  /* ---- Body prose ---- */
+  .body-text p {
+    margin: 0;
+    text-indent: 1.4em;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    text-wrap: pretty;
+  }
+  .body-text p.lead { text-indent: 0; }
+  .yr {
+    color: #7c2330;
+    font-weight: 600;
+    font-feature-settings: "lnum" 1;
+    white-space: nowrap;
+  }
+
+  /* ---- Drop cap ---- */
+  .dropcap {
+    float: left;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    color: #7c2330;
+    font-size: 4.7em;
+    line-height: 0.74;
+    padding: 0.04em 0.09em 0 0;
+    margin-top: 0.02em;
+  }
+
+  /* ---- Dividers ---- */
+  .fleuron {
+    text-align: center;
+    margin: 2.1em 0;
+    color: #a98a5c;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+  }
+  .datemark {
+    text-align: center;
+    margin: 2.4em 0 1.6em;
+  }
+  .datemark .dm-num {
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #7c2330;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+  }
+  .datemark .dm-cap {
+    font-size: 0.72rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: #8a7e68;
+    margin-top: 0.5em;
+  }
+
+  /* ---- Dialogue ---- */
+  .dialogo { margin: 1.3em 0 1.3em 1.4em; }
+  .dialogo p {
+    margin: 0.12em 0;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    text-align: left;
+    color: #322c22;
+  }
+
+  /* ---- Verse-like reflective block ---- */
+  .verse {
+    margin: 1.5em 0;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.32rem;
+    line-height: 1.5;
+    color: #4a4234;
+  }
+  .verse p { margin: 0.18em 0; }
+
+  /* ---- Conditions list ---- */
+  .condicoes {
+    list-style: none;
+    margin: 1.3em 0 1.3em 1.4em;
+    padding: 0;
+  }
+  .condicoes li {
+    margin: 0.45em 0;
+    padding-left: 2.6em;
+    text-indent: -2.6em;
+    text-align: left;
+  }
+  .condicoes .ord {
+    color: #7c2330;
+    font-weight: 600;
+    font-variant-numeric: lining-nums;
+  }
+  .values {
+    list-style: none;
+    margin: 1.1em 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+    color: #4a4234;
+    font-size: 1.08rem;
+  }
+  .values li { margin: 0.2em 0; }
+
+  /* ---- Featured pull line ---- */
+  .feature {
+    margin: 2.2em auto;
+    max-width: 30rem;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.85rem;
+    line-height: 1.32;
+    color: #7c2330;
+  }
+
+  /* ---- Closing ---- */
+  .closing {
+    margin: 2.6em 0 0.4em;
+    text-align: center;
+  }
+  .closing .c-orn {
+    color: #a98a5c;
+    font-family: 'Cormorant', serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    margin-bottom: 0.7em;
+  }
+  .closing .c-1 {
+    font-family: 'Cormorant', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #7c2330;
+    line-height: 1.1;
+  }
+  .closing .c-2 {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.45rem;
+    color: #4a4234;
+    margin-top: 0.5em;
+  }
+
+  /* ---- Transcription note ---- */
+  .nota {
+    margin: 3.4em 0 2em;
+    padding-top: 1.4em;
+    border-top: 1px solid #ddd5c4;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: #8a7e68;
+    font-style: italic;
+    text-align: left;
+  }
+  .nota b { font-style: normal; font-weight: 600; color: #6f6452; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.72rem; }
+
+  /* ---- Title page ---- */
+  .titlepage {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.4rem 0;
+  }
+  .tp-photo {
+    margin: 2rem 0 1.9rem;
+    padding: 10px;
+    background: #fdfcf8;
+    border: 1px solid #d8cfba;
+    box-shadow: 0 3px 22px rgba(40, 30, 15, 0.16);
+    max-width: 100%;
+  }
+  .tp-photo img {
+    display: block;
+    width: 100%;
+    max-height: 46vh;
+    object-fit: cover;
+    filter: saturate(0.92) contrast(1.01);
+  }
+  .tp-photo figcaption {
+    margin-top: 0.7rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: #8a7e68;
+    text-indent: 0.34em;
+  }
+  .tp-overline {
+    font-size: 0.82rem;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: #7c2330;
+    margin-bottom: 1.8rem;
+    text-indent: 0.42em;
+  }
+  .tp-name {
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    font-size: clamp(2.6rem, 8vw, 4.3rem);
+    line-height: 1.02;
+    color: #221e18;
+    margin: 0;
+  }
+  .tp-rule {
+    width: 64px;
+    height: 1px;
+    background: #b89763;
+    margin: 1.9rem 0;
+  }
+  .tp-place {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #4a4234;
+  }
+  .tp-place .yr { font-style: normal; }
+  .tp-sub {
+    margin-top: 0.5rem;
+    font-size: 0.92rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #8a7e68;
+  }
+  .tp-epi {
+    margin-top: auto;
+    padding-top: 3rem;
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #7c2330;
+  }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    html, body { margin: 0; padding: 0; background: #faf8f2; }
+    .doc {
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 0.85in !important;
+      box-shadow: none !important;
+      background: #faf8f2 !important;
+    }
+    .hdr-space, .ftr-space { display: table-cell; height: 0.85in; }
+    .titlepage { min-height: 9.2in; break-after: page; }
+    .tp-photo img { max-height: 4.3in; }
+    .fleuron, .feature, .verse, .dialogo, .condicoes, .datemark, .closing { break-inside: avoid; }
+    h1, h2, h3 { break-after: avoid; }
+    .body-text p { orphans: 3; widows: 3; }
+  }
+</style>
+</head>
+<body>
+<main class="doc">
+  <table class="doc-frame" role="presentation">
+    <thead><tr><td class="hdr-space"></td></tr></thead>
+    <tbody><tr><td>
+
+      <section class="titlepage">
+        <div class="tp-overline">Memória</div>
+        <h1 class="tp-name">Hydra<br>Alves de Sousa</h1>
+        <div class="tp-rule"></div>
+        <figure class="tp-photo">
+          <img src="familia.png" alt="Retrato de família">
+          <figcaption>A Família</figcaption>
+        </figure>
+        <div class="tp-place">Paris, <span class="yr">1918</span></div>
+        <div class="tp-sub">Escrita para os seus Filhos e Netos</div>
+        <div class="tp-epi">«Sou uma Mulher Feliz.»</div>
+      </section>
+
+      <div class="body-text">
+
+        <p class="lead"><span class="dropcap">C</span>orria o ano de <span class="yr">1918</span> quando, na Rue Vercingétorix, em Paris, nascia uma menina, de Pai Português e de Mãe Francesa. Era eu.</p>
+
+        <p>Meu Pai vira pela primeira vez a luz do dia em Vilar de Andorinho, no dia 9 de Janeiro de <span class="yr">1884</span>. Tinha-se distinguido no Curso de Escultura na Academia de Belas Artes do Porto, onde recebera ensinamentos de Mestre Teixeira Lopes, em cujo atelier também trabalhou.</p>
+
+        <p>Quando lhe foi atribuída uma bolsa de estudo para, em Paris, apurar a sua arte com novos mestres, materializava o sonho acalentado por qualquer artista da época, mas só ao alcance dos melhores.</p>
+
+        <p>Foi durante essa estadia na capital francesa que conheceu minha Mãe, Germaine Lechartier, tendo deste casamento nascido meu Irmão, Caiús, e eu, Hydra, meia dúzia de anos mais tarde. Felicidade fugaz pois, seis meses após o meu nascimento, morria minha Mãe, vitimada pelas febres que assolaram a França na sequência da guerra de <span class="yr">1914-1918</span>.</p>
+
+        <p>Foram decerto difíceis para o meu querido Pai esses tempos vividos em terra estranha, sem qualquer apoio da família e com duas crianças nos braços, uma de seis anos e outra de poucos meses. Valia-lhe uma vizinha, boa alma que, vendo-o em tal necessidade, olhava pela menina durante o dia. É-me fácil imaginar a ternura de meu Pai, acorrendo às minhas necessidades básicas após as horas de ausência ditadas pelo trabalho. Talvez momentos únicos de encorajamento para o dia seguinte.</p>
+
+        <p>Quando olho as duas garrafas de leite que guardo como relíquia — uma, das <i>Fermes des Prairies de l'Andelle et d'Outerville</i>, a outra, <i>À la Belle Fermière Guillaumin</i> —, imagino o Caiús correndo apressadamente à Avenue d'Orléans e, de volta, trazendo o leitinho para a sua Irmã-Bébé, e imagino o meu Pai, cuidando-me em alimento e em desvelos amorosos. Querido Pai! Tão duramente provado pelo revés da morte de minha Mãe!</p>
+
+        <p>Ao meu Irmão, na idade das traquinices, nem sempre agradaria a interrupção da brincadeira, mesmo para ajudar o Pai e, desse tempo, alguma marca ficou pois, quando anos mais tarde se zangava comigo, lançava-me o insulto: «És filha de uma garrafa!»</p>
+
+        <p>Tinha eu onze meses quando o meu Pai regressou a Portugal, não mais tendo havido qualquer contacto com a família do lado de minha Mãe.</p>
+
+        <p>Ficámos entregues aos Avós em Vilar de Andorinho, onde fui crescendo no meio de carinhos e sã alegria, um tempo feliz, nem mesmo perturbado pela nova ausência de meu Pai em França. Não muito longa, aliás, pois regressa quando eu tinha três anos e meio. Vinha doente, muito doente, atacado de mal incurável. Quando pedia «Tragam-me a menina ao pé de mim», olhava-me com aqueles olhos grandes que retenho na memória e ouço-lhe ainda a voz dizendo «Levem-na depressa daqui». Com que dor, podemos imaginar! Acabaria por falecer meio ano depois, com 38 anos apenas, quando trabalhava no projecto para os Padrões de Guerra na Flandres. Restavam-nos agora os Avós, já de idade avançada, e a Tia Elisa.</p>
+
+        <p>Andava na Escola quando, pelos meus 8 anos, novo golpe se abate sobre nós: a Avó, o grande pilar na nossa educação, verdadeira Mãe duas vezes, que recordo com todo o carinho e admiração, a Avó também parte em definitivo.</p>
+
+        <p>De agora em diante, caberá à Tia Elisa educar-nos e muito se vai modificar na nossa vida. A Tia era o tipo de mulher solteira fria e amarga, de temperamento nervoso e instável, que todos os dias contrariava o meu gosto de brincar, próprio da idade.</p>
+
+        <p>Tempos difíceis esses, os dos meus 10-12 anos! Sentia falta de afecto, uma tristeza profunda…</p>
+
+        <p>A outra Tia, que era casada e costureira, a Tia Ana, minha Madrinha, era muito afectuosa comigo e, como a sua casa era junto da nossa, sempre me dava carinho. Quando comprava algum boneco para a minha Prima, a Cinda, também comprava para mim, de certeza com sacrifício. Então eu sofria pois desde garota teimava em fazer vestidos para os meus bonecos, mas achava-os tão pequenos e feios, sem expressão nenhuma, e arreliava-me que fossem tão apertados, sem poder fazer-lhes as mangas: «Como posso fazer um vestido para o meu boneco?!…» Os da Cinda sempre eram mais bonitos e eu pedia-lhe: «Deixa-me pegar um bocadinho!» Sofria tanto e tinha tantos ciúmes que, quando ela me aparecia, lhe batia. Claro que a Tia nada notava nem imaginava o que eu sentia…</p>
+
+        <p>Graças ao meu Pai, nunca passámos necessidade. À sua morte ficaram nove contos, muito dinheiro ao tempo pois se comprava um terreno por 200$00! Desses nove contos, a Avó ia retirando, mensalmente, 100$00 para a nossa alimentação.</p>
+
+        <p>Recordo uma conversa entre a Tia Elisa e a Avó, a propósito da conta da mercearia que era preciso pagar. Propunha a Tia recorrer «ao dinheiro dos meninos». «Não voltes mais a dizer isso. És mulher, mas eu dou-te uma bofetada. Só tiro 100$00 por mês», afirmou a Avó.</p>
+
+        <p>O meu Pai deixara outro dinheiro na mão dos Amigos em quem confiava, com a recomendação: «Não deixeis passar necessidade aos meus Filhos. Dai-lhes o que precisarem», o que eles cumpriram escrupulosa e integralmente, dando à Tia Elisa sempre que ela pedia.</p>
+
+        <p>Do restante, quando o meu Irmão completou 21 anos, recebemos cento e cinquenta contos das mãos desses Amigos, em Lisboa, aonde nos deslocámos de comboio, em viagem que nunca esquecerei, eu, com o meu vestido novo, azul, e o casaco cinzento, comprados na Casa Africana. Tinha então 15 anos!</p>
+
+        <p>A parte que me coube desse dinheiro era algo de sagrado para mim e não lhe queria mexer sob qualquer pretexto.</p>
+
+        <p>Terminados os tempos de Escola, fora para a costura em Oliveira do Douro. O que mais desejava era trabalhar, ser independente e viver para mim, sustentar-me a mim própria e não mexer no dinheiro que o meu Pai me deixara. Como em Vilar de Andorinho não havia desenvoltura nenhuma, era um marasmo, o que eu queria era sair de lá, desejava outras coisas que satisfizessem a minha vontade, sempre presente no meu pensamento a bailar a ideia da costura…</p>
+
+        <p>Um dia, tinha eu 16 anos, ocorreu algo de estranho. Era a Hora das Trindades. Subi ao meu quarto e, sòzinha, descarreguei. Gritei alto pelo meu Pai, chamei-o e lamentei-me: «Por que é que os outros têm Pais e eu não tenho?…» Em três dias consecutivos, em resultado das muitas faltas que sentia, desabafei desta maneira, gritando pelo meu Pai.</p>
+
+        <p>No fim deles, estávamos a cear, a minha Tia, o meu Irmão e eu, quando, nitidamente, ouvi uma voz de homem chamar por mim, uma voz sonora e triste, uma voz que me atormentou: «Ó Hydra!» A primeira vez apanhei-a mal; na segunda, fiquei alerta; na terceira, caí em mim:</p>
+
+        <p>«Ai, que não devo fazer o que tenho feito, não devo chamar pelo meu Pai, que é ele que me está a chamar!»</p>
+
+        <p>Fosse formulação da minha consciência, ou fosse acusação por fazer o que não devia, lá que ouvi, ouvi. Caí em mim mesma e terminei. Não voltei a chamar pelo meu Pai nem a fechar-me no quarto.</p>
+
+        <p>A partir de então, foi como que uma luz que me conduzisse… para o Marquês.</p>
+
+        <div class="fleuron">&#10086;</div>
+
+        <p class="lead"><span class="dropcap">D</span>esde pequenina me habituara a acompanhar a querida Tia Ana e muitas vezes visitara, no Porto, no Marquês, a Senhora D. Júlia, Esposa do Arquitecto Marques da Silva, antigo Mestre de meu Pai.</p>
+
+        <p>Nessa visita, que considero providencial e decisiva, a bondosa Senhora, vendo-me desenvolvida nos meus 16 anos, travou comigo um dos mais importantes diálogos da minha vida:</p>
+
+        <div class="dialogo">
+          <p>— O que é que tu fazes?</p>
+          <p>— Ando na costura.</p>
+          <p>— E o que queres ser na vida?</p>
+          <p>— Quero ser modista.</p>
+          <p>— Pois, então, modista serás! Vou falar com a Sr.ª D. Rosa, que é a minha modista.</p>
+          <p>— Mas eu não sei se posso pagar o transporte.</p>
+          <p>— Isso tudo fica à minha conta.</p>
+        </div>
+
+        <p>E assim aconteceu. Passou a dar-me o dinheiro necessário para pagar essa despesa.</p>
+
+        <p>Durante três anos, aprendi a arte, na Rua dos Bragas, 85, trabalhando sob a orientação da Senhora D. Rosa de Oliveira Leconat. Nada pagava pelo ensino; pelo contrário, desde logo recebi 22 tostões por dia e, quando de lá saí, já ganhava 4$20.</p>
+
+        <p>Saí para me estabelecer.</p>
+
+        <p>Aluguei uma sala na Praça Carlos Alberto, pela qual pagava 200$00 por mês, e tão nova o proprietário me achou que exigiu fiador.</p>
+
+        <p>Pedi esse favor ao meu Irmão, a trabalhar por conta própria, mas ele recusou: «Não vais nada, ficas aqui comigo e és minha empregada.» Oferta que não aceitei: «Não. Quero a minha arte, quero ser modista.»</p>
+
+        <p>Então, ele assinou o contrato de arrendamento. Fiz obras na sala, dividi-a e comecei a trabalhar com três costureiras. E, mais uma vez, a Senhora D. Júlia me deu a mão, encaminhando clientes para mim, como a sobrinha com sete filhos. Nunca me faltou trabalho!</p>
+
+        <p>Saía de Vilar de Andorinho às 7h30 com um lanchezinho para o almoço e não me metia em despesas. O meu Irmão, um dia, perguntou-me o que comia:</p>
+
+        <div class="dialogo">
+          <p>— Não comes sopa?</p>
+          <p>— Não, porque custa 1$00.</p>
+        </div>
+
+        <p>E passou a dar-me 6$00 por semana para eu comer uma sopinha.</p>
+
+        <p>À noite, em casa, esperava-me mais trabalho de costura, que o meu Irmão e a minha Tia contrariavam. Como não havia ainda electricidade, alumiava-me um candeeiro de petróleo e, quando, pelas três ou quatro horas, descendo as escadas pé ante pé, o meu Irmão dava comigo, levava o candeeiro para o jardim e fechava a porta. Então eu ficava danada.</p>
+
+        <p>O que eu acho espantoso em tudo isto é ter sido capaz de lutar sòzinha, sendo tão nova, sem Pai nem Mãe, sem ter quem me orientasse; é verdade que a Tia Ana dava bons conselhos mas, de qualquer modo, lutava sòzinha.</p>
+
+        <div class="verse">
+          <p>— Como tinha aquela força?</p>
+          <p>— Como é que de mim vinha uma coisa tão certa?</p>
+          <p>— Como é que eu tinha energia e sensatez para isto?</p>
+        </div>
+
+        <div class="feature">Era a alma de meu Pai que me acompanhava!</div>
+
+        <div class="fleuron">&#10086;</div>
+
+        <p class="lead"><span class="dropcap">N</span>um Domingo, tinha eu 19 anos, fui com a Cinda passear até ao Monte da Virgem e reparei num bonito rapaz, enquanto comia uma sande dada por ela. Disse para a minha Prima:</p>
+
+        <div class="dialogo">
+          <p>— Que lindo rapaz ali está! Estas raparigas têm muita sorte!</p>
+        </div>
+
+        <p>Ao descer o Monte, pelo fim da tarde, qual não é o meu espanto quando o mesmo rapaz se aproxima e me pergunta se pode acompanhar-me.</p>
+
+        <div class="dialogo">
+          <p>— Você não é namoro da Brasileira?</p>
+          <p>— Não, é só uma pessoa amiga. E você não é a Francesa do Vilar?</p>
+          <p>— Sou. Mas olhe que moro muito longe… Quer andar todo este caminho comigo?</p>
+          <p>— Não me importo.</p>
+        </div>
+
+        <p>Foi este o primeiro encontro com o Mário, a que outros se seguiram, sem que me decidisse a aceitar-lhe [o namoro, nem que] isso alterasse a minha vida e, sobretudo, o meu trabalho. Passado algum tempo, porém, perante a sua insistência, resolvi aceitar:</p>
+
+        <p>«Vou namorar 15 dias para saber como é namorar.»</p>
+
+        <p>E nunca mais me vi livre dele.</p>
+
+        <p>Quando, um dia, quase ao pôr do sol, estávamos a falar, vimos a Tia Ana a espreitar-nos. Ele ficou muito [atrapalhado]:</p>
+
+        <p>«A tua Tia dá comigo, mas, se fosse com outro, não sei o que seria.»</p>
+
+        <p>No dia seguinte, escrevi-lhe dizendo:</p>
+
+        <p>«Fiquei muito sentida com a ideia que fazes da minha Tia Ana. Terminou o nosso tempo. Não me apareças [mais].»</p>
+
+        <p>A Cinda até chorou: «Vais fazer isso a um rapaz tão bom?!»</p>
+
+        <p>Eu queria era um pé para ficar livre. Porém, não consegui pois, no dia seguinte, ia eu a entrar na camioneta quando me agarrou pelo braço e não tive coragem de o despedir.</p>
+
+        <p>Quando, após quatro anos de namoro, me pediu ao meu Irmão em casamento, impus três condições:</p>
+
+        <ol class="condicoes">
+          <li><span class="ord">1.ª —</span> Quando tivesse obras para terminar, teria de as acabar, nem que fosse de noite.</li>
+          <li><span class="ord">2.ª —</span> Seria eu a governar a casa.</li>
+          <li><span class="ord">3.ª —</span> Ser-me-ia fiel; de outro modo, deixá-lo-ia.</li>
+        </ol>
+
+        <p>Até a mim, hoje, me espanta esta atitude, mas eu era assim, directa, e estas condições eram apenas o reflexo do que prezava acima de tudo:</p>
+
+        <ul class="values">
+          <li>— trabalho e compromissos assumidos;</li>
+          <li>— economia bem gerida;</li>
+          <li>— autenticidade de vida.</li>
+        </ul>
+
+        <p>Qualidades herdadas de meu Pai, que também as recebera de sua Mãe, essa Mulher excepcional que foi a minha querida Avó.</p>
+
+        <div class="datemark">
+          <div class="dm-num">17 de Agosto de <span style="color:inherit">1941</span></div>
+          <div class="dm-cap">O Casamento</div>
+        </div>
+
+        <p class="lead"><span class="dropcap">C</span>asámos no dia 17 de Agosto de <span class="yr">1941</span>.</p>
+
+        <p>Como o Mário trabalhava com o Pai em Santo Ovídio, mudei o atelier para Coimbrões e ficámos a morar.</p>
+
+        <p>Era o tempo do volfrâmio e resolvi registar um poço, que me custou 900$00, no Alto das Torres, para os lados de Arcozelo. Pus homens a trabalhar por minha conta e começámos a britar pedra para extrair o minério. De manhã, levava o material de trabalho para tirar os filões de volfrâmio e, à noite, trazia-os para serem aguçados. Era um trajecto feito a pé, com 7 ou 8 kg de peso e já grávida de quatro meses!</p>
+
+        <p>Quando precisava de ir ao Porto comprar aplicações, arranjava-me muito bem, usando sempre o meu chapèuzinho, e seguia directamente do Porto para Arcozelo. Ao chegar, vestia uma bata, tirava o chapéu e, como o poço ficava no terreno de um lavrador que tinha bois, pousava-o em cima da palha que estava no estrado e começava a extrair o minério.</p>
+
+        <p>À noite, tratava de deixar guiado o trabalho para as costureiras e encontrava ainda algum tempo para cuidar do quintal, o que fazia com muito gosto.</p>
+
+        <p>Só morámos quatro meses em Coimbrões, mudando de seguida para a Avenida da República — chamada então Avenida Marechal Carmona —, no número 1300, a actual Casa das Bicicletas.</p>
+
+        <p>Aí vivemos o grande contentamento da chegada da nossa primeira Filha, em parto difícil, precisamente no [dia em que] o Mário me preparara como prenda um crucifixo que ele próprio fizera e que ainda hoje mantenho no meu quarto.</p>
+
+        <p>Ano e meio depois, chegou a nossa segunda Filha, em parto normal. Só doze anos mais tarde nasceria a Lisa, tendo as Irmãs sido suas Madrinhas.</p>
+
+        <p>Tempos de muitas alegrias e, sempre, de muito trabalho.</p>
+
+        <p>Comecei também a dar aulas de Corte em quatro Colégios: no Colégio do Sardão, em Oliveira do Douro; no Colégio de Nossa Senhora da Bonança, perto de casa; no Colégio de Nossa Senhora da Paz, junto ao Marquês; e no Colégio da Rua do Vilar, no Porto.</p>
+
+        <p>Tal foi-me possível porque, antes de me estabelecer aos 19 anos, ainda no tempo em que trabalhava sob a orientação da Senhora D. Rosa, havia frequentado um Curso de Corte, que se chamava Luso-Brasileiro, pois era da responsabilidade de uma Senhora Brasileira. Quando registei o meu, em Lisboa, pus-lhe o nome de Curso de Corte Luso-Francês.</p>
+
+        <p>A Dete e a Bebé iam crescendo normalmente e frequentando as aulas na Rua Passos Manuel, em casa da Senhora D. Maria Adelaide, minha cliente, que se me oferecera para as preparar para a 4.ª classe. Seguiram-se o 1.º ano no Colégio da Esperança e os restantes no Liceu Rainha Santa.</p>
+
+        <p>A Lisa, tendo nascido doze anos mais tarde, quase posso dizer que pertenceu a outro tempo. Como via as Irmãs tocar piano, desde os 2-3 anos se sentava também no banquinho, entretendo-se a percorrer as teclas.</p>
+
+        <p>Passando eu um dia no corredor, vi-a desesperada, com as mãozitas na cabeça, e recomendei à Senhora Maria que a chamasse sempre que a visse sentada ao piano mais de 10 minutos. Parecia-me estar a ser demais para a sua idade.</p>
+
+        <p>Foi depois disso que surgiu a surpresa: «Fiz uma música para a Mamã!»</p>
+
+        <p>Como não se conseguiu identificar o que ela tocou, lembrei-me de falar a uma Senhora amiga da Rua de Cedofeita, que veio visitar-nos no Domingo seguinte.</p>
+
+        <p>Enquanto tomávamos o nosso chá, a Lisa voltou a tocar a música que me fizera e a Senhora exclamou:</p>
+
+        <p>«É uma música a quatro tempos, perfeita!»</p>
+
+        <p>E, passando as mãos pelo piano, não tardou que a Lisa fizesse o mesmo, repetindo as notas que a Senhora havia tocado.</p>
+
+        <p>«Vá ao Conservatório, pois tem aqui uma menina-prodígio.»</p>
+
+        <p>Assim fiz mas, estando a Directora em férias e tendo de ir ao Colégio da Paz, expus o caso à Madre Foch que, depois de ouvi-la tocar, achou por bem encaminhá-la para a Senhora D. Helena de Sá e Costa. Ao telefone, pediu-lhe que aceitasse «esta menina de três anos».</p>
+
+        <p>A Senhora D. Helena dispôs-se a ouvi-la mas, como o seu ensino era dirigido ao Curso Superior, combinou [recebê-la mais tarde], ficando a Madre Aguiar com a incumbência de a preparar.</p>
+
+        <p>A certa altura, algumas vozes clamaram que eu estava a puxar demais, sendo tão pequena. Marquei por isso [uma consulta com o Dr.] Gonçalves, especialista de crianças, a quem relatei a situação, enquanto a ia observando.</p>
+
+        <p>Obtida a autorização de 10 minutos de prática diária, sem os ultrapassar, passei a ir ao Marquês todos os dias para a Lisa receber a lição da Madre Aguiar. Felizmente, o trânsito automóvel era escasso, nem sequer havia qualquer sinalização. Por sorte, tirara a carta alguns anos antes — tinha eu 28 anos — e, assim, pegava no carro e, num instante, me punha no Colégio da Paz.</p>
+
+        <p>Coitadinha da Lisa, que mal brincou! O piano roubava-lhe muito tempo: eram as lições, era um ou outro concerto, era alguém a querer ouvi-la. Foi assim até aos 18 anos, quando concluiu o Conservatório. Com 18 valores.</p>
+
+        <p>Claro que a minha vida teve de ser reorientada, no sentido de ter disponibilidade para acompanhar a Lisa quando e onde fosse preciso.</p>
+
+        <p>Tinha de me socorrer da noite para deixar o trabalho guiado para as 17 costureiras a meu cargo e elas próprias, quando necessário, trabalhavam até 1 hora da manhã, indo o Mário, nesse caso, levá-las a casa.</p>
+
+        <p>Como já disse, quando casámos, o Mário trabalhava com o Pai mas, a dado momento, o negócio começou a falhar e a fábrica fechou.</p>
+
+        <p>Os dois Irmãos, o Mário e o Gabriel, formaram então uma sociedade que durou alguns anos, mas o lucro começou a ser escasso para ambos e resolveram separar-se.</p>
+
+        <p>Tínhamos acabado de construir a nossa casa quando o Mário passou a trabalhar sòzinho. Foram anos de grande esforço, tentando com o meu trabalho equilibrar o negócio, mas tal não foi possível, acabando a fábrica por fechar, com algumas dívidas, que assumi cumulativamente com a dívida da casa que ainda estávamos a pagar.</p>
+
+        <p>Resolvemos, por isso, ir para África, visto que muitas clientes de lá me entusiasmavam a dar esse passo. Iríamos o Mário, a Lisa e eu. A Dete e a Bebé haviam casado pouco antes, duas Irmãs com dois Irmãos, um dos momentos de grande felicidade para todos nós.</p>
+
+        <p>Tudo estava pronto para a partida mas, como sofria muito da vesícula, fui ainda ao Gerês fazer tratamento. Foi lá que recebi um telefonema da Dete: «Mamã, não vá para África. Está aqui o Senhor Reitor que quer alugar o nosso quarto e, se a Mamã pensasse um bocadinho, não nos deixava.» Estava ela grávida de 4 meses.</p>
+
+        <p>Comoveram-me estas palavras e respondi-lhe:</p>
+
+        <p>«Vou pensar; amanhã vamos embora e resolvo o problema.»</p>
+
+        <p>Quando me encontrei com o Sr. Reitor do Liceu, apresentei-lhe os meus receios por nunca ter trabalhado em tal sentido e imaginar a dificuldade em dar alimentação.</p>
+
+        <p>A sua resposta animou-me:</p>
+
+        <p>«Não se importe que, se me cozer umas batatinhas com bacalhau, fico satisfeito.»</p>
+
+        <p>«Se me arranjar 6 professores, recebo-os», foi a minha proposta.</p>
+
+        <p>«Não me diga que a casa vai esticar.»</p>
+
+        <p>«Estica até onde eu quiser.»</p>
+
+        <p>E esticou mesmo. Fui à nossa sala de visitas, retirei os móveis e pus uma cama. Fiz o mesmo ao escritório e aos compartimentos melhores da casa, ocupando-os todos com camas. E comecei nova vida. Como tinha assumido a dívida da fábrica e da casa, e tinha todas as outras despesas, desta maneira o nosso problema estava resolvido.</p>
+
+        <p>Foram 10 anos de grande labuta para garantir o nosso futuro.</p>
+
+        <p>Foi o tempo da chegada dos Bebés: o Tó, a Paula, a Cristina, a Sara, a Carla, o Pedro. O Adriano e o Gonçalo só chegariam uns anos mais tarde.</p>
+
+        <p>O nascimento da Sara deu-nos grande preocupação por ser prematura, de 8 meses. Para salvaguardar o seu desenvolvimento, recomendou o médico que a Mãe se isolasse com a Bebé num quarto, não autorizando outras entradas. Deste modo, atingiu a Sara os 9 meses em nossa casa.</p>
+
+        <p>Tenho o grande prazer de dizer que os primeiros anos dos meus Netos foram, em grande parte, passados comigo — tinha pessoal a ajudar-me, que muito os acarinhava, mas, de noite, não confiava a ninguém os que tinha comigo.</p>
+
+        <p>A Dete tinha decidido continuar o Curso de Matemática e essas viagens para Coimbra, que duraram três anos, faziam com que os seus Filhos me ficassem entregues.</p>
+
+        <p>Também a Paula e a Sara aqui ficavam enquanto a Bebé estava no emprego, na Câmara do Porto.</p>
+
+        <p>Recordo com grande ternura esses anos dos meus queridos Netos, um após outro enriquecendo a nossa Família e crescendo em anos e entendimento. A porta sempre esteve aberta e a mesa posta para receber toda a Família.</p>
+
+        <p>Quando se aproximou o nosso 25.º aniversário de casamento, o Mário e as Filhas gostavam de fazer uma festa, mas eu discordei.</p>
+
+        <p>«Não faço festa, trazendo o coração tão escuro.»</p>
+
+        <p>Então, ao fim da tarde desse dia 17 de Agosto de <span class="yr">1966</span>, as Filhas aproximaram-se e pediram licença para nos entregarem as alianças. Chamaram pelo Pai e por mim. Aprontámos as mãos e trocámos as alianças, com toda a simplicidade, sem qualquer sinal de festa.</p>
+
+        <p>Só depois de tudo estar pago, no fim desses 10 anos de luta constante, lhes disse:</p>
+
+        <p>«Vamos fazer a Festa das Bodas de Prata», indicando-lhes o dia que tinha determinado.</p>
+
+        <p>Arranjei uma Capela no Marquês, que enfeitei a meu gosto, falei com um Padre conhecido, disse que se preparassem para comungar e foi celebrada a Missa de Acção de Graças.</p>
+
+        <p>No fim, fui à Igreja de Nossa Senhora da Conceição levar uma promessa a Santa Rita, advogada das coisas impossíveis, que eu nunca me convenci que daria conta do caso.</p>
+
+        <p>Seguimos depois para a Casa Branca, onde continuou a celebração em alegre convívio familiar.</p>
+
+        <div class="fleuron">&#10086;</div>
+
+        <p class="lead"><span class="dropcap">A</span> partir daí, é a história recente que conheceis, feita de horas boas e de outras menos boas:</p>
+
+        <p>A alegria da vossa vinda ao Domingo, para almoçar; os encontros das datas especiais, do Natal, da Páscoa, dos aniversários…</p>
+
+        <p>E também o sofrimento de ver o vosso Pai e Avô imobilizado, quase sem falar, só os seus belos olhos azuis [a falarem por ele], até àquele dia de Verão de <span class="yr">1990</span>.</p>
+
+        <p>Entrei na rotina da vida, com a consciência de ter ultrapassado contrariedades e asperezas. Dentro de mim mantém-se ainda o forte desejo de ser auto-suficiente e comandar a minha vida, sem incomodar ninguém. Por que havia a minha querida Alice de parar o ritmo do seu trabalho para me ir buscar o carro das linhas?!</p>
+
+        <p>O meu prazer é estar dentro das quatro paredes da minha casa, trabalhando e pensando em cada um dos meus. [Não ando] em passeios, nem gozos, nem tenho anseio de mais nada na vida.</p>
+
+        <p>Agora, as forças já são poucas, mas não me quero dar por vencida e quero lutar mesmo contra mim. Já está [tudo encaminhado]. Pouco quero do mundo. Olho para a linha da minha vida e vejo-a limpa, sem lacunas, sem maldade, lutando continuamente. A missão está cumprida.</p>
+
+        <p>Agradeço a toda a hora a Deus a Família que me deu:</p>
+
+        <p>Meu Marido sempre me respeitou.</p>
+
+        <p>As minhas Filhas nunca me deram desgosto algum e sempre ouviram os meus conselhos. São muito trabalhadoras, boas Mães, o que me dá tanta alegria! São toda a minha vida.</p>
+
+        <p>Também quero dar uma palavra de admiração e estima aos meus Genros, Francisco, José e Fernando, pelas suas qualidades de honestidade e dignidade, pela boa educação que deram aos meus Netos e pelo grande Amor com que tratam as minhas Filhas. Peço todos os dias a Deus que os guarde.</p>
+
+        <p>Ainda é um pouco cedo para falar dos meus Netos. Mas já me mostram bom equilíbrio, formados ou a caminho disso, com as suas carreiras definidas e decisões tomadas. Aprecio-os muito. Enchem-me o coração.</p>
+
+        <p>Quando senti a vocação da minha arte, estava bem longe de pensar no prazer que sinto, que tenho sentido, nos seus dias de maior Felicidade — o Baptizado, a Comunhão, o Casamento — por ser eu a vesti-los.</p>
+
+        <div class="closing">
+          <div class="c-orn">&#10086;</div>
+          <div class="c-1">Sou uma Mulher Feliz!</div>
+          <div class="c-2">Vivo abraçada ao trabalho e à minha querida Família.</div>
+        </div>
+
+        <div class="nota">
+          <b>Nota de transcrição</b><br>
+          Texto transcrito de oito páginas dactilografadas. Corrigiram-se a pontuação e erros evidentes de digitalização, preservando integralmente a voz e o conteúdo originais. As palavras entre parênteses retos <span style="font-style:normal">[ ]</span> completam, com prudência, passagens em que o original se encontrava truncado.
+        </div>
+
+      </div>
+
+    </td></tr></tbody>
+    <tfoot><tr><td class="ftr-space"></td></tr></tfoot>
+  </table>
+</main>
+</body>
+</html>
