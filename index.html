@@ -78,6 +78,33 @@ a{color:var(--accent);}
  .market-facts{grid-template-columns:1fr 1fr;}
 }
 
+/* ACTUALIZAÇÃO DA INVESTIGAÇÃO */
+.research-update{padding:48px 0 52px;background:#f8f2e7;border-bottom:1px solid var(--line);scroll-margin-top:14px;}
+.research-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-bottom:22px;}
+.research-head h2{font-size:clamp(27px,4vw,38px);line-height:1.14;margin:.15em 0 .35em;font-weight:600;}
+.research-head p{max-width:720px;margin:0;color:#4f4638;}
+.research-date{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#725620;white-space:nowrap;}
+.research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+.research-card{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:19px 20px 17px;
+ box-shadow:0 2px 8px rgba(70,45,25,.06);}
+.research-card h3{font-size:19px;line-height:1.28;margin:.55em 0 .35em;font-weight:600;}
+.research-card p{font-size:15.5px;line-height:1.55;margin:.45em 0;}
+.research-card .sources{font-size:13px;color:var(--muted);margin-top:10px;}
+.new-badge,.correction-badge,.evidence-badge{display:inline-block;border-radius:999px;padding:3px 8px 2px;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;font-weight:700;
+ letter-spacing:.08em;line-height:1.4;text-transform:uppercase;vertical-align:.12em;}
+.new-badge{background:#365d46;color:#fff;}
+.correction-badge{background:var(--accent);color:#fff;}
+.evidence-badge{background:#e8dcc4;color:#514634;margin-left:4px;}
+.research-key{font-size:13.5px;color:#5b5040;margin-top:17px;}
+.research-key .new-badge,.research-key .correction-badge{margin-right:4px;}
+@media(max-width:700px){
+ .research-update{padding:34px 0 38px;}
+ .research-head{grid-template-columns:1fr;gap:8px;}
+ .research-date{white-space:normal;}
+ .research-grid{grid-template-columns:1fr;}
+}
+
 /* GALLERY */
 .gallery-sec{background:#efe6d4;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px;padding:46px 0;}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
@@ -228,6 +255,90 @@ details.gfold[open]>summary{background:#e9dabb;}
  </div>
 </section>
 
+<section class="research-update" id="novidades-investigacao" aria-labelledby="research-title">
+ <div class="wrap">
+  <div class="research-head">
+   <div>
+    <div class="kicker">Novas ligações documentais</div>
+    <h2 id="research-title">Oito resultados acrescentados pela investigação</h2>
+    <p>Esta actualização cruza correspondência, imprensa de época, catálogos de exposições e leilões,
+    documentação oficial e investigação universitária. As etiquetas distinguem uma descoberta que amplia
+    a biografia de uma correcção que substitui uma leitura anterior.</p>
+   </div>
+   <div class="research-date">Actualização · 14 Jul. 2026</div>
+  </div>
+  <div class="research-grid">
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="evidence-badge">Fonte de época</span>
+    <h3>A prova final foi publicada e elogiada em 1906</h3>
+    <p><em>O Occidente</em> reproduziu o baixo-relevo de 1905 em 20 de Fevereiro de 1906. A crítica apresentou
+    Alves de Sousa e José de Oliveira Ferreira como jovens de decidida vocação e considerou as duas provas
+    obras de valor. A data da obra mantém-se; corrige-se a data da publicação.</p>
+    <p class="sources"><a href="https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_ooccidente_ano29_n0977_20fev1906/pdf/full.pdf" target="_blank" rel="noopener"><em>O Occidente</em>, n.º 977, pp. 36–37</a></p>
+   </article>
+   <article class="research-card">
+    <span class="correction-badge">Correcção</span><span class="evidence-badge">Fontes oficiais</span>
+    <h3>Primeira pedra em 1909; fundações executadas em 1912</h3>
+    <p>D. Manuel II presidiu à cerimónia da primeira pedra em <strong>5 de Julho de 1909</strong>. O convite
+    monárquico catalogado entre documentos de 1911 pertence a esse acto e não é um anacronismo republicano.
+    As contas públicas de 1912 separam a cerimónia simbólica da obra material: registam trabalhos nas fundações
+    entre 29 de Junho e 29 de Julho e uma despesa total de 803$440.</p>
+    <p class="sources"><a href="https://hemerotecadigital.cm-lisboa.pt/OBRAS/IlustracaoPort/1909/N178/N178_master/N178.pdf" target="_blank" rel="noopener"><em>Ilustração Portugueza</em>, 19-07-1909, pp. 73–74</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1913/02/03600.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 14-02-1913, p. 563</a></p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="evidence-badge">Cruzamento</span>
+    <h3>O n.º 52 era um núcleo activo de escultura</h3>
+    <p>O escultor francês <strong>Maurice Osmond</strong> expôs em 1912 dando a mesma morada de Alves de Sousa:
+    52, rue Vercingétorix. Uma história urbana da Sorbonne descreve ali uma pequena <em>cité</em> com um grande
+    atelier envidraçado de escultura. A simultaneidade no mesmo complexo está documentada; não prova, por si,
+    amizade ou colaboração entre ambos.</p>
+    <p class="sources"><a href="https://pv-gallery.com/downloadFile?objectId=51378893" target="_blank" rel="noopener">Catálogo dos Artistes Indépendants, 1912, pp. 234–235</a> · <a href="https://books.openedition.org/psorbonne/1592" target="_blank" rel="noopener">Jean-Louis Robert, <em>Plaisance près Montparnasse</em></a></p>
+   </article>
+   <article class="research-card">
+    <span class="correction-badge">Correcção</span><span class="evidence-badge">Fonte académica</span>
+    <h3>O concurso de professor de 1913 teve vencedor conhecido</h3>
+    <p>Alves de Sousa concorreu com Rodrigo Faria de Castro e João Gomes Correa de Faria. A regência da cadeira
+    foi entregue a <strong>João Gomes Correa de Faria</strong>. A correspondência mostra a campanha de Alves de
+    Sousa, mas a frase antes lida como desistência não substitui este desfecho documentado.</p>
+    <p class="sources"><a href="https://run.unl.pt/bitstreams/d3f31d13-8211-4e9d-a0cb-ef9117ca572f/download" target="_blank" rel="noopener">Dissertação, Universidade Nova de Lisboa, p. 53, nota 68</a></p>
+   </article>
+   <article class="research-card">
+    <span class="correction-badge">Correcção</span><span class="evidence-badge">Leitura do original</span>
+    <h3>As iniciais são «T. L.»: Teixeira Lopes</h3>
+    <p>Na carta de 1917 lê-se «T. L.», não «F. L.». A notícia dizia respeito à saída de <strong>António Teixeira
+    Lopes</strong> da Escola Portuense de Belas-Artes. A pergunta de Alves de Sousa sobre o sucessor também tem
+    resposta: <strong>José de Oliveira Ferreira</strong> ocupou temporariamente o lugar em 1916.</p>
+    <p class="sources"><a href="gallery/f/01600.jpg" target="_blank" rel="noopener">Ver o manuscrito</a> · <a href="https://www.arquivo.museu.presidencia.pt/results?p=3694&amp;s=Rank&amp;sd=False&amp;searchType=Description" target="_blank" rel="noopener">Arquivo do Museu da Presidência</a> · <a href="https://sigarra.up.pt/up/pt/web_BASE.GERA_PAGINA?P_pagina=1005714" target="_blank" rel="noopener">Universidade do Porto</a></p>
+   </article>
+   <article class="research-card">
+    <span class="correction-badge">Correcção</span><span class="evidence-badge">Leilão oficial</span>
+    <h3>A <em>Figura feminina</em> de 1915 foi vendida em 2011</h3>
+    <p>A escultura em gesso, com 64 cm, assinada e datada de 1915 segundo a ficha oficial, foi o lote 128 da
+    Cabral Moncada em <strong>31 de Janeiro de 2011</strong>. Tinha estimativa de 400–600 € e foi vendida por
+    <strong>600 €</strong>. «8 de Junho de 2023» era uma data de anotação, não do leilão.</p>
+    <p class="sources"><a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado da Cabral Moncada</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">Catálogo do leilão 124</a></p>
+   </article>
+   <article class="research-card">
+    <span class="correction-badge">Correcção</span><span class="evidence-badge">Data confirmada</span>
+    <h3>Inauguração em 27 de Maio de 1952</h3>
+    <p>A dúvida entre 1951 e 1952 resolve-se distinguindo conclusão material e inauguração. O Monumento da
+    Boavista foi inaugurado em <strong>27 de Maio de 1952</strong>, durante a visita do Presidente Craveiro Lopes
+    ao Porto.</p>
+    <p class="sources"><a href="https://cciporto.com/2020/11/" target="_blank" rel="noopener">Associação Comercial do Porto</a> · <a href="https://books.openedition.org/cidehus/25774" target="_blank" rel="noopener">estudo académico, OpenEdition</a></p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="evidence-badge">Imprensa de época</span>
+    <h3>O projecto do Pombal tinha reputação pública em 1914</h3>
+    <p><em>O Occidente</em>, de 20 de Abril de 1914, identificou o lema <em>Cuidar dos vivos</em>, de Marques da
+    Silva e Alves de Sousa, e apresentou os autores do segundo projecto como artistas reputados da escola do
+    Porto. É um testemunho contemporâneo independente da recepção pública da dupla.</p>
+    <p class="sources"><a href="https://hemerotecadigital.cm-lisboa.pt/OBRAS/Ocidente/1914/N1271/N1271_master/N1271.pdf" target="_blank" rel="noopener"><em>O Occidente</em>, n.º 1271, 20-04-1914</a></p>
+   </article>
+  </div>
+  <p class="research-key"><span class="new-badge">Novo</span> amplia o que se sabia. <span class="correction-badge">Correcção</span> substitui uma data, leitura ou conclusão anterior. As transcrições brutas preservadas mais abaixo podem conservar leituras antigas, sempre assinaladas como ultrapassadas nas sínteses críticas.</p>
+ </div>
+</section>
+
 
 <div class="arq-region">
  <div class="arq-banner"><div class="wrap">
@@ -237,7 +348,7 @@ details.gfold[open]>summary{background:#e9dabb;}
   (1884–1922): a sua vida e a sua obra reconstituídas a partir das fontes primárias. O essencial está em
   destaque; o restante fica <strong>recolhido em secções que pode abrir</strong>. Cada documento está
   identificado e legendado. Use o índice abaixo para navegar.</p>
-  <nav class="arq-nav"><a href="#arq-historia">A biografia, capítulo a capítulo</a><a href="#arq-notas">Método e questões em aberto</a><a href="#arq-primarias">Fontes primárias — cronologia, retrato e catálogo de obras</a><a href="#arq-cartas">A correspondência — 262 cartas</a><a href="#arq-symbolos">O caderno «Assuntos de Arte e Symbolos»</a><a href="#arq-investigacao">Pessoas, obras e lugares — investigação documental</a><a href="#arq-leituras">Leituras cruzadas</a><a href="#arq-obra-circulo">A obra, o Monumento e o círculo</a><a href="#arq-contexto">Contexto de época</a><a href="#arq-proveniencia">Proveniência e inventário das fontes</a><a href="#arq-catchall">Materiais de origem e notas avulsas (cobertura total)</a><a href="#arq-galeria">Galeria do acervo</a></nav>
+  <nav class="arq-nav"><a href="#novidades-investigacao">Novidades · Julho 2026</a><a href="#arq-historia">A biografia, capítulo a capítulo</a><a href="#arq-notas">Método e questões em aberto</a><a href="#arq-primarias">Fontes primárias — cronologia, retrato e catálogo de obras</a><a href="#arq-cartas">A correspondência — 262 cartas</a><a href="#arq-symbolos">O caderno «Assuntos de Arte e Symbolos»</a><a href="#arq-investigacao">Pessoas, obras e lugares — investigação documental</a><a href="#arq-leituras">Leituras cruzadas</a><a href="#arq-obra-circulo">A obra, o Monumento e o círculo</a><a href="#arq-contexto">Contexto de época</a><a href="#arq-proveniencia">Proveniência e inventário das fontes</a><a href="#arq-catchall">Materiais de origem e notas avulsas (cobertura total)</a><a href="#arq-galeria">Galeria do acervo</a></nav>
  </div></div>
  <section class="arq" id="arq-historia"><h2>A biografia, capítulo a capítulo</h2><p class="arq-intro">A biografia documental completa, em prosa corrida, narrada carta a carta a partir da correspondência do escultor. Seis capítulos; cada um cita a fonte de cada facto. Clique para ler.</p><h1>A história de António Alves de Sousa, contada pelos seus documentos</h1>
 <p>Reconstrução biográfica detalhada do escultor <strong>António Alves de Sousa (1884–1922)</strong>,
@@ -258,7 +369,7 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <li><a href="#cap-3"><strong>1912–1913 — Consolidação e vida parisiense</strong></a> — a estátua de <em>Orfeu</em> (prova do pensionato), o ateliê da Rue Vercingétorix, Salons, a candidatura a professor no Porto. <em>(31 cartas)</em></li>
 <li><a href="#cap-4"><strong>1914–1917 — A guerra, os atrasos e a doença</strong></a> — Paris em guerra, a equação impossível da verba, a tuberculose pulmonar (certificado do Dr. Letulle), as curas de Ville d'Avray e Sospel. <em>(34 cartas)</em></li>
 <li><a href="#cap-5"><strong>1918–1928 — Rompimento, morte e ecos</strong></a> — o desligamento jurídico de 1918, o novo contrato recusado, a última carta (1921), a morte (1922) e os ecos até 1928. <em>(36 cartas)</em></li>
-<li><a href="#cap-6"><strong>Documentação de época e o Monumento</strong></a> — cronologia factual (1884–1952), a história completa do Monumento da Boavista (concluído só em 1951/52), e o que os documentos de época acrescentam.</li>
+<li><a href="#cap-6"><strong>Documentação de época e o Monumento</strong></a> — cronologia factual (1884–1952), a história completa do Monumento da Boavista (concluído em 1951 e inaugurado em 27 de Maio de 1952), e o que os documentos de época acrescentam.</li>
 </ol>
 <h2>Questões em aberto a resolver (cruzar com os scans em <code>../fontes/</code>)</h2>
 <ul>
@@ -413,7 +524,7 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <p>«A maquette partiu hontem á ½ noite da Gare d'Orleans em grande velocidade. Vi-a partir pelo facto de ter assistido poucos minutos antes ao transporte do caes para o Wagon com o intuito de evitar qualquer brutalidade da parte do pessoal que trabalha no caes. (...) A maquette já leva escripta a divisa "Poros e Tropa".»
 <em>(Carta 019, 1909-12-29, Sousa → Silva, FIMS_MSMS_1187, scans 0070–0077)</em></p>
 </blockquote>
-<p>A divisa «Povo e Tropa» (grafada «Poros e Tropa» na transcrição) é o lema sob o qual a dupla concorre — e que a Câmara do Porto retomaria, em 1911, ao convidar para o lançamento da primeira pedra «em honra do "Heroismo dos Povos e Tropas do Norte contra as Invasões Francezas"» <em>(Carta 051)</em>. Nessa mesma carta de 29 de Dezembro, o escultor já articula a sua angústia estratégica: a maqueta, por ser à escala definitiva, <strong>parecerá grande demais</strong> ao pé das dos concorrentes, e isso pode iludir o júri:</p>
+<p>A divisa «Povo e Tropa» (grafada «Poros e Tropa» na transcrição) é o lema sob o qual a dupla concorre. A Câmara do Porto empregara a mesma fórmula no convite para a primeira pedra, «em honra do "Heroismo dos Povos e Tropas do Norte contra as Invasões Francezas"» <em>(Carta 051, agora redatada de 1911 para 1909)</em>. Nessa mesma carta de 29 de Dezembro, o escultor já articula a sua angústia estratégica: a maqueta, por ser à escala definitiva, <strong>parecerá grande demais</strong> ao pé das dos concorrentes, e isso pode iludir o júri:</p>
 <blockquote>
 <p>«Tenho mais ou menos a certeza que ella pelo tamanho perto das outras parecerá quasi o monumento <em>grandeur naturelle</em>, cujo acontecimento poderá causar perante os examinadores a impressão de que tal pedaço será demasiadamente grande para o terreno que existe.»
 <em>(Carta 019, 1909-12-29)</em></p>
@@ -536,13 +647,13 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <em>(Carta 049, 1911-05-25, Sousa → Silva, FIMS_MSMS_1187, scans 0182–0184)</em></p>
 </blockquote>
 <p>A 30 de Maio, a Comissão (Rodrigues da Costa) confirma o adiamento concedido <em>(Carta 050, 1911-05-30, FIMS_MSMS_1595 pp.51)</em>.</p>
-<h2>VIII. Junho–Julho de 1911: a primeira pedra, e o colapso do Marquês</h2>
-<p>A 22 de Junho de 1911 chega o convite oficial mais solene do corpus: o lançamento da pedra fundamental do Monumento do Porto, presidido pelo Rei [sic — anacronismo da minuta, ver dúvidas], no dia 5 de Julho:</p>
+<h2>VIII. Um documento deslocado: a primeira pedra de 5 de Julho de 1909</h2>
+<p><span class="correction-badge">Correcção</span> O convite oficial conservado no dossier foi catalogado como peça de 22 de Junho de 1911, mas a presidência de D. Manuel II e o cruzamento com a imprensa ilustrada mostram que pertence à cerimónia de <strong>5 de Julho de 1909</strong>. Não há anacronismo republicano nem um segundo lançamento da primeira pedra em 1911: há um documento deslocado na cronologia. A <em>Ilustração Portugueza</em> publicou fotografias da assistência, da bênção e do rei junto da pedra. <a href="https://hemerotecadigital.cm-lisboa.pt/OBRAS/IlustracaoPort/1909/N178/N178_master/N178.pdf" target="_blank" rel="noopener">Ver o n.º 178, de 19-07-1909, pp. 73–74</a>.</p>
 <blockquote>
 <p>«Em nome da Camara Municipal do Porto tenho a honra de convidar V.ª Ex.ª a assistir no dia 5 do corrente, pela 1 hora da tarde, ao lançamento da pedra fundamental do monumento a erigir na Praça Mousinho d'Albuquerque, n'esta cidade, em honra do "Heroismo dos Povos e Tropas do Norte contra as Invasões Francezas" (...). Toilette - casaca ou farda.»
-<em>(Carta 051, 1911-06-22, FIMS_MSMS_1595 pp.1–5)</em></p>
+<em>(Carta 051, antes catalogada como 1911-06-22; convite para 5-07-1909, FIMS_MSMS_1595 pp.1–5)</em></p>
 </blockquote>
-<p>Esta peça do dossier inclui também um <strong>telegrama de Paris</strong> do escultor — «receben cartas aguardo resposta» — e a nota de que cada convidado podia fazer-se acompanhar de duas senhoras «no recinto reservado» <em>(Carta 051)</em>.</p>
+<p>O agrupamento arquivístico inclui também um <strong>telegrama de Paris</strong> do escultor — «receben cartas aguardo resposta» — e a nota de que cada convidado podia fazer-se acompanhar de duas senhoras «no recinto reservado» <em>(Carta 051)</em>. A colagem de peças de datas diferentes no mesmo conjunto ajuda a explicar a classificação errada.</p>
 <p>O concurso do Marquês, entretanto, desmorona-se. A 4 de Julho, Alves de Sousa transmite a notícia que lera n'<em>O Século</em>:</p>
 <blockquote>
 <p>«li hontem n'"O Seculo" de Lisbôa que os artistas do Norte d'este paiz, declararam ao conselho director da Sociedade dos Architectos Portuguezes, abster-se absolutamente de concorrer até que o respectivo programma [seja remodelado].»
@@ -612,8 +723,8 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <h2>Apêndice B — Dúvidas, lacunas e problemas de datação</h2>
 <ol>
 <li><strong>Carta 025 (data e ano)</strong>: indexada como 1910-02-22, mas o ofício transcrito está assinado «Lisboa (...) 11 de Fevereiro de 1911». Há aqui confusão: o «concurso de 22 de fevereiro de 1910» é o do triunfo, mas o documento parece ser de Fev. 1911 (coincidindo com o envio das bases, Carta 034). <strong>Confirmar a datação real do scan.</strong></li>
-<li><strong>Carta 051 (anacronismo monárquico)</strong>: o convite da Câmara para o lançamento da primeira pedra (Jul. 1911) diz que à cerimónia «se digna presidir Sua Magestade El-Rei» — impossível em Julho de 1911, já em plena República (proclamada em Out. 1910). Trata-se provavelmente de minuta-modelo de 1909 reutilizada, ou de erro de transcrição. <strong>Verificar o original e a data real do lançamento da pedra</strong> (a narrativa-base aponta inauguração dos alicerces a 7 de Julho de 1911).</li>
-<li><strong>Lançamento da pedra: 5 ou 7 de Julho?</strong> A Carta 051 fala em «dia 5 do corrente»; a narrativa-base menciona jantar e eucaristia a 7 de Julho. Esclarecer.</li>
+<li><strong>Carta 051 e lançamento da primeira pedra:</strong> <span class="correction-badge">Resolvido</span> a cerimónia foi em <strong>5 de Julho de 1909</strong>, presidida por D. Manuel II. A data e a presença do rei são confirmadas pela reportagem fotográfica da <em>Ilustração Portugueza</em>; a classificação em 1911 é que estava errada. A referência narrativa a 7 de Julho não corresponde ao lançamento da primeira pedra.</li>
+<li><strong>Construção material das fundações:</strong> <span class="new-badge">Novo</span> um anúncio oficial de 23 de Abril de 1912 marcou para 15 de Maio a praça da empreitada. As contas da Comissão para o ano civil de 1912 registam 803$440 de despesas e 761$270 pagos a Manuel da Rocha por trabalhos executados entre <strong>29 de Junho e 29 de Julho</strong>. Assim, a cerimónia simbólica de 1909 e a execução das fundações em 1912 são acontecimentos distintos. <a href="https://files.dre.pt/gratuitos/1s/1912/04/09500.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-04-1912</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1913/02/03600.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 14-02-1913, p. 563</a>.</li>
 <li><strong>Cartas 041 e 042</strong> (1911-04-17): leitura muito comprometida por sobreposição de tinta do verso (<em>offset</em>). Vários passos conjecturais — convém colação directa com os scans 0151–0155.</li>
 <li><strong>Carta 047</strong>: a transcrição mistura o ofício de 9 de Maio à Comissão com fólios datáveis de <strong>24 de Maio</strong> (a anotação arquivística diz «Paris 24 Maio 1911»); parecem ser duas peças coligadas. <strong>Separar e datar os fólios.</strong></li>
 <li><strong>Identidade de «Oliveira Ferreira»</strong> (Carta 028): não fica claro se é o escultor José de Oliveira Ferreira ou o arquitecto Francisco de Oliveira Ferreira (ambos reaparecem em 1926). Esclarecer com outras fontes.</li>
@@ -627,6 +738,7 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <hr>
 <h2>1. O limiar de 1912: o amigo doente e a dívida de gratidão</h2>
 <p>O ano abre-se com um ofício seco da Comissão Oficial Executiva do 1.º Centenário da Guerra Peninsular: Amílcar Motta acusa a recepção do recibo da <strong>«1.ª prestação do monumento do Porto»</strong>, indispensável para a liquidação das contas de fim de ano, e deseja <strong>«m.tas boas festas e um anno feliz»</strong> (Carta 069, 1912-01-02, Amílcar Motta, FIMS_MSMS_1595 pp.76-77). É o primeiro pagamento do Monumento já em circulação contabilística — sinal de que, depois da escritura de Julho de 1911, a obra tem agora vida administrativa própria.</p>
+<p><span class="new-badge">Novo</span> A vida material da obra pode agora ser datada com maior precisão. O <em>Diário do Governo</em> anunciou em 23 de Abril de 1912 a praça para a construção das fundações; as contas do mesmo ano registam trabalhos entre <strong>29 de Junho e 29 de Julho</strong>, executados por Manuel da Rocha, e uma despesa total de <strong>803$440</strong>. É esta a fase física das fundações, distinta da cerimónia monárquica da primeira pedra em 1909. <a href="https://files.dre.pt/gratuitos/1s/1912/04/09500.pdf" target="_blank" rel="noopener">Anúncio da empreitada</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1913/02/03600.pdf" target="_blank" rel="noopener">contas publicadas em 14-02-1913, p. 563</a>.</p>
 <p>A primeira carta do escultor neste período não é, porém, sobre a obra, mas sobre o homem. Marques da Silva esteve doente, e Alves de Sousa abre 1912 com inquietação fraterna: <strong>«Aguardo com grande cuidado as suas melhoras e faço votos ardentes pela sua felicidade e pelo seu restabelecimento»</strong>, agradecendo de seguida <strong>«do fundo d'Alma, o enorme sacrificio que fez para contribuir na minha defeza»</strong> — e jurando <strong>«jámais esquecel-o»</strong> (Carta 070, 1912-02-06, Sousa→Silva, FIMS_MSMS_1187 scans 0238-0244). Nesta mesma carta começa a definir-se o nó que dominará todo o ano de 1912: o conflito do escultor com a Academia Portuense de Belas-Artes a propósito da sua estátua de <strong>Orfeu</strong>, a prova final do pensionato. Comunica que já reclamou <strong>«todos os documentos possiveis referentes ao meu aproveitamento n'esta Escola de Bellas-Artes, durante os tres annos lectivos»</strong>, e que tivera no atelier, na semana anterior, <strong>«o nosso Ministro em Paris Snr. José Chagas»</strong> — figura que, daqui em diante, será o seu padroeiro diplomático constante. Quanto à verba oficial para modelar a estátua: <strong>«até hoje, nada recebi apesar de ter feito as minhas reclamações na Legação por varias vezes.»</strong></p>
 <p>A carta traz já, no topo, uma anotação a tinta vermelha do próprio escultor (rasura/correcção sobre o documento) e termina com a fórmula doméstica que percorre todo o corpus: <strong>«Beijos na Aurelinha»</strong> (a filha pequena dos Marques da Silva, noutras cartas «Amelinha» e «Angelinha»).</p>
 <hr>
@@ -721,8 +833,8 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <p>A peça oficial deste pleito está conservada na <strong>Carta 095</strong> (1913-08-25, FIMS_MSMS_1187 scans 0378-0381): a <strong>exposição ao Ministro da Instrução Pública e Belas-Artes, Sousa Júnior</strong>. Nela, Alves de Sousa identifica-se como <strong>«ex-pensionista do Estado no estrangeiro, alumno da Escola Nacional de Bellas-Artes de Paris e um dos autores do monumento commemorativo aos heroes da Guerra Peninsular a erigir no Porto»</strong>, e defende que <strong>«o seu merito artistico é superior á clausula do protesto»</strong>, argumentando que a lei do decreto de <strong>24 de Dezembro de 1901</strong> se refere <strong>«unicamente á nomeação official»</strong> e não às provas do concurso. A carta de acompanhamento (Carta 094) revela a sua tática: juntou novo certificado da École e <strong>«uma carta chammante do snr. Carlos d'Lano [Olavo], deputado e amigo intimo d'este ministro»</strong>, guardando uma carta do mestre <strong>Injalbert</strong> <strong>«para outro ataque de maior importancia»</strong>.</p>
 <hr>
 <h2>11. O desenlace de 1913: o regresso adiado e a tempestade de telegramas</h2>
-<p>O ano fecha com o escultor, finalmente, a preparar o regresso. A <strong>Carta 099</strong> (1913-12-23, Sousa→Silva, FIMS_MSMS_1187 scans 0389-0398) anuncia: <strong>«Tenciono regressar ahi no fim do corrente [mês], por isso, diga-me se deseja que eu lhe leve d'aqui alguma coisa»</strong>, e — momento decisivo para a obra-mãe — pede <strong>«para ativar os trabalhos do barracão afim de podermos dar começo á obra logo que eu ahi chegue»</strong>. Está a dar <strong>«os ultimos toques no busto»</strong> e a deitar gesso. A frase <strong>«julgo ter feito bem assistir do concurso»</strong> (que reaparece num fragmento anexo à Carta 096) sugere que, no fim, o escultor <em>desistiu</em> dos concursos da Escola para se concentrar no Monumento e no Pombal.</p>
-<p>A <strong>Carta 099</strong> é, materialmente, a mais extraordinária do biénio: ao seu verso e em folhas anexas conservaram-se <strong>vários telegramas</strong> relativos ao desfecho do concurso do Marquês de Pombal — o eco direto da decisão. Lê-se a aflição em código telegráfico: <strong>«Julgamento amanha ultima reuniao segundao coisas renhidas venha ja estou hotel universo. Alves Souza, Hotel Universo Lisboa»</strong>; <strong>«termina domingo tudo bem encaminhado»</strong>; <strong>«arroyo diz negocio exigir sua presença aqui desempate breve»</strong>; <strong>«carta seguiu hontem»</strong>. E anotações manuscritas que documentam a luta na imprensa e nos gabinetes: pedido de <strong>«entrevistas Secullo, concurso Marquez de Pombal, 2.º premio»</strong>, referência ao <strong>«Chefe de gabinete Ministro da Instrucção»</strong> e à <strong>«Silva Graça»</strong>. Estes telegramas — alguns endereçados a «marques silva 44 praça marquez pombal pto» — pertencem ao próprio momento do julgamento do Pombal e fixam a memória do <strong>2.º prémio</strong> que a dupla viria a obter (o resultado oficial cairia já em 1914). É o documento que melhor encarna a tensão das vésperas: a obra, a política, a imprensa e a amizade todas comprimidas em tiras de papel telegráfico.</p>
+<p>O ano fecha com o escultor, finalmente, a preparar o regresso. A <strong>Carta 099</strong> (1913-12-23, Sousa→Silva, FIMS_MSMS_1187 scans 0389-0398) anuncia: <strong>«Tenciono regressar ahi no fim do corrente [mês], por isso, diga-me se deseja que eu lhe leve d'aqui alguma coisa»</strong>, e — momento decisivo para a obra-mãe — pede <strong>«para ativar os trabalhos do barracão afim de podermos dar começo á obra logo que eu ahi chegue»</strong>. Está a dar <strong>«os ultimos toques no busto»</strong> e a deitar gesso. A frase <strong>«julgo ter feito bem assistir do concurso»</strong> foi antes interpretada como desistência, mas uma investigação académica documenta o desfecho: concorreram António Alves de Sousa, Rodrigo Faria de Castro e João Gomes Correa de Faria, tendo a regência sido entregue a <strong>João Gomes Correa de Faria</strong>. <span class="correction-badge">Correcção</span> <a href="https://run.unl.pt/bitstreams/d3f31d13-8211-4e9d-a0cb-ef9117ca572f/download" target="_blank" rel="noopener">Universidade Nova de Lisboa, p. 53, nota 68</a>.</p>
+<p>A <strong>Carta 099</strong> é, materialmente, a mais extraordinária do biénio: ao seu verso e em folhas anexas conservaram-se <strong>vários telegramas</strong> relativos ao desfecho do concurso do Marquês de Pombal — o eco direto da decisão. Lê-se a aflição em código telegráfico: <strong>«Julgamento amanha ultima reuniao segundao coisas renhidas venha ja estou hotel universo. Alves Souza, Hotel Universo Lisboa»</strong>; <strong>«termina domingo tudo bem encaminhado»</strong>; <strong>«arroyo diz negocio exigir sua presença aqui desempate breve»</strong>; <strong>«carta seguiu hontem»</strong>. E anotações manuscritas que documentam a luta na imprensa e nos gabinetes: pedido de <strong>«entrevistas Secullo, concurso Marquez de Pombal, 2.º premio»</strong>, referência ao <strong>«Chefe de gabinete Ministro da Instrucção»</strong> e à <strong>«Silva Graça»</strong>. Estes telegramas — alguns endereçados a «marques silva 44 praça marquez pombal pto» — pertencem ao próprio momento do julgamento do Pombal e fixam a memória do <strong>2.º prémio</strong> que a dupla viria a obter. A recepção pública está documentada em 1914: <em>O Occidente</em> identifica a divisa <strong>«Cuidar dos vivos»</strong> e chama aos autores artistas reputados da escola do Porto. <span class="new-badge">Novo</span> <a href="https://hemerotecadigital.cm-lisboa.pt/OBRAS/Ocidente/1914/N1271/N1271_master/N1271.pdf" target="_blank" rel="noopener">Consultar o n.º 1271, de 20-04-1914</a>.</p>
 <hr>
 <h2>12. Síntese do biénio: o homem nas vésperas da Grande Guerra</h2>
 <p>Em 1912-1913, Alves de Sousa amadurece como artista (o <em>Orfeu</em> monumental, o <em>Ferreiro</em>, o busto da <em>República</em>, o grupo <em>Édipo e Antígona</em>, o baixo-relevo <em>Vítimas da Miséria</em>) ao mesmo tempo que se enreda em duas batalhas burocráticas paralelas — a estátua-prova perante a Academia e o concurso a professor — e em dois grandes projectos monumentais — a Boavista, que avança nos alicerces, e o Pombal, que culmina no 2.º prémio. Move-se entre o Trocadéro e o Salon, entre Injalbert e Bonnat, entre João Chagas e Gaspar da Graça, sempre a braços com a <strong>«falta de dinheiro n'este paiz [que] é extremamente alarminavel»</strong>. A correspondência fecha-se em Dezembro de 1913 com o escultor a anunciar o regresso e a obra do Monumento prestes a começar no terreno — ignorante de que, oito meses depois, a Grande Guerra cairia sobre Paris e arrastaria consigo a sua saúde, a obra e a sua vida.</p>
@@ -732,6 +844,7 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <p><strong>Topografia verificada (fonte institucional + iconografia de época).</strong> A morada do atelier que percorre toda esta correspondência — <strong>«Rue Vercingétorix, 52»</strong> (livret do SAF, anuário profissional, sobrescritos) — não designava um prédio comum: o <strong>nº52 era um atelier dentro de uma <em>cité d'artistes</em></strong> (colónia de ateliers de artistas) que ocupava os <strong>nº50-58</strong> da rua.</p>
 </blockquote>
 <ul>
+<li><span class="new-badge">Novo</span> O catálogo da <strong>Société des Artistes Indépendants de 1912</strong> dá a mesma morada ao escultor <strong>Maurice Osmond</strong>, que expôs três trabalhos destinados a bronze. A presença simultânea de dois escultores no n.º 52 reforça a identificação do lugar como complexo de ateliers; não demonstra uma relação pessoal entre ambos. <a href="https://pv-gallery.com/downloadFile?objectId=51378893" target="_blank" rel="noopener">Catálogo, pp. 234–235</a>. Uma história urbana da Sorbonne descreve a entrada na pequena cité e o grande atelier envidraçado de escultura: <a href="https://books.openedition.org/psorbonne/1592" target="_blank" rel="noopener"><em>Plaisance près Montparnasse</em></a>.</li>
 <li>A Wikipédia FR (<em>Rue Vercingétorix</em>) regista nos <strong>nº50 e 52</strong> o <em>«emplacement d'une ancienne cité d'artistes menacée de destruction dans les années 1970»</em>: uma colónia de cerca de trinta ateliers de escultores e pintores, ameaçada de demolição nos anos 1970 e <strong>parcialmente salva</strong> por mobilização de associações de defesa do património, autarcas e do Ministério da Cultura. No próprio nº52 esteve mais tarde o pintor-litógrafo <strong>Maurice Georges Poncelet</strong> (1897-1978).</li>
 <li>A rua era um dos núcleos da vida artística de Montparnasse, com <strong>várias</strong> cités: a do <strong>nº6</strong> (por onde passaram o Douanier Rousseau, Gargallo, González e Foujita) e a do <strong>nº50-58</strong>, a dele. Isto enquadra Alves de Sousa — <em>élève</em> de Injalbert — no <strong>meio dos ateliers de artistas</strong> do 14e, e não num simples quarto alugado: ajuda a explicar por que «todos os que teem visitado o atelier d'este nosso compatriota na rua Vercingetorix ficam admirados» (recorte de Xavier de Carvalho anexo à Carta 071, 1912) e por que João Chagas, Teixeira Gomes e Columbano o visitam ali (Cartas 082, 093).</li>
 </ul>
@@ -772,7 +885,7 @@ os scans e documentos de época em <code>../fontes/</code>.</p>
 <li><strong>O «fim que V. Ex.a sabe» (Carta 083):</strong> alusão velada (sigilo) cujo objecto exacto — ornato para o Monumento da Boavista ou para o Pombal — fica por esclarecer documentalmente.</li>
 <li><strong>Carta 074:</strong> indexada como Sousa→Júlia, mas o assunto central (fundações do Monumento, concurso do Pombal) é dirigido «ao marido»; é carta a Júlia que serve de canal ao arquiteto.</li>
 <li><strong>Identidade de «Gonçalves» (Carta 080) e do «irmão» de Marques da Silva (Carta 081):</strong> não identificados nominalmente no corpus; mereceriam pesquisa biográfica complementar.</li>
-<li><strong>Resultado do pleito académico (professor no Porto):</strong> o corpus mostra a candidatura e a exposição ao ministro (Cartas 093-095), mas não conserva o desfecho. A frase «julgo ter feito bem assistir do concurso» (Cartas 096/099) sugere desistência, não confirmação de êxito.</li>
+<li><strong>Resultado do pleito académico (professor no Porto):</strong> <span class="correction-badge">Resolvido</span> o corpus conserva a candidatura e a exposição ao ministro (Cartas 093-095), mas não o desfecho. Uma dissertação académica baseada na imprensa da época identifica os candidatos e afirma que a regência foi entregue a <strong>João Gomes Correa de Faria</strong>; não há, portanto, fundamento para concluir que Alves de Sousa desistiu. <a href="https://run.unl.pt/bitstreams/d3f31d13-8211-4e9d-a0cb-ef9117ca572f/download" target="_blank" rel="noopener">Fonte, p. 53, nota 68</a>.</li>
 </ul></div></details><details id="cap-4"><summary>Capítulo IV — A guerra, os atrasos e a doença (1914–1917)</summary><div class="doc"><h1>Capítulo 4 — 1914–1917: a Guerra, os atrasos, a doença</h1>
 <p><em>Reconstrução narrativa e documentada a partir da correspondência de António Alves de Sousa (1884–1922) com José Marques da Silva e Júlia Lopes Martins. Fundo FIMS — núcleos FIMS_MSMS_1187 (cartas do escultor) e FIMS_MSMS_1595 (dossier do processo de obra do Monumento aos Heróis da Guerra Peninsular). Período coberto: cartas 100 a 133 (34 documentos), de 19 de Março de 1914 a 24 de Dezembro de 1917. Fio condutor: o Monumento da Boavista. Cruzamento permanente com o <code>DOSSIER-SAUDE.md</code>.</em></p>
 <hr>
@@ -910,7 +1023,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 </blockquote>
 <p>Decisão técnica de primeira ordem para a história da obra: <strong>os grupos escultóricos serão fundidos em bronze, não talhados em pedra.</strong> O resto da carta retrata a carestia de guerra: aconselha o arquiteto a encomendar já os livros que deseja, porque «<em>as últimas medidas do governo e a falta de papel obrigarão os livreiros a augmentar seus livros de 50%</em>».</p>
 <blockquote>
-<p><strong>Documento de época.</strong> A carta 120 (resumo arquivístico da mesma data) está escrita num <strong>bilhete-postal ilustrado</strong> com a vista «<em>996 — MENTON — Plage — Promenade du Midi, Édition GILETTA, Nice</em>» — postal da Riviera, que prefigura o destino da cura que aí vem. O resumo regista ainda duas notas de actualidade portuguesa: «<em>Li no Século que o F. L. ia abandonar a Escola!</em>» e «<em>A vida está caríssima.</em>»</p>
+<p><strong>Documento de época.</strong> A carta 120 (resumo arquivístico da mesma data) está escrita num <strong>bilhete-postal ilustrado</strong> com a vista «<em>996 — MENTON — Plage — Promenade du Midi, Édition GILETTA, Nice</em>» — postal da Riviera, que prefigura o destino da cura que aí vem. A leitura directa do manuscrito corrige a transcrição: «<em>Li no Século que o <strong>T. L.</strong> ia abandonar a Escola!</em>» e «<em>A vida está caríssima.</em>» As iniciais são de <strong>António Teixeira Lopes</strong>; em 1916, <strong>José de Oliveira Ferreira</strong> ocupou temporariamente o lugar por ele deixado. <span class="correction-badge">Correcção</span> <a href="gallery/f/01600.jpg" target="_blank" rel="noopener">Manuscrito</a> · <a href="https://www.arquivo.museu.presidencia.pt/results?p=3694&amp;s=Rank&amp;sd=False&amp;searchType=Description" target="_blank" rel="noopener">saída de Teixeira Lopes</a> · <a href="https://sigarra.up.pt/up/pt/web_BASE.GERA_PAGINA?P_pagina=1005714" target="_blank" rel="noopener">sucessão temporária</a>.</p>
 </blockquote>
 <h3>Maio–Setembro: a cura em Sospel</h3>
 <p>A 28 de Maio de 1917, de <strong>Sospel</strong>, pequena aldeia dos Alpes Marítimos, vem a primeira boa notícia em anos:</p>
@@ -1033,14 +1146,14 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <ol>
 <li><strong>Datação anómala da Carta 132:</strong> o cabeçalho transcreve «Paris 34 — XI — 17», data impossível; pelo contexto e pelo resumo arquivístico, é 24 de Novembro de 1917. Provável lapso de leitura/escrita do «2» como «3».</li>
 <li><strong>Identidade do destinatário do restabelecimento na Carta 107</strong> (1915-06-09): a saudação «vae em via de completo restabelecimento» dirige-se a terceiro — não fica claro se a Júlia ou ao arquiteto. O dossier classifica-a como saúde de terceiro.</li>
-<li><strong>«F. L.» da Carta 120</strong> («Li no Século que o F. L. ia abandonar a Escola!»): iniciais por identificar (eventual professor da Escola de Belas Artes do Porto). A confirmar.</li>
+<li><strong>«T. L.» da Carta 120:</strong> <span class="correction-badge">Resolvido</span> o original lê-se «Li no Século que o T. L. ia abandonar a Escola!». Trata-se de <strong>António Teixeira Lopes</strong>; a vaga foi ocupada temporariamente em 1916 por <strong>José de Oliveira Ferreira</strong>.</li>
 <li><strong>Cartas 118 e 119</strong> são dois estados/versões do mesmo texto de 28-2-1917 (mesma abertura); a 119 contém o desenvolvimento completo. Tratá-las como uma única carta com dois testemunhos.</li>
 <li><strong>Distinção entre os dois concursos:</strong> a correspondência mistura o <strong>Monumento da Guerra Peninsular</strong> (Porto/Boavista, a obra adjudicada) e o <strong>caso do Pombal/«maquettes de Lisboa»</strong> (concurso distinto, em Lisboa, perdido em 1917). É essencial não confundir as «maquettes» de um e de outro. A <em>segunda maquette</em> da Carta 105 refere-se ao monumento do Porto.</li>
 <li><strong>Fase terminal fora do corpus deste período:</strong> o <code>DOSSIER-SAUDE</code> alerta que a fase final da doença (1919–1922) está fora das cartas do escultor; este capítulo termina, deliberadamente, num momento de esperança que a história desmentiria.</li>
 <li><strong>Documentos do dossier 1595 sem digitalização:</strong> as cartas 100, 102, 104 e 108 provêm de transcrição anterior (Gemini 3 Pro), sem <em>scan</em>; alguns trechos estão «desvanecidos» ou conjecturais (sobretudo a Carta 108). Convém cotejo com o original sempre que possível.</li>
 <li><strong>Identificação de «Mecè»:</strong> assumida como forma carinhosa para a mãe, mas não há prova interna definitiva no corpus; a confirmar com restante arquivo.</li>
 </ol></div></details><details id="cap-5"><summary>Capítulo V — Rompimento, morte e ecos (1918–1928)</summary><div class="doc"><h1>V — O rompimento, o declínio, a morte e os ecos (1918–1928)</h1>
-<p><em>Capítulo narrativo do período final da vida de António Alves de Sousa (1884–1922) e dos seus ecos posteriores, reconstruído a partir da correspondência conservada no Sistema de Informação Marques da Silva / Moreira da Silva (FIMS): fundo </em><em>FIMS_MSMS_1187</em><em> (cartas do escultor a José Marques da Silva e a Júlia Lopes Martins) e fundo </em><em>FIMS_MSMS_1595</em><em> (dossier do processo de obra do Monumento aos Heróis da Guerra Peninsular). Fio condutor: o destino do </em><em>Monumento da Boavista</em><em>, concluído só em 1951. Todas as citações preservam a ortografia original pré-reforma.</em></p>
+<p><em>Capítulo narrativo do período final da vida de António Alves de Sousa (1884–1922) e dos seus ecos posteriores, reconstruído a partir da correspondência conservada no Sistema de Informação Marques da Silva / Moreira da Silva (FIMS): fundo </em><em>FIMS_MSMS_1187</em><em> (cartas do escultor a José Marques da Silva e a Júlia Lopes Martins) e fundo </em><em>FIMS_MSMS_1595</em><em> (dossier do processo de obra do Monumento aos Heróis da Guerra Peninsular). Fio condutor: o destino do </em><em>Monumento da Boavista</em><em>, concluído em 1951 e inaugurado em 27 de Maio de 1952. Todas as citações preservam a ortografia original pré-reforma.</em></p>
 <hr>
 <h2>Nota preliminar sobre as fontes deste período</h2>
 <p>Este capítulo assenta em dois corpora de natureza muito diferente, que importa não confundir. De um lado, as <strong>cartas pessoais do escultor</strong> (fundo 1187): postais e cartas a Marques da Silva e a Júlia, de tom íntimo, escritas de Paris (e, uma vez, de Lisboa), entre Janeiro de 1918 e Março de 1921 — Cartas 134 a 159. De outro, os <strong>ofícios do arquiteto</strong> à Comissão Oficial Executiva do Centenário da Guerra Peninsular (fundo 1595, minutas guardadas no copiador de Marques da Silva), que cobrem o rompimento de 1918, o abandono da obra e todo o epílogo posterior à morte do escultor — Cartas 150, 151, 160 e, no bloco «sem data», 214–215, 218–224 e 243–248.</p>
@@ -1264,6 +1377,11 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <td><em>Cronologia</em>; <code>estudo_livro</code></td>
 </tr>
 <tr>
+<td><strong>20 Fev 1906</strong></td>
+<td><em>O Occidente</em> reproduz a prova final de 1905 e elogia Alves de Sousa e José de Oliveira Ferreira como jovens de decidida vocação, autores de duas obras de valor. <span class="new-badge">Novo</span></td>
+<td><a href="https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_ooccidente_ano29_n0977_20fev1906/pdf/full.pdf" target="_blank" rel="noopener"><em>O Occidente</em>, n.º 977, pp. 36–37</a></td>
+</tr>
+<tr>
 <td><strong>1907</strong></td>
 <td>Perde o pensionato (de estudo no estrangeiro) para <strong>Oliveira Ferreira</strong>.</td>
 <td><em>Cronologia</em></td>
@@ -1332,8 +1450,8 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 </tr>
 <tr>
 <td><strong>5 Jul 1909</strong></td>
-<td><strong>Lançamento da 1.ª pedra</strong> do Monumento do Porto <strong>por D. Manuel II</strong>, na visita ao Porto e a Amarante (comemoração das Invasões Francesas). Festas adiadas de 12 de Maio para 3 de Julho por causa do terramoto do Ribatejo.</td>
-<td><em>Cronologia</em> (19090705); <strong>resumo Cardoso</strong></td>
+<td><strong>Lançamento da 1.ª pedra</strong> do Monumento do Porto <strong>por D. Manuel II</strong>, na visita ao Porto e a Amarante (comemoração das Invasões Francesas). Festas adiadas de 12 de Maio para 3 de Julho por causa do terramoto do Ribatejo. <span class="correction-badge">Data confirmada</span></td>
+<td><em>Cronologia</em> (19090705); <strong>resumo Cardoso</strong>; <a href="https://hemerotecadigital.cm-lisboa.pt/OBRAS/IlustracaoPort/1909/N178/N178_master/N178.pdf" target="_blank" rel="noopener"><em>Ilustração Portugueza</em>, 19-07-1909, pp. 73–74</a></td>
 </tr>
 <tr>
 <td>Ago–Out 1909</td>
@@ -1448,11 +1566,6 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <td>INDEX carta 047</td>
 </tr>
 <tr>
-<td><strong>22 Jun 1911</strong></td>
-<td>A <strong>Comissão Oficial Executiva</strong> (papel do Ministério da Guerra) marca, para <strong>7 Jul 1911</strong>, jantar de inauguração dos <strong>alicerces</strong> + eucaristia solene «em frente do monumento commemorativo em construção» (traje: casaca ou farda).</td>
-<td><code>00-narrativa</code>; catálogo corresp. (item 11)</td>
-</tr>
-<tr>
 <td><strong>Jul 1911</strong></td>
 <td>Crise do concurso do Pombal: os artistas do Norte abstêm-se «até que o programa seja remodelado». Decisão (15 Jul): «que se não apresente coisa nenhuma…» — a dupla cede.</td>
 <td>cartas; <code>00-narrativa</code></td>
@@ -1479,8 +1592,8 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 </tr>
 <tr>
 <td><strong>25 Ago 1913</strong></td>
-<td>Exposição ao <strong>Ministro Sousa Júnior</strong> (Belas-Artes) defendendo o direito de concorrer ao Grand Prix de Rome; questão da <strong>certidão do 2.º grau</strong> e do nome trocado na certidão.</td>
-<td>cartas 094, 095; <em>Cronologia</em> (19130806)</td>
+<td>Exposição ao <strong>Ministro Sousa Júnior</strong> defendendo a admissão ao concurso de professor na Escola de Belas-Artes do Porto; a candidatura fora contestada por falta da <strong>certidão do 2.º grau</strong>. <span class="correction-badge">Correcção</span></td>
+<td>cartas 094, 095; <em>Cronologia</em> (19130806); <a href="https://run.unl.pt/bitstreams/d3f31d13-8211-4e9d-a0cb-ef9117ca572f/download" target="_blank" rel="noopener">desfecho, p. 53 n. 68</a></td>
 </tr>
 <tr>
 <td><strong>1914</strong></td>
@@ -1664,9 +1777,9 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <td><strong>resumo Cardoso</strong></td>
 </tr>
 <tr>
-<td><strong>1951</strong> <em>(Narrativa/catálogos)</em> / <strong>Maio de 1952</strong> <em>(Cardoso)</em></td>
-<td><strong><code>[DIV — data de inauguração]</code></strong> Conclusão do Monumento. Direcção das obras: <strong>Maria José Marques da Silva</strong> (filha, arquitecta) e <strong>David Moreira da Silva</strong> (genro, arquitecto); execução escultórica final por <strong>Henrique Moreira</strong> e <strong>José de Sousa Caldas</strong>. Cardoso data a <strong>inauguração de Maio de 1952, pelo Presidente da República General Craveiro Lopes</strong>.</td>
-<td><code>00-narrativa</code>; catálogos; <strong>resumo Cardoso</strong></td>
+<td><strong>1951–27 Mai 1952</strong></td>
+<td>Conclusão material atribuída a 1951; <strong>inauguração em 27 de Maio de 1952</strong>, durante a visita do Presidente da República, General Craveiro Lopes. Direcção das obras: <strong>Maria José Marques da Silva</strong> e <strong>David Moreira da Silva</strong>; execução escultórica final por <strong>Henrique Moreira</strong> e <strong>José de Sousa Caldas</strong>. <span class="correction-badge">Data resolvida</span></td>
+<td><code>00-narrativa</code>; catálogos; <a href="https://cciporto.com/2020/11/" target="_blank" rel="noopener">Associação Comercial do Porto</a>; <a href="https://books.openedition.org/cidehus/25774" target="_blank" rel="noopener">estudo académico</a></td>
 </tr>
 </tbody>
 </table>
@@ -1681,8 +1794,8 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <p>A <strong>memória descritiva</strong> (Marques da Silva + Alves de Sousa) acentua a coluna como elemento de <strong>centralidade</strong> mais do que ornamento. A parte escultural distribui-se em <strong>grandes massas</strong> «numa febre de convulsão à volta do pedestal», com <strong>dois fortes redutos laterais — porque duas foram as invasões</strong>; em volta da coluna, os generais portugueses <strong>Silveira, Bernardim Freire, Champalimaud, Ebben</strong>; no remate, a síntese da luta — <strong>o leão (força popular) subjugando a águia napoleónica</strong>. A composição é tripartida, «numa hierarquização mais simbólica do que escultórica» (Cardoso).</p>
 <p>Da correspondência e dos orçamentos resulta a materialidade prevista: <strong>4 altos-relevos, escudo e o grupo leão/águia</strong> a fundir em bronze pela <strong>casa Barbedienne</strong> por <strong>125 000 francos</strong> (orçamento de 9-12-1909). Os baixos-relevos da base mediam <strong>13,60 m × 3 m</strong> (ofício de 1919). As <strong>quatro datas</strong> da Guerra Peninsular seriam gravadas — debate de 1917 entre soco e fuste da coluna.</p>
 <h3>2.4 Atrasos, impasse e conclusão póstuma</h3>
-<p>Cadência: lançamento da 1.ª pedra (1909) → bênção dos alicerces (Jul 1911) → escritura/contrato (1911) → <strong>paragem com a Grande Guerra</strong> (1914) e a <strong>doença</strong> do escultor (a partir de 1915) → <strong>rompimento formal</strong> de Marques da Silva (Dez 1918) → tentativa de novo contrato «por pedaços» (1919, recusado pelos preços) → <strong>abandono da guarda</strong> (1921) → <strong>morte do escultor</strong> (1922). Seguem-se anos de inflação (a obra valorizou ~40× em 14 anos), tapumes roubados, e a polémica dos Oliveira Ferreira (1926).</p>
-<p>A obra ficou décadas reduzida aos <strong>alicerces do pedestal</strong>, que o público apelidava de <strong>«castiçal»</strong> (expressão registada no debate parlamentar de 1945). A conclusão deveu-se à direcção de <strong>Maria José Marques da Silva</strong> e <strong>David Moreira da Silva</strong>, com escultura final de <strong>Henrique Moreira</strong> e <strong>Sousa Caldas</strong>, e ao <strong>concurso financeiro do Tesouro garantido desde 1929</strong>; Cardoso atribui a inauguração a <strong>Maio de 1952</strong> (Craveiro Lopes), após a morte de <strong>Duarte Pacheco</strong> (impulsionador) e de <strong>Marques da Silva</strong> (1947).</p>
+<p>Cadência: cerimónia da 1.ª pedra (<strong>5 Jul 1909</strong>) → escritura/contrato (1911) → concurso e execução material das fundações (<strong>1912</strong>) → <strong>paragem com a Grande Guerra</strong> (1914) e a <strong>doença</strong> do escultor (a partir de 1915) → <strong>rompimento formal</strong> de Marques da Silva (Dez 1918) → tentativa de novo contrato «por pedaços» (1919, recusado pelos preços) → <strong>abandono da guarda</strong> (1921) → <strong>morte do escultor</strong> (1922). <span class="correction-badge">Cronologia corrigida</span> Seguem-se anos de inflação (a obra valorizou ~40× em 14 anos), tapumes roubados e a polémica dos Oliveira Ferreira (1926).</p>
+<p>A obra ficou décadas reduzida aos <strong>alicerces do pedestal</strong>, que o público apelidava de <strong>«castiçal»</strong> (expressão registada no debate parlamentar de 1945). A conclusão deveu-se à direcção de <strong>Maria José Marques da Silva</strong> e <strong>David Moreira da Silva</strong>, com escultura final de <strong>Henrique Moreira</strong> e <strong>Sousa Caldas</strong>, e ao <strong>concurso financeiro do Tesouro garantido desde 1929</strong>. Concluída materialmente em 1951 segundo a narrativa e os catálogos, a obra foi <strong>inaugurada em 27 de Maio de 1952</strong>, durante a visita de Craveiro Lopes, após a morte de <strong>Duarte Pacheco</strong> (impulsionador) e de <strong>Marques da Silva</strong> (1947).</p>
 <h3>2.5 Cautela documental — Porto vs. Lisboa (não confundir)</h3>
 <p>A <strong>discussão parlamentar de 24-1-1945</strong> (<code>obras/discussão parlamentar.txt</code>) trata predominantemente do <strong>outro</strong> Monumento à Guerra Peninsular — o de <strong>Lisboa (Campo Grande)</strong>, da autoria dos <strong>irmãos Oliveira Ferreira</strong>, já concluído e elogiado — pedindo indemnização pela alta de preços. Só de passagem o orador lamenta que o do <strong>Porto</strong> (de Alves de Sousa e Marques da Silva) «apenas exista[m] os alicerces do pedestal… que o público designa por castiçal». Esta fonte é, portanto, valiosa <strong>para datar o estado do monumento do Porto em 1945</strong> e para fixar o <strong>enquadramento financeiro do Estado Novo (1929)</strong> — mas <strong>não descreve a obra de Alves de Sousa</strong>; os «dois artistas» que sofreram nela são os <strong>Oliveira Ferreira</strong>, em Lisboa. (Reforça-se com a <em>Cronologia</em>: a frase «adjudicada, por concurso de 1909, aos irmãos Oliveiras Ferreiras» é de Lisboa.)</p>
 <hr>
@@ -1693,7 +1806,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <p><strong>3.3 Lista de espólio da FBAUP (1923) (<code>lista-chegada-Paris-Livro8.odt</code>).</strong> Ofício n.º 368 (20-10-1923, director <strong>Guedes de Oliveira</strong>) à Alfândega do Porto, enumerando o espólio parisiense: bustos de senhora e de homem, <em>Orfeu</em> e variantes, <em>Eurídice</em>, <em>O Remesso</em>, <em>Diógenes</em>, <em>Velha atando a liga</em>, <em>Avant l'Opération</em>, <em>Vendedores de jornaes</em>, <em>S. Sebastião</em> (baixo-relevo). Documenta a <strong>chegada física do espólio</strong> e a sua <strong>isenção alfandegária</strong> como obra de aluno bolseiro.</p>
 <p><strong>3.4 «Obras no mundo» (<code>obras-no-mundo.docx</code>).</strong> Mapeamento (com referências web) de obras em França ou criadas em Paris: <em>Regresso do Calvário</em> (1909, paradeiro desconhecido), <em>Procissão da Fome</em>, <em>Desespero</em>, <em>Garoto dos Jornais</em>, <em>Édipo e Antígona</em>, <em>Bacante</em>, busto de <em>Suzanne B.</em>, <strong>Orfeu (FBAUP)</strong>, <em>Cristo preso à coluna</em> (1911), busto de <em>Pinto de Couto</em>, <strong>Busto da República</strong> (oferecido em 1913 à Legação/Embaixada de Portugal em Paris, onde permanece), <strong>busto de Madame Chagas</strong>, o <strong>conjunto do Monumento da Boavista</strong> e a <strong>maqueta do Marquês de Pombal</strong> (2.º lugar, 1914). Útil para localização e para o objectivo de <strong>digitalização 3D</strong> (público no monumento; restrito na Embaixada e na FBAUP).</p>
 <p><strong>3.5 Os dois catálogos de estampas/cenas (<code>catalog-estampas.json</code>).</strong> São catálogos de <strong>recriação por IA</strong> (estética Belle Époque sépia / atelier de gesso «non-finito» à Rodin), cada item ancorado numa <strong>citação datada</strong>:
-- <strong><code>correspondencia/catalog-estampas.json</code> — 48 cenas</strong> do mundo do escultor, com <code>source</code> citando cartas e datas: capa do Monumento; retratos (Alves de Sousa, Marques da Silva, Júlia); o concurso de 1908; a viagem e chegada a Paris (Jan 1909); Injalbert; Louvre/Carpeaux; Versalhes; Rouen; Luxembourg; Sarah Bernhardt; Luna Park (29-5-1909); Notre-Dame; a maquette à noite (Nov 1909); a partida da Gare d'Orléans (30-11-1909); o leão e a águia (Barbedienne); o triunfo (5-3-1910); a admissão à École (Mai 1910); a bênção dos alicerces (Jul 1911); o Orfeu (1912); Trocadéro/Rodin (1913); a colónia portuguesa de Montparnasse; <strong>Germaine / Saint-Pair-sur-Mer</strong>; a Grande Guerra (1914); Ville d'Avray (1916); Sospel (1917); o rompimento (1918); a morte (1922); o monumento sem escultor (1951).
+- <strong><code>correspondencia/catalog-estampas.json</code> — 48 cenas</strong> do mundo do escultor, com <code>source</code> citando cartas e datas: capa do Monumento; retratos (Alves de Sousa, Marques da Silva, Júlia); o concurso de 1908; a viagem e chegada a Paris (Jan 1909); Injalbert; Louvre/Carpeaux; Versalhes; Rouen; Luxembourg; Sarah Bernhardt; Luna Park (29-5-1909); Notre-Dame; a maquette à noite (Nov 1909); a partida da Gare d'Orléans (30-11-1909); o leão e a águia (Barbedienne); o triunfo (5-3-1910); a admissão à École (Mai 1910); a primeira pedra (5-7-1909) e a execução material das fundações (1912) <span class="correction-badge">Cronologia corrigida</span>; o Orfeu (1912); Trocadéro/Rodin (1913); a colónia portuguesa de Montparnasse; <strong>Germaine / Saint-Pair-sur-Mer</strong>; a Grande Guerra (1914); Ville d'Avray (1916); Sospel (1917); o rompimento (1918); a morte (1922); o monumento sem escultor (1951).
 - <strong><code>symbolos/catalog-estampas.json</code> — 60 cenas</strong> das <strong>esculturas e <em>assumptos</em></strong> (Pietà 1909; Péricles e Fídias; ninfas e Orfeu; Édipo e Antígona; <em>Oreste endormi</em>; S. Sebastião; <em>Chute d'Icare</em>; Salomé; Caim e Abel; Prosérpina; <em>Vítimas da Miséria</em>; <em>Avant l'Opération</em>; etc.), espelhando o índice do caderno (§3.1).</p>
 <blockquote>
 <p><strong>Observação biográfica iluminada pela documentação:</strong> a presença, na <em>Cronologia</em> e no catálogo, do núcleo <strong>Germaine Lechartier / família Bazin / Saint-Pair-sur-Mer (Normandia)</strong> sugere uma <strong>afeição normanda</strong> do escultor (bilhetes «Meu António, tu onde estás?»), e contextualiza a investigação genealógica paralela do compilador. O catálogo refere ainda os <strong>filhos</strong> mandados vir para Paris, um deles <strong>Caius</strong> (avô do bisneto que hoje conserva o arquivo).</p>
@@ -1708,7 +1821,8 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <li><strong>5 Jul 1909</strong> — <strong>D. Manuel II lança a 1.ª pedra</strong> do Monumento do Porto.</li>
 <li><strong>Nov–Dez 1909</strong> — Maquette «Povo e Tropa» enviada da Gare d'Orléans; orçamento <strong>Barbedienne 125 000 fr</strong>.</li>
 <li><strong>1910</strong> — <strong>1.º prémio</strong> (júri unânime, pres. Rodrigues da Costa); admitido à <strong>École</strong> (28 Mai); 2.ª prestação (envasamento na 7.ª fiada).</li>
-<li><strong>1911</strong> — <strong>1ère médaille</strong> Grand Prix de Rome (<em>Oreste</em>); <strong>escritura/contrato</strong> do Monumento (<strong>31 Jul / 15 Ago</strong> <code>[DIV]</code>); bênção dos alicerces (7 Jul).</li>
+<li><strong>1911</strong> — <strong>1ère médaille</strong> Grand Prix de Rome (<em>Oreste</em>); <strong>escritura/contrato</strong> do Monumento (<strong>31 Jul / 15 Ago</strong> <code>[DIV]</code>).</li>
+<li><strong>1912</strong> — Concurso público e <strong>execução material das fundações</strong>; as contas registam trabalhos entre 29 de Junho e 29 de Julho.</li>
 <li><strong>1914</strong> — <strong>2.º lugar</strong> no Marquês de Pombal; eclode a <strong>Grande Guerra</strong> (paragem).</li>
 <li><strong>1915–1917</strong> — Doença (<strong>tuberculose pulmonar</strong>, Boucicaut/Letulle); curas em Ville d'Avray e <strong>Sospel</strong>.</li>
 <li><strong>Dez 1918</strong> — <strong>Rompimento formal</strong> de Marques da Silva.</li>
@@ -1717,7 +1831,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <li><strong>1922–1923</strong> — Espólio comprado pelo Estado (despacho 17-8-1922); listas FBAUP/MNSR.</li>
 <li><strong>1929</strong> — Tesouro garante o financiamento (Estado Novo).</li>
 <li><strong>1947</strong> — Morre <strong>Marques da Silva</strong>.</li>
-<li><strong>1951 / Maio 1952</strong> <code>[DIV]</code> — <strong>Conclusão e inauguração</strong> do Monumento (Maria José Marques da Silva + David Moreira da Silva; escultura de <strong>Henrique Moreira</strong> e <strong>Sousa Caldas</strong>; inauguração por Craveiro Lopes segundo Cardoso).</li>
+<li><strong>1951–27 Mai 1952</strong> — <strong>Conclusão e inauguração</strong> do Monumento (Maria José Marques da Silva + David Moreira da Silva; escultura de <strong>Henrique Moreira</strong> e <strong>Sousa Caldas</strong>). A inauguração ocorreu em 27 de Maio de 1952, durante a visita de Craveiro Lopes. <span class="correction-badge">Resolvido</span></li>
 </ul>
 <hr>
 <h2>5. Lacunas e divergências por resolver</h2>
@@ -1732,7 +1846,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <p><strong>Data do veredicto do concurso.</strong> Cardoso: <strong>Fevereiro de 1911</strong>; narrativa e cartas: <strong>triunfo em Fevereiro de 1910</strong> (a 2.ª prestação é já de Maio de 1910). → Distinguir <strong>decisão do júri</strong> de <strong>adjudicação/contrato</strong>; verificar atas.</p>
 </li>
 <li>
-<p><strong>Data de inauguração do Monumento.</strong> <strong>1951</strong> (narrativa/catálogos) <em>vs.</em> <strong>Maio de 1952, por Craveiro Lopes</strong> (Cardoso). → Confirmar em imprensa de época / Livro de Honra do Monumento.</p>
+<p><strong>Data de inauguração do Monumento.</strong> <span class="correction-badge">Resolvido</span> <strong>27 de Maio de 1952</strong>, durante a visita do Presidente Craveiro Lopes ao Porto. A referência a 1951 pode conservar-se como data de conclusão material, não de inauguração. Fontes: <a href="https://cciporto.com/2020/11/" target="_blank" rel="noopener">Associação Comercial do Porto</a> e <a href="https://books.openedition.org/cidehus/25774" target="_blank" rel="noopener">estudo académico</a>.</p>
 </li>
 <li>
 <p><strong>Composição exata do júri e do programa.</strong> Cardoso é a fonte mais precisa (Rodrigues da Costa; Ventura Terra; Alexandre Soares; Veloso Salgado; João Augusto Ribeiro). A narrativa menciona ainda Veloso Salgado e José de Figueiredo num registo de bastidores. → Cruzar com a <strong>memória descritiva</strong> e o <strong>programa do concurso</strong> (em Git LFS, ainda por carregar).</p>
@@ -1759,7 +1873,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 6. <strong>Postais ilustrados</strong> que servem de suporte às cartas (a <em>Cronologia</em> anota o motivo de dezenas): séries de <strong>Roma/Rafael, Carpeaux no Luxembourg, Catedrais de Rouen / Reims / Amiens, Panteão, Porte Saint-Denis, baixos-relevos da estátua da République</strong> — registar editor e motivo (ex.: Ernesto Richter).
 7. <strong>Bilhetes/postais a «Mademoiselle Germaine, Bazin, Saint-Pair»</strong> («Meu António, tu onde estás?») — núcleo afetivo normando.
 8. <strong>Recortes de imprensa</strong> colados no caderno (p.17): «Fragmento de Guerra» (Lüle-Burgas, 1912), «A despedida d'um condemnado à morte», «Congresso de mendigos» (Nova Orleans).
-9. <strong>Carta colectiva dos pedreiros</strong> (23-2-1910) e o <strong>convite oficial</strong> da bênção dos alicerces (22-6-1911, papel do Ministério da Guerra).
+9. <strong>Carta colectiva dos pedreiros</strong> (23-2-1910) e o <strong>convite oficial</strong> para a primeira pedra (Junho de 1909, papel do Ministério da Guerra, antes catalogado como 22-6-1911) — cotejar com a reportagem fotográfica da <em>Ilustração Portugueza</em> de 19-7-1909.
 10. <strong>Fotografias de arquivo</strong>: maqueta do Marquês de Pombal (FIMS_MSMS_Foto3802_142, 1914); fotografias da maquette «Povo e Tropa»; <em>Caridade</em> dedicada por Teixeira Lopes (1905).</p>
 <p>Obras a fotografar/3D (para o livro-homenagem):
 11. <strong>Conjunto do Monumento da Boavista</strong> (público), <strong>Orfeu</strong> (FBAUP), <strong>Busto da República</strong> (Embaixada de Paris), e o núcleo do <strong>MNSR</strong> (gessos originais + bronzes do Fundo João Chagas); a <strong>maqueta gigante do Porto</strong> guardada em caixas no <strong>quartel da Serra do Pilar</strong>.</p>
@@ -1814,6 +1928,11 @@ revista <em>Arte</em> (período) · <code>[Inv. FBAUP]</code> inventário da Fac
 <td><strong>1905</strong></td>
 <td>Conclui o curso de Escultura. Prova final: <strong>«Mulher caída na praça pública»</strong> (gesso).</td>
 <td>[Inv. FBAUP] 99.Esc.70</td>
+</tr>
+<tr>
+<td><strong>1906-02-20</strong></td>
+<td><em>O Occidente</em> publica uma fotografia da prova final e uma crítica favorável às provas de Alves de Sousa e José de Oliveira Ferreira. <span class="new-badge">Novo</span></td>
+<td><a href="https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_ooccidente_ano29_n0977_20fev1906/pdf/full.pdf" target="_blank" rel="noopener">n.º 977, pp. 36–37</a></td>
 </tr>
 <tr>
 <td><strong>1905</strong></td>
@@ -2125,6 +2244,11 @@ revista <em>Arte</em> (período) · <code>[Inv. FBAUP]</code> inventário da Fac
 <td><strong>1912-07</strong></td>
 <td><strong>Grand Prix de Rome (pintura):</strong> <strong>«Œdipe sur le corps de ses fils»</strong> (Estácio, <em>Tebaida</em>, Livro XI) — Édipo, cadáver vivo, lança-se sobre os despojos de Etéocles e Polinice.</td>
 <td>[Caderno Symbolos]</td>
+</tr>
+<tr>
+<td><strong>23 Abr–29 Jul 1912</strong></td>
+<td><strong>Fundações do Monumento:</strong> anúncio da praça da empreitada em 23 de Abril; trabalhos materiais pagos a Manuel da Rocha, executados entre 29 de Junho e 29 de Julho. Despesa total registada: 803$440. <span class="new-badge">Novo</span></td>
+<td><a href="https://files.dre.pt/gratuitos/1s/1912/04/09500.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-04-1912</a>; <a href="https://files.diariodarepublica.pt/gratuitos/1s/1913/02/03600.pdf" target="_blank" rel="noopener">contas de 1912, publicadas em 14-02-1913, p. 563</a></td>
 </tr>
 <tr>
 <td><strong>1913-01-17/22</strong></td>
@@ -2583,7 +2707,7 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 <td>—</td>
 <td><strong>1905</strong> (prova final do curso)</td>
 <td>gesso (<em>nophoto</em> no catálogo FBAUP)</td>
-<td>F + <strong>revista <em>Arte<em> p.62</em>* + </em></strong>O Occidente<em> 1905</em><em> + fotos de época <code>fomeP.jpg</code> / <code>fomePdetalhe.jpg</code> — legenda: «</em>Uma mulher do povo, conduzindo duas crianças, cae debilitada pela fome em um banco de praça pública; rodeiam-na populares procurando reconfortá-la*»</td>
+<td>F + revista <em>Arte</em>, p. 62 + <a href="https://hemerotecadigital.lisboa.pt/fileadmin/user_upload/magalone/m_ooccidente_ano29_n0977_20fev1906/pdf/full.pdf" target="_blank" rel="noopener"><em>O Occidente</em>, n.º 977, 20-02-1906, pp. 36–37</a> <span class="correction-badge">Data corrigida</span> + fotos de época <code>fomeP.jpg</code> / <code>fomePdetalhe.jpg</code> — legenda: <em>«Uma mulher do povo, conduzindo duas crianças, cae debilitada pela fome em um banco de praça pública; rodeiam-na populares procurando reconfortá-la»</em></td>
 </tr>
 <tr>
 <td>3</td>
@@ -2785,10 +2909,10 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 </tr>
 </tbody>
 </table>
-<h3 id="mercado-l1">Peça aparecida no mercado — atribuição a confirmar</h3>
-<p>O registo seguinte <strong>não entra ainda na tabela-mestra</strong>. Uma atribuição de leilão demonstra que a peça
-foi apresentada e, segundo o Invaluable, vendida sob o nome do artista, mas não substitui o exame da assinatura, das marcas de fundição, da
-proveniência e da relação material com os modelos conhecidos.</p>
+<h3 id="mercado-l1">Peças aparecidas no mercado</h3>
+<p>Os dois registos documentam circulação comercial, mas têm estatutos diferentes. A <em>Cabeza de joven</em>
+continua a ser uma atribuição comercial sem assinatura publicada; a <em>Figura feminina</em> é descrita pela
+leiloeira como assinada e datada, embora a reprodução disponível não permita conferir directamente esses sinais.</p>
 <table>
 <thead>
 <tr>
@@ -2808,8 +2932,19 @@ proveniência e da relação material com os modelos conhecidos.</p>
 <td><strong>Atribuição comercial por confirmar.</strong> Data do modelo, data e oficina de fundição, edição e
 proveniência desconhecidas. <a href="#descoberta-mercado">Ver fotografia e fontes</a>.</td>
 </tr>
+<tr>
+<td>L2</td>
+<td><strong>Figura feminina</strong><br>Gesso, 64 cm; assinada e datada de 1915 segundo a ficha oficial</td>
+<td>Cabral Moncada, Lisboa, leilão 124, <strong>31-01-2011</strong>, lote 128<br>Estimativa: 400–600 €</td>
+<td><strong>600 €</strong>, resultado publicado pela leiloeira</td>
+<td><strong>Autoria fortemente sustentada pela ficha.</strong> Falta uma fotografia legível da assinatura e da data.
+<span class="correction-badge">Data corrigida</span> <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">catálogo</a>.</td>
+</tr>
 </tbody>
 </table>
+<blockquote>
+<p><strong>Desambiguação de mercado.</strong> O perfil agregador do Invaluable mistura este escultor com uma peça de ourivesaria atribuída a um homónimo de cronologia incompatível e com dois óleos de Celestino Alves. Por isso, o total de «cinco lotes vendidos» não representa o corpus de António Alves de Sousa. <a href="https://www.invaluable.com/artist/alves-de-sousa-antonio-hrk9wr1szi/" target="_blank" rel="noopener">Ver o índice contaminado</a>.</p>
+</blockquote>
 <blockquote>
 <p><strong>⚠️ Nota de correção (27-06-2026):</strong> uma «Néréide» (statuette marfim/nacre/coral/pérola) foi
 momentaneamente atribuída a Alves de Sousa como obra nova de 1913. <strong>É falso</strong> — o nº 3109 «vitrine contenant
@@ -3330,7 +3465,8 @@ Monumento, mas com outro projeto.</p>
 Boavista), foi concluído apenas em 1951, por Maria José Marques da Silva (filha, arquiteta) e David
 Moreira da Silva (genro, arquiteto), com execução escultórica de Henrique Moreira e José de Sousa
 Caldas — vinte e nove anos depois da morte de Alves de Sousa e quatro anos depois da morte de José
-Marques da Silva.</p>
+Marques da Silva. A inauguração realizou-se em <strong>27 de Maio de 1952</strong>, durante a visita do Presidente
+Craveiro Lopes ao Porto. <span class="correction-badge">Data confirmada</span></p>
 <p>Temas transversais</p>
 <p>A tríade afetiva</p>
 <p>A correspondência com Júlia Lopes Martins é profundamente sentimental ("V. Ex.ª uma Mãe que eu tenho
@@ -6158,7 +6294,7 @@ que estou quasi livre, vou
 pensar em partir para ahi</p>
 <p>o mais breve possivel.
    Outro assumpto! Li no
-"Seculo" que o F. L. ia abandonar
+"Seculo" que o T. L. ia abandonar
 a Escola! É 'verdade? Em caso
 affirmativo, qual será o ar-
 tista, na idéa do Snr. M. da Silva
@@ -11965,7 +12101,8 @@ da Guerra Peninsular, 30 de Maio de 1911.</p>
 <p>O PRESIDENTE</p>
 <p>[Assinatura] J. C. Rodrigues da Costa
 G.al de D.ão</p>
-<p>1911-05-31 — Porto</p></div></details><details id="carta-051"><summary>Carta 051 — 1911-06-22</summary><div class="doc"><h1>Carta 051 — 1911-06-22</h1>
+<p>1911-05-31 — Porto</p></div></details><details id="carta-051"><summary>Carta 051 — convite redatado: Junho de 1909</summary><div class="doc"><h1>Carta 051 — convite para 5 de Julho de 1909</h1>
+<p><span class="correction-badge">Correcção</span> A classificação anterior «1911-06-22» é incompatível com a cerimónia monárquica descrita. A reportagem contemporânea confirma o lançamento da primeira pedra por D. Manuel II em 5 de Julho de 1909.</p>
 <p><em>— → — · FIMS_MSMS_1595 pp.1–5</em></p>
 <p>COMMISSÃO OFFICIAL EXECUTIVA
 DO 1.º CENTENARIO
@@ -16017,7 +16154,7 @@ estes dois annos mais chegados.
 <p><em>Alves de Sousa → Marques da Silva · FIMS_MSMS_1187 (scans 0481–0482)</em></p>
 <p>Paris   28.2.1917   / para M.S.
 Só hoje li ... por chegar de Rouen
-... Li no Século que o . F. L. ia abandonar a Escola !   ... A vida está carissima.</p>
+... Li no Século que o T. L. ia abandonar a Escola !   ... A vida está carissima.</p>
 <p>996   MENTON - Plage - Promenade du Midi</p>
 <p>Edition GILETTA - N[ice]</p>
 <p>[manuscrito vertical, à direita, parcialmente legível]
@@ -26523,7 +26660,7 @@ lingua: PT
 ---
 o mais breve possivel.
    Outro assumpto! Li no
-&quot;Seculo&quot; que o F. L. ia abandonar
+&quot;Seculo&quot; que o T. L. ia abandonar
 a Escola! É &#x27;verdade? Em caso
 affirmativo, qual será o ar-
 tista, na idéa do Snr. M. da Silva
@@ -26549,7 +26686,7 @@ lingua: PT
 ---
 Paris   28.2.1917   / para M.S.
 Só hoje li ... por chegar de Rouen
-... Li no Século que o . F. L. ia abandonar a Escola !   ... A vida está carissima.
+... Li no Século que o T. L. ia abandonar a Escola !   ... A vida está carissima.
 </pre></div></details><details><summary>FIMS/MSMS 1187 — pág. 0482 &middot; <span class="snip">«996 MENTON - Plage - Promenade du Midi»</span></summary><div class="doc"><pre class="raw">---
 ficheiro: FIMS_MSMS_1187_0482.jpg
 lingua: FR
@@ -33672,13 +33809,14 @@ page <code>Catalogo1910_p61_SCULPTURE_Alves.jpg</code> + recorte <code>Catalogo1
 resultados</strong>; «Souza» = <strong>0</strong>. Motor validado com «Injalbert» = <strong>4 obras</strong> (Washington, Goldendale,
 Glendale-«Laughter», Memphis). Conclusão: <strong>nenhuma obra de Alves de Sousa em coleção pública norte-americana</strong>.
 Fecha o lead da escultura francesa nos EUA.</p>
-<p><strong>Mercado internacional — correção de 2026.</strong> A conclusão negativa desta varredura ficou superada
-por um resultado que não tinha sido indexado nas bases consultadas: a Bayeu Subastas apresentou em Madrid,
-em 10-06-2025, <em>Cabeza de joven</em>, bronze patinado de 32 cm atribuído a Alves de Sousa, lote 124. O catálogo
-estimou a peça em 200–300 € e o Invaluable regista a venda por 250 €. É uma <strong>atribuição comercial ainda
-sem documentação publicada da assinatura, marcas de fundição e proveniência que permita confirmar a autoria</strong>,
-mas documenta circulação no mercado espanhol. Nas bases museológicas consultadas fora de Portugal não foi
-localizada obra sua; o núcleo institucional conhecido continua concentrado no MNSR e na FBAUP.</p>
+<p><strong>Mercado — correcção de 2026.</strong> Estão documentadas duas ocorrências. A Cabral Moncada vendeu em
+31-01-2011 uma <em>Figura feminina</em> em gesso, com 64 cm, assinada e datada de 1915 segundo a ficha oficial:
+lote 128, estimativa 400–600 €, resultado 600 €. Em Madrid, a Bayeu Subastas apresentou em 10-06-2025 a
+<em>Cabeza de joven</em>, bronze patinado de 32 cm atribuído a Alves de Sousa, lote 124; o catálogo estimou-a em
+200–300 € e o Invaluable regista 250 €. A segunda é uma <strong>atribuição comercial ainda sem documentação
+publicada da assinatura, marcas de fundição e proveniência</strong>. <span class="correction-badge">Correcção</span>
+O perfil agregado do Invaluable mistura ainda o escultor com um ourives homónimo e com Celestino Alves;
+o total de «cinco lotes vendidos» não deve ser usado como estatística do artista. <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Cabral Moncada</a> · <a href="https://www.invaluable.com/artist/alves-de-sousa-antonio-hrk9wr1szi/" target="_blank" rel="noopener">índice do Invaluable</a>. Nas bases museológicas consultadas fora de Portugal não foi localizada obra sua; o núcleo institucional conhecido continua concentrado no MNSR e na FBAUP.</p>
 <h2>Relatório completo da Gallica (1909-1914) — 7 fontes primárias (27-06-2026)</h2>
 <p>Varrimento sistemático da Gallica (via SRU + leitura no browser). <strong>Sete acertos confirmados</strong>, todos com
 discriminador (morada Vercingétorix 52 / mestre Injalbert / secção Sculpture), distinguindo dos homónimos.</p>
@@ -39657,10 +39795,11 @@ com <strong>Cruz de Cristo</strong> ao centro.
 <strong>Inscrição:</strong> "PORTUGAL" repetido nas lápides; restante texto (nomes/datas) ilegível à distância.
 <strong>Notas:</strong> complemento contextual da imagem 6 (mesmo cemitério).</p>
 <h2>8. <code>de_sousa_antonio_alves-figura_feminina_OM5eb300_11237_20110131_124_128.jpg</code></h2>
-<p><strong>Classificação:</strong> [OBRA-MODERNA] (registo de catálogo) / obra autoral
-<strong>Material/estado:</strong> estatueta de vulto inteiro, <strong>mármore ou gesso branco</strong>, sobre base quadrangular; fotografada com <strong>fundo cinza neutro</strong> (catálogo de museu/leilão).
+<p><strong>Classificação:</strong> [OBRA-MODERNA] (registo de leilão) / obra autoral
+<strong>Material/estado:</strong> estatueta de vulto inteiro em <strong>gesso, 64 cm</strong>, sobre base quadrangular; fotografada com <strong>fundo cinza neutro</strong>.
 <strong>Assunto:</strong> <strong>figura feminina</strong> em pé, drapeada num longo manto de pregas finas, cabeça inclinada e velada, segurando junto ao corpo um <strong>ramo/palma</strong> (folhagem tipo palma ou espigas) — iconografia simbolista/Art Nouveau (alegoria, possível luto ou vitória).
-<strong>Inscrição:</strong> nenhuma visível; nome de ficheiro confirma atribuição "de_sousa_antonio_alves – figura feminina" e refª de catálogo (datação do registo 2011-01-31).</p>
+<strong>Inscrição:</strong> a ficha oficial descreve-a como <strong>assinada e datada de 1915</strong>; a assinatura e a data não são legíveis nesta reprodução.
+<strong>Mercado:</strong> Cabral Moncada, leilão 124, lote 128, <strong>31-01-2011</strong>; estimativa 400–600 €; <strong>vendida por 600 €</strong>. <span class="correction-badge">Correcção</span> <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">catálogo oficial</a>.</p>
 <h2>9. <code>diogo de macedo sobre alves de sousa.png</code></h2>
 <p><strong>Classificação:</strong> [DOCUMENTO] (recorte impresso de época)
 <strong>Suporte:</strong> recorte de jornal/revista, papel envelhecido.
@@ -39786,9 +39925,9 @@ Texto crítico-biográfico (em duas colunas) identificado como <strong>Diogo de 
 <tr>
 <td>8</td>
 <td>Figura feminina (com palma/ramo)</td>
-<td>Mármore ou gesso branco</td>
-<td>Obra acabada (cat. museu/leilão)</td>
-<td>sem assinatura visível; reg. 2011</td>
+<td>Gesso, 64 cm</td>
+<td>Obra acabada; ficha de leilão</td>
+<td>Assinada e datada de 1915 segundo a ficha; leilão 31-01-2011; vendida 600 €</td>
 <td>OBRA-MODERNA</td>
 <td>de_sousa_antonio_alves-figura_feminina_...jpg</td>
 </tr>
@@ -40346,16 +40485,16 @@ são material novo a integrar quando os temas forem revisitados.</p>
 - <code>historia/02-1910-1911-o-monumento-e-a-ascensao.md</code> — Linha 230 afirma erradamente «A escritura é, assim, assinada — a 31 de Julho de 1911» — contradita pelos próprios documentos que cita (o telegrama de 'até 15' é posterior a 31-07).</p>
 <h2>II. Datação de cartas e peças sem data</h2>
 <h3>7. A carta 261 (sem data) é do inverno 1916-17: os '13 francos do jantar do ano novo' são o saldo de 13fr60 das contas do tapete — e é ela a 'carta em falta' citada pela ficha de 28-Fev-1917 <em>(confiança: alta)</em></h3>
-<p>A carta 261 ('Recebo e agradeço... os 13 fr.s que me mandou guardar para o jantar do anno novo') data-se entre fins de Dez-1916 e 28-Fev-1917: os 13 francos são o saldo de 13fr60 do acerto de contas do tapete que ele declara a Júlia a 30-Out-1916 ('Restam 13,60 ficam à disposição de V. Excia', carta 114) e reitera a M. da Silva a 20-Nov-1916 ('sou eu que tenho em meu poder 13 fr.s 60 centimos', carta 117) — Júlia mandou-lho guardar para o jantar de ano novo (1916→17). Mais: as duas frases singulares da carta 261 ('Li no Seculo que o F. L. ia abandonar a Escola!' e 'A vida... está carissima') são exactamente as passagens que a ficha arquivística datada 'Paris 28.2.1917' (carta 120) cita e que NÃO constam da carta 119 do mesmo dia — a anomalia da 'página ou carta em falta' de 28-2-1917 resolve-se: essa carta é a 261, enviada a Júlia na mesma remessa do regresso de Rouen.</p>
+<p>A carta 261 ('Recebo e agradeço... os 13 fr.s que me mandou guardar para o jantar do anno novo') data-se entre fins de Dez-1916 e 28-Fev-1917: os 13 francos são o saldo de 13fr60 do acerto de contas do tapete que ele declara a Júlia a 30-Out-1916 ('Restam 13,60 ficam à disposição de V. Excia', carta 114) e reitera a M. da Silva a 20-Nov-1916 ('sou eu que tenho em meu poder 13 fr.s 60 centimos', carta 117) — Júlia mandou-lho guardar para o jantar de ano novo (1916→17). Mais: as duas frases singulares da carta 261 ('Li no Seculo que o T. L. ia abandonar a Escola!' e 'A vida... está carissima') são exactamente as passagens que a ficha arquivística datada 'Paris 28.2.1917' (carta 120) cita e que NÃO constam da carta 119 do mesmo dia — a anomalia da 'página ou carta em falta' de 28-2-1917 resolve-se: essa carta é a 261, enviada a Júlia na mesma remessa do regresso de Rouen. <span class="correction-badge">Correcção</span> A leitura «T. L.» identifica Teixeira Lopes.</p>
 <p><strong>Evidência:</strong>
-- <code>analises/correspondencia/cartas/261_sd_1187.md</code> — 'os 13 fr.s que me mandou guardar para o jantar do anno novo' + 'Li no "Seculo" que o F. L. ia abandonar a Escola!' + 'A vida aqui como em toda a França está carissima!'
+- <code>analises/correspondencia/cartas/261_sd_1187.md</code> — 'os 13 fr.s que me mandou guardar para o jantar do anno novo' + 'Li no "Seculo" que o T. L. ia abandonar a Escola!' + 'A vida aqui como em toda a França está carissima!'
 - <code>analises/correspondencia/cartas/114_1916-10-30_1187.md</code> — Règlement de comptes do tapete, 30-X-16: 'Reçu 220,00... Restam 13,60 ficam à disposição de V. Excia' (a Júlia)
 - <code>analises/correspondencia/cartas/117_1916-11-20_1187.md</code> — N.B. de 20-11-1916: 'sou eu que tenho em meu poder 13 fr.s 60 centimos'
-- <code>analises/correspondencia/cartas/120_1917-02-28_1187.md</code> — Ficha arquivística 'Paris 28.2.1917 / para M.S.': 'Só hoje li ... por chegar de Rouen ... Li no Século que o F. L. ia abandonar a Escola! ... A vida está carissima' — frases ausentes da carta 119 e presentes na 261
+- <code>analises/correspondencia/cartas/120_1917-02-28_1187.md</code> — Ficha arquivística 'Paris 28.2.1917 / para M.S.': 'Só hoje li ... por chegar de Rouen ... Li no Século que o T. L. ia abandonar a Escola! ... A vida está carissima' — frases ausentes da carta 119 e presentes na 261
 - <code>analises/correspondencia/cartas/114_1916-10-30_1187.md</code> — Règlement de comptes do tapete: «Reçu 220,00... Restam 13,60 ficam à disposição de V. Excia».
 - <code>analises/correspondencia/cartas/117_1916-11-20_1187.md</code> — 20-11-1916: «sou eu que tenho em meu poder 13 fr.s 60 centimos»; «trabalho sem descanço para pagar dividas».
-- <code>analises/correspondencia/cartas/261_sd_1187.md</code> — «Recebo e agradeço... os 13 fr.s que me mandou guardar para o jantar do anno novo... não por precisar mas por ser mais uma prova da amizade»; contém «Li no 'Seculo' que o F. L. ia abandonar a Escola!» e «A vida... está carissima!» (scans 0479-0480).
-- <code>analises/correspondencia/cartas/120_1917-02-28_1187.md</code> — Ficha arquivística de 28-2-1917 cita exactamente «Li no Século que o F. L. ia abandonar a Escola! ... A vida está carissima» — passagens ausentes das cartas 118/119 e presentes na 261 (scans contíguos 0481-0482).</p>
+- <code>analises/correspondencia/cartas/261_sd_1187.md</code> — «Recebo e agradeço... os 13 fr.s que me mandou guardar para o jantar do anno novo... não por precisar mas por ser mais uma prova da amizade»; contém «Li no 'Seculo' que o T. L. ia abandonar a Escola!» e «A vida... está carissima!» (scans 0479-0480).
+- <code>analises/correspondencia/cartas/120_1917-02-28_1187.md</code> — Ficha arquivística de 28-2-1917 cita exactamente «Li no Século que o T. L. ia abandonar a Escola! ... A vida está carissima» — passagens ausentes das cartas 118/119 e presentes na 261 (scans contíguos 0481-0482).</p>
 <h3>8. A carta 262 é a carta 'à esposa' citada na carta 128; o irmão chorado é Manoel (morto de tuberculose a 27-Fev-1917) e a consulta ao Dr. Letulle desloca-se para a primeira quinzena de Maio de 1917 <em>(confiança: alta)</em></h3>
 <p>A carta 262 (sem data, a Júlia: condolências pela 'morte de meu querido irmão', tratamento com o Dr. Bessandet e 'Vou, amanhã consultar o Dr. Letulle... o maior especialista da Tuberculose') é a carta que a carta 128 refere: 'Ha dias escrevi a sua esposa a dizer-lhe que ia consultar o Dr. Letulle o que fiz hontem'. O 'querido irmão' é Manoel Alves de Sousa, morto de tuberculose a 27-Fev-1917 — o que revela a sequência causal: ~10 semanas depois de o irmão morrer tísico, o escultor, 'um pouco adoentado', procura precisamente o maior especialista de tuberculose, escondendo-o da mãe. E a cronologia fina re-data o episódio: como ele chegou a Sospel a 27-Mai-1917 'depois de passar 10 dias em Nice e em Menton' (carta 121) e a carta 128 anuncia 'resolvi partir terça feira proxima', a partida foi a terça-feira 15-Mai-1917 (1-Mai-1917 foi terça), a carta 128 é de ~9-13 de Maio (não '25-07-1917'), a consulta a Letulle de ~inícios de Maio, e a carta 262 de fins de Abril/inícios de Maio de 1917 — a anotação '[c. 1917] 18 Junho' na 262 é insustentável (ele estava em Sospel a 18-Jun).</p>
 <p><strong>Evidência:</strong>
@@ -59763,8 +59902,9 @@ frente                                                                          
            disso: para irem morar juntos, convém alguma coisa ser legítima;
 1915       Armando Navarro, que viria a bater-se pela aquisição do seu espólio pelo Estado depois da
            morte, era já conselheiro comercial da LEgação. Morava na Rua Saint senoch 9. Paris
-1915       Escultura de figuras feminina não identificada, mas datada de 1915, que apareceu num leilão em
-           8 de Junho de 2023
+1915       «Figura feminina», gesso, 64 cm, assinada e datada de 1915 segundo a ficha oficial.
+20110131   Cabral Moncada, leilão 124, lote 128: estimativa 400–600 euros; vendida por 600 euros.
+           A antiga data «8 de Junho de 2023» era uma anotação posterior, não a data do leilão.
 
 
 
