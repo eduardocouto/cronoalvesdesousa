@@ -1,2 +1,8 @@
 content.html
 assets/
+!assets/
+assets/*
+!assets/obras-conhecidas/
+!assets/obras-conhecidas/*.jpg
+!assets/paris/
+!assets/paris/*.jpg
