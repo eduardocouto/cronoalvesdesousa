@@ -122,6 +122,13 @@ a{color:var(--accent);}
 .work-media{display:grid;gap:8px;align-content:start;}
 .work-media.views-2{grid-template-columns:1fr 1fr;}
 .work-media.views-3{grid-template-columns:repeat(3,1fr);}
+.work-document{min-height:310px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;
+ background:linear-gradient(145deg,#26241f 0%,#4a4032 68%,#765f3f 100%);color:#f6eddd;
+ border:1px solid #8e7959;border-radius:7px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);}
+.work-document small{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;
+ letter-spacing:.14em;text-transform:uppercase;color:#d7c49f;}
+.work-document strong{display:block;margin:10px 0 5px;font-size:clamp(24px,3vw,34px);line-height:1.08;font-weight:600;}
+.work-document span{font-size:14px;line-height:1.45;color:#e9dcc6;}
 .work-shot.ph{margin:0;padding:7px;background:#e8dec9;box-shadow:none;min-width:0;}
 .work-shot.ph img{height:390px;object-fit:contain;background:#2b2924;}
 .work-media.views-2 .work-shot.ph img{height:285px;}
@@ -449,7 +456,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
  <div class="hero-status">Arquivo público · investigação em curso · actualizado em 15 Jul. 2026</div>
  <nav class="hero-links" aria-label="Atalhos principais">
   <a href="#visao-geral">Começar pela visão geral</a>
-  <a href="#obras-conhecidas">Explorar 17 obras</a>
+  <a href="#obras-conhecidas">Explorar 22 obras</a>
   <a href="#arquivo-integral">Consultar o arquivo integral</a>
  </nav>
 </header>
@@ -471,8 +478,8 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
 
   <div class="portal-grid">
    <a class="portal-card" href="#obras-conhecidas">
-    <span class="portal-count">17 obras · 23 imagens analisadas</span><strong>Obras em destaque</strong>
-    <p>Catálogo crítico ilustrado, dividido por cinco núcleos e com factos, leituras e dúvidas separados.</p>
+    <span class="portal-count">22 obras · 26 imagens analisadas</span><strong>Obras em destaque</strong>
+    <p>Catálogo crítico ilustrado, dividido por seis núcleos e com factos, leituras e dúvidas separados.</p>
     <span class="portal-go">Abrir o catálogo →</span>
    </a>
    <a class="portal-card" href="#arq-historia">
@@ -486,7 +493,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
     <span class="portal-go">Explorar Paris →</span>
    </a>
    <a class="portal-card" href="#novidades-investigacao">
-    <span class="portal-count">17 resultados recentes</span><strong>Descobertas e correcções</strong>
+    <span class="portal-count">23 resultados recentes</span><strong>Descobertas e correcções</strong>
     <p>O que mudou com o cruzamento de jornais, catálogos, registos civis, arquivos e mercado de arte.</p>
     <span class="portal-go">Ver as novidades →</span>
    </a>
@@ -585,8 +592,10 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
     <h3>A <em>Figura feminina</em> de 1915 foi vendida em 2011</h3>
     <p>A escultura em gesso, com 64 cm, assinada e datada de 1915 segundo a ficha oficial, foi o lote 128 da
     Cabral Moncada em <strong>31 de Janeiro de 2011</strong>. Tinha estimativa de 400–600 € e foi vendida por
-    <strong>600 €</strong>. «8 de Junho de 2023» era uma data de anotação, não do leilão.</p>
-    <p class="sources"><a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado da Cabral Moncada</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">Catálogo do leilão 124</a></p>
+    <strong>600 €</strong>. Um catálogo da Trocadéro, de 10 de Dezembro de 2010, já descrevia uma obra do mesmo autor e título,
+    com 62 cm, no lote 1051. A proximidade de título, data e medidas torna provável que seja o mesmo gesso, mas a diferença
+    de 2 cm e a falta de cotejo fotográfico impedem apresentar a passagem Trocadéro → Cabral Moncada como proveniência fechada.</p>
+    <p class="sources"><a href="https://livrozilla.com/doc/1110749/catalogo_leilao-001_-10-dez" target="_blank" rel="noopener">Trocadéro — catálogo de 10-12-2010</a> · <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado da Cabral Moncada</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">Catálogo do leilão 124</a></p>
    </article>
    <article class="research-card">
     <span class="correction-badge">Correcção</span><span class="evidence-badge">Data confirmada</span>
@@ -648,7 +657,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
     conserva a marca «G. Costilhes, Mouleur Statuaire, 10 Impasse de la Gaîté, Paris XIV»: é a marca do moldador,
     não uma segunda assinatura de autoria. O Bottin confirma Costilhes como <em>mouleur-figuriste</em>, nos números
     8 e 10 da impasse de la Gaîté, em 1914 e 1919; o primeiro nome continua desconhecido.</p>
-    <p class="sources"><a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 206</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k9776785t/f441.item" target="_blank" rel="noopener">Bottin 1914</a> · <a href="#actualizacao-paris-2026-07-15">fac-símile e análise</a></p>
+    <p class="sources"><a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 205</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k9776785t/f441.item" target="_blank" rel="noopener">Bottin 1914</a> · <a href="#actualizacao-paris-2026-07-15">fac-símile e análise</a></p>
    </article>
    <article class="research-card">
     <span class="new-badge">Novo</span><span class="evidence-badge">Problema de proveniência</span>
@@ -667,6 +676,61 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
     Alves de Sousa, cuja requalificação recebeu apoio aprovado em 2022; falta apenas confirmar cartograficamente se são dois arruamentos
     distintos ou designações ligadas do mesmo espaço.</p>
     <p class="sources"><a href="https://www.cm-gaia.pt/fotos/galeria_documentos/boletim_municipal_cmgaia_04_2018_1197847815b1a9f63baa03.pdf" target="_blank" rel="noopener">Boletim Municipal de Gaia, Abril de 2018, p. 72</a> · <a href="https://www.cm-gaia.pt/fotos/galeria_documentos/bm_n140_junho2022_80709014762e3f63158d7e.pdf" target="_blank" rel="noopener">Boletim Municipal, Junho de 2022, p. 22</a></p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="evidence-badge">Inventários MNSR</span>
+    <h3>Três objectos escapam ao filtro público de autor</h3>
+    <p><em>Património de Gaia no Mundo</em> publica três peças do MNSR que não aparecem entre os quinze resultados do filtro
+    RAIZ de Alves de Sousa: <strong>28 Esc., <em>Procissão da Fome</em></strong>, terracota; <strong>34 Esc., <em>Mulher na sua
+    toilette</em></strong>, terracota; e <strong>186 Esc., <em>Busto de homem</em></strong>, gesso assinado em Paris em 1909.
+    O núcleo institucional conhecido passa, assim, a compreender pelo menos dezoito objectos documentados. Este total não
+    equivale aos dezassete comprados à família em 1922, porque inclui incorporações e fundições de datas diferentes.</p>
+    <p class="sources"><a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, pp. 204–206</a> · <a href="https://raiz.museusemonumentos.pt/DetalhesAutor?authorId=60061" target="_blank" rel="noopener">RAIZ — filtro de autor</a></p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="hypothesis-badge">Hipótese verificável</span>
+    <h3>O busto de 1909 pode ser o retrato do Salon de 1910</h3>
+    <p>O <em>Busto de homem</em>, MNSR 186 Esc., é de gesso, representa um homem não identificado, foi assinado em Paris e
+    está datado de 1909. O livret do Salon seguinte regista apenas uma obra: <em>Portrait de M. X…; buste plâtre</em>, n.º 3249.
+    Material, assunto, lugar e sequência cronológica coincidem. A identificação é forte como pista, mas não é prova: faltam
+    fotografia do Salon, medidas publicadas em 1910 ou uma cadeia de entrada no Museu.</p>
+    <p class="sources"><a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 204</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k49796r/f450.item" target="_blank" rel="noopener">Livret do Salon de 1910, n.º 3249</a></p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="evidence-badge">Dois objectos</span>
+    <h3><em>Édipo e Antígona</em>: o gesso e o bronze seguiram caminhos diferentes</h3>
+    <p>As cartas mostram uma maquete ou exemplar em gesso já entregue à Escola do Porto em 1911–1912; em Abril de 1913,
+    José de Brito ainda o podia mostrar ao fundidor. O livret e <em>Le Ménestrel</em> documentam outro objecto — um bronze —
+    no Grand Palais em 1913, muito provavelmente a encomenda de João Chagas. O último rasto do gesso aponta para a FBAUP;
+    o do bronze termina no Salon. Confundir os dois escondia duas linhas de investigação distintas.</p>
+    <p class="sources"><a href="#actualizacao-paris-2026-07-15">dossiê Paris e transcrições</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k98117334/f457.item" target="_blank" rel="noopener">livret do Salon de 1913</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k5615944j/f2.item" target="_blank" rel="noopener"><em>Le Ménestrel</em>, 07-06-1913</a></p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="evidence-badge">Carta + fotografia</span>
+    <h3>O busto de Maria Teresa Chagas ainda era reproduzido em 1946</h3>
+    <p>Em 8 de Março de 1910, Alves de Sousa escreveu que dava os últimos retoques no busto de «Madame Chagas» e deixaria
+    o gesso nessa semana. <em>O Tripeiro</em> publicou em 1946 uma fotografia de Américo T. Lopes com a legenda «D. Maria
+    Tereza Chagas — Busto, gesso, por Alves de Sousa». É o último testemunho visual localizado. O paradeiro actual continua
+    desconhecido; o próximo documento decisivo será o inventário sucessório de Maria Teresa Chagas. A data exacta da sua
+    morte deve ser confirmada no registo civil antes de delimitar a pesquisa.</p>
+    <p class="sources"><a href="gallery/f/01098.jpg" target="_blank" rel="noopener"><em>O Tripeiro</em>, 1946 — reprodução conservada no acervo</a> · correspondência FIMS/MSMS 1187, 08-03-1910</p>
+   </article>
+   <article class="research-card">
+    <span class="new-badge">Novo</span><span class="hypothesis-badge">Atribuição comercial</span>
+    <h3>Um grupo não assinado passou pelo mercado em 2015</h3>
+    <p>A P55 — Second Hand Luxury apresentou em 24 de Setembro de 2015, lote 99, um grupo em gesso patinado atribuído a
+    Alves de Sousa como estudo para o Monumento da Guerra Peninsular e o desastre da Ponte das Barcas. Media
+    27,5 × 42,5 × 19,5 cm, tinha pequenas falhas e estimativa de 150–195 €. O registo agregado assinala o lote como
+    não vendido. A atribuição é possível, mas a ausência de assinatura e proveniência impede incorporá-lo como obra segura.</p>
+    <p class="sources"><a href="https://www.invaluable.com/auction-lot/alves-de-sousa-1884-1922-99-c-5c64e119a4" target="_blank" rel="noopener">Invaluable — P55, lote 99</a> · <a href="gallery/f/02246.jpg" target="_blank" rel="noopener">imagem preservada no acervo</a></p>
+   </article>
+   <article class="research-card">
+    <span class="correction-badge">Correcção</span><span class="evidence-badge">Catálogo primário</span>
+    <h3><em>Salvamento de Luísa Todi</em> não é de Alves de Sousa</h3>
+    <p>Agregadores e anúncios recentes propagaram a atribuição do grupo em bronze a Alves de Sousa. O catálogo da própria
+    leiloeira identifica, porém, o lote 223 de forma inequívoca como obra de <strong>Joaquim Gonçalves (1863–1912)</strong>.
+    A peça fica excluída do corpus; registar a correcção evita que a repetição automática do erro fabrique uma falsa obra.</p>
+    <p class="sources"><a href="https://www.leiloeirasaodomingos.pt/storage/app/public/leiloes/normal/2026.115.pdf" target="_blank" rel="noopener">Leiloeira São Domingos, catálogo 115, lote 223</a></p>
    </article>
   </div>
   <div class="research-actions">
@@ -751,7 +815,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
 
    <h2>3. Obras recuperadas por cruzamento de fontes</h2>
    <p><span class="new-badge">Novo</span><span class="evidence-badge">Catálogo oficial</span> A 20.ª Exposição dos Trabalhos Escolares, de 1910–1911, regista no n.º <strong>205</strong> uma «<strong>estátua a gesso, estudo, cópia do natural, feita no atelier de escultura da Escola Nacional de Bellas-Artes</strong>». O paradeiro é desconhecido. O gesso sem título <strong>99.Esc.74</strong> é apenas uma hipótese a testar, não uma identificação provável, até surgir a ficha de incorporação ou uma fotografia. <a href="https://hdl.handle.net/10405/1006" target="_blank" rel="noopener">20.ª Exposição, item 205</a>.</p>
-   <p><span class="new-badge">Novo</span><span class="evidence-badge">Objecto + manifesto</span> A escultura de uma mulher idosa, nua e inclinada para ajustar a liga, publicada em <em>Património de Gaia no Mundo</em>, oferece uma correspondência visual e temática muito forte com <em>Velha atando a liga</em>, título do Ofício FBAUP n.º 368 sobre o espólio vindo de Paris em 1923. A base conserva a marca «<strong>G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV</strong>». A marca identifica o moldador e o atelier de moldagem, não um segundo autor; a associação ao título ainda precisa de confirmação pela proveniência do objecto. <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 206</a>.</p>
+   <p><span class="new-badge">Novo</span><span class="evidence-badge">Objecto + manifesto</span> A escultura de uma mulher idosa, nua e inclinada para ajustar a liga, publicada em <em>Património de Gaia no Mundo</em>, oferece uma correspondência visual e temática muito forte com <em>Velha atando a liga</em>, título do Ofício FBAUP n.º 368 sobre o espólio vindo de Paris em 1923. A base conserva a marca «<strong>G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV</strong>». A marca identifica o moldador e o atelier de moldagem, não um segundo autor; a associação ao título ainda precisa de confirmação pela proveniência do objecto. <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 205</a>.</p>
    <p><span class="new-badge">Novo</span><span class="evidence-badge">Problema de proveniência</span> <em>Vítimas da Miséria</em> não pode continuar a ser tratada sem ressalvas como um único gesso. A remessa escolar de 1909–1910 pertencia, pelo regulamento, à Academia; em 1913, Alves de Sousa enviou a Júlia um baixo-relevo do mesmo título; e a ficha do MNSR regista um gesso comprado à família em 1922. Os documentos <strong>apontam para mais de um objecto</strong>, mas não excluem uma devolução ou transferência seguida de novo envio. Versões, moldagens e movimentos de proveniência continuam em aberto. <a href="https://hdl.handle.net/10405/981" target="_blank" rel="noopener">19.ª Exposição, 1909–1910</a>.</p>
    <p><span class="new-badge">Novo</span><span class="evidence-badge">Imprensa de época</span> <em>O Occidente</em> identificou <em>Cuidar dos vivos</em> como o projecto de Alves de Sousa e Marques da Silva para o Monumento ao Marquês de Pombal, confirmou o <strong>2.º prémio de 2.000 escudos</strong> e chamou aos autores artistas bem reputados. <span class="correction-badge">Correcção</span> A memória reproduzida na mesma página — da reconstrução de Lisboa à reforma da Universidade de Coimbra — pertence à maqueta vencedora de <strong>Adães Bermudes</strong>, não a <em>Cuidar dos vivos</em>. <a href="https://hemerotecadigital.cm-lisboa.pt/OBRAS/Ocidente/1914/N1271/N1271_master/N1271.pdf" target="_blank" rel="noopener"><em>O Occidente</em>, 20-04-1914, p. 125</a>.</p>
 
@@ -816,6 +880,25 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
    <p><span class="correction-badge">Cautela</span> A fundição póstuma de obras através do Fundo João Chagas não prova que Chagas tenha possuído cada modelo hoje associado ao fundo. A hipótese sobre o Salon de 1913 nasce da sequência específica das cartas, não do nome do fundo museológico.</p>
    <p class="src"><a href="https://fims.up.pt/index.php?cat=19" target="_blank" rel="noopener">FIMS — catálogo do fundo Marques da Silva</a>. Os fac-símiles da correspondência não são reproduzidos aqui porque a utilização pública das imagens está sujeita a autorização; usam-se apenas síntese e referência arquivística.</p>
 
+   <h3>Quatro linhas documentais para três ou quatro objectos</h3>
+   <p><span class="new-badge">Nova síntese</span> Separar suporte, data e destino muda o mapa de procura. Os dois retratos dos
+   livrets podem ser objectos diferentes — ou o mesmo gesso reapresentado depois de patinado — e <em>Édipo</em> existiu pelo
+   menos em gesso e em bronze. A tabela fixa apenas o último rasto que cada fonte permite.</p>
+   <table>
+    <thead><tr><th>Objecto</th><th>Último rasto seguro</th><th>Hipótese ou próxima consulta</th></tr></thead>
+    <tbody>
+     <tr><td><em>Portrait de M. X…</em>, gesso, 1910</td><td>Salon des Artistes Français, Grand Palais, 1910</td><td>O <em>Busto de homem</em>, MNSR 186 Esc., gesso assinado «Paris» e datado de 1909, é candidato plausível; faltam fotografia, medidas ou proveniência comum.</td></tr>
+     <tr><td><em>Portrait de M. X…</em>, gesso patinado, 1913</td><td>Salon des Artistes Français, Grand Palais, 1913</td><td>Não se sabe se é outro retrato ou o gesso de 1910 patinado e reapresentado.</td></tr>
+     <tr><td><em>Œdipe et Antigone</em>, gesso/maquete</td><td>Escola de Belas-Artes do Porto, 1911–1913, ao cuidado de José de Brito</td><td>Pesquisar inventários antigos e reservas FBAUP, cotas 193, 213 e 250.</td></tr>
+     <tr><td><em>Œdipe et Antigone</em>, bronze</td><td>Nave do Grand Palais, documentado em 7 de Junho de 1913</td><td>Muito provavelmente a encomenda de João Chagas; procurar inventários domésticos e sucessórios de João e Maria Teresa Chagas.</td></tr>
+    </tbody>
+   </table>
+   <p><span class="correction-badge">Fundo não é recheio</span> O acto parlamentar de 1941 autorizou a doação ao Estado de
+   <strong>bens imóveis</strong> de Maria Teresa Chagas, incluindo o prédio da Avenida Nice, no Estoril, destinando o rendimento
+   líquido ao MNSR. Não incorporou nem inventariou o recheio artístico da família. A eventual passagem do bronze pela casa dos
+   Chagas tem, portanto, de ser procurada na sucessão privada, não deduzida do Fundo João Chagas.
+   <a href="https://debates.parlamento.pt/catalogo/r2/dan/01/02/03/100/1941-02-17?sft=true" target="_blank" rel="noopener">Diário das Sessões, 17-02-1941, p. 193</a>.</p>
+
    <h2>5. G. Costilhes, o moldador</h2>
    <p><span class="new-badge">Novo</span><span class="evidence-badge">Anuário profissional</span> A marca «G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV» deixa de ser apenas uma inscrição sobre a obra. O Bottin confirma <strong>Costilhes</strong> na rubrica «Mouleurs-figuristes», nos números <strong>8 e 10 da impasse de la Gaîté</strong>, em 1914 e novamente em 1919.</p>
    <div class="phrow cols1">
@@ -870,14 +953,14 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
  <section class="works-chapter" id="obras-conhecidas" aria-labelledby="works-title">
   <header class="works-head">
    <div class="kicker">Catálogo crítico · primeiro núcleo ilustrado</div>
-   <div><span class="new-badge">Novo capítulo</span><span class="evidence-badge">17 obras fotografadas</span></div>
+   <div><span class="new-badge">Capítulo ampliado</span><span class="evidence-badge">22 obras e composições</span></div>
    <h2 id="works-title">Obras em destaque</h2>
-   <p class="works-deck">Este capítulo reúne dezassete obras de Alves de Sousa — incluindo peças atribuídas no mercado, sempre identificadas como tal — e cruza a leitura directa das imagens com os inventários do Museu Nacional Soares dos Reis, a documentação da FBAUP, a correspondência do escultor, a lista do espólio chegado de Paris em 1923 e os registos de leilão. Distingue a data do modelo da data das fundições póstumas e separa, em cada ficha, o que está documentado, o que resulta da leitura da obra e o que continua por esclarecer. Uma estampa histórica aparece apenas como termo de comparação.</p>
+   <p class="works-deck">Este capítulo reúne vinte e duas obras ou composições de Alves de Sousa — incluindo peças atribuídas no mercado, sempre identificadas como tal — e cruza a leitura directa das imagens com os inventários do Museu Nacional Soares dos Reis, a documentação da FBAUP, a correspondência do escultor, a lista do espólio chegado de Paris em 1923 e os registos de leilão. Distingue a data do modelo da data das fundições póstumas e separa, em cada ficha, o que está documentado, o que resulta da leitura da obra e o que continua por esclarecer. Uma estampa histórica aparece apenas como termo de comparação.</p>
   </header>
 
   <div class="works-stats" aria-label="Resumo do núcleo estudado">
-   <div><strong>17</strong><span>obras estudadas</span></div>
-   <div><strong>23</strong><span>imagens analisadas</span></div>
+   <div><strong>22</strong><span>obras ou composições</span></div>
+   <div><strong>26</strong><span>imagens analisadas</span></div>
    <div><strong>4</strong><span>variações de Orfeu</span></div>
    <div><strong>1957–58</strong><span>fundições póstumas</span></div>
   </div>
@@ -890,6 +973,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
    <a href="#obras-corpo-moderno">Trabalho, rua e corpo moderno</a>
    <a href="#obras-retrato-intimo">Retrato íntimo</a>
    <a href="#obras-mercado">Reaparições no mercado</a>
+   <a href="#obras-novos-rastos">Novos rastos documentais</a>
   </nav>
 
   <div class="works-method" aria-label="Convenção editorial das fichas">
@@ -900,7 +984,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
 
   <div class="works-controls" aria-label="Controlos dos grupos de obras">
    <span>Abra apenas o núcleo que pretende consultar.</span>
-   <button class="works-control" id="works-expand" type="button">Abrir os cinco núcleos</button>
+   <button class="works-control" id="works-expand" type="button">Abrir os seis núcleos</button>
    <button class="works-control" id="works-collapse" type="button">Recolher núcleos</button>
   </div>
 
@@ -1102,7 +1186,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
       <div class="work-badges"><span class="new-badge">Prova documental</span><span class="hypothesis-badge">Identidade do objecto</span></div>
       <dl class="work-facts"><div><dt>Inventário</dt><dd>169 Esc.</dd></div><div><dt>Material</dt><dd>Gesso patinado</dd></div><div><dt>Proveniência</dt><dd>Fundo antigo da FBAUP</dd></div><div><dt>Dimensões</dt><dd>138 × 87 × 91 cm</dd></div></dl>
       <div class="work-copy">
-       <p class="fact"><b class="label">Facto</b>Paula Triães atribuiu o gesso a Alves de Sousa por proximidade com o <em>Busto de homem</em>, assinado em Paris em 1909. As cartas provam que o escultor trabalhava num <em>Ferreiro</em> em Paris: não o concluiu para o Salon de 1912, ainda precisava de semanas em Dezembro e, em 1913, Teixeira Gomes e Columbano, acompanhados por João Chagas, aconselharam o seu envio para Lisboa.</p>
+       <p class="fact"><b class="label">Facto</b>Paula Triães atribuiu o gesso a Alves de Sousa por proximidade com o <em>Busto de homem</em>, hoje identificado como <strong>MNSR 186 Esc.</strong>, assinado em Paris em 1909. As cartas provam que o escultor trabalhava num <em>Ferreiro</em> em Paris: não o concluiu para o Salon de 1912, ainda precisava de semanas em Dezembro e, em 1913, Teixeira Gomes e Columbano, acompanhados por João Chagas, aconselharam o seu envio para Lisboa.</p>
        <p class="reading"><b class="label">Leitura</b>O martelo, a bigorna e sobretudo o cadeado permitem ver simultaneamente um trabalhador e uma possível imagem de libertação. Esta segunda dimensão é interpretativa.</p>
        <p class="open"><b class="label">Em aberto</b>A correspondência demonstra a existência da obra no atelier, mas falta fechar a cadeia de proveniência que identifique o gesso MNSR 169 com o objecto visto em Paris.</p>
       </div>
@@ -1176,17 +1260,17 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
       <figure class="ph work-shot"><img loading="lazy" decoding="async" width="263" height="538" src="assets/obras-conhecidas/mnsr-284-estudo-figura-feminina-frontal.jpg" alt="Estudo de figura feminina idosa visto de frente"><figcaption>Vista frontal.</figcaption></figure>
      </div>
      <div class="work-body">
-      <div class="work-kicker">13 · Nu observado · MNSR 284 Esc.</div>
+      <div class="work-kicker">13 · Nu observado · MNSR 34 e 284 Esc.</div>
       <h4>Estudo de figura feminina</h4>
       <p class="work-subtitle">Provável <em>Mulher na sua toilette</em> ou <em>Velha atando a liga</em>.</p>
-      <div class="work-badges"><span class="new-badge">Identificação provável</span><span class="correction-badge">Material divergente</span></div>
-      <dl class="work-facts"><div><dt>Inventário</dt><dd>284 Esc.</dd></div><div><dt>Bronze</dt><dd>Fundido em 1958</dd></div><div><dt>Modelo</dt><dd>N.º 34</dd></div><div><dt>Dimensões</dt><dd>30,5 × 12,5 × 12 cm</dd></div></dl>
+      <div class="work-badges"><span class="new-badge">Dois objectos localizados</span><span class="evidence-badge">Mesma composição</span></div>
+      <dl class="work-facts"><div><dt>Terracota</dt><dd>34 Esc. · 31 × 14,2 × 12,5 cm</dd></div><div><dt>Bronze</dt><dd>284 Esc. · 1958</dd></div><div><dt>Modelo</dt><dd>Gesso referido na ficha 284</dd></div><div><dt>Bronze</dt><dd>30,5 × 12,5 × 12 cm</dd></div></dl>
       <div class="work-copy">
-       <p class="fact"><b class="label">Facto</b>Uma versão publicada como <em>Mulher na sua toilette</em> mostra a mesma mulher velha, magra, nua e inclinada para ajustar a liga. Conserva a marca «G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV». O Bottin confirma Costilhes como <em>mouleur-figuriste</em> nos números 8 e 10 dessa impasse em 1914 e 1919.</p>
+       <p class="fact"><b class="label">Facto</b>Já não se trata apenas de um «número de modelo». O MNSR conserva uma terracota inventariada como <strong>34 Esc., <em>Mulher na sua toilette</em></strong>, e um bronze póstumo, <strong>284 Esc., <em>Estudo de figura feminina</em></strong>. As dimensões quase coincidem e as imagens mostram a mesma mulher velha, magra, nua e inclinada para ajustar a liga. A terracota conserva a marca «G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV». O Bottin confirma Costilhes como <em>mouleur-figuriste</em> nos números 8 e 10 dessa impasse em 1914 e 1919.</p>
        <p class="reading"><b class="label">Leitura</b>O corpo envelhecido e observado num gesto privado inverte o ideal tradicional do nu feminino. A marca do moldador estabelece uma ligação material directa a um atelier do XIV arrondissement.</p>
-       <p class="open"><b class="label">Em aberto</b>A equivalência <em>Estudo de figura feminina</em> = <em>Mulher na sua toilette</em> = provável <em>Velha atando a liga</em> é muito forte, mas requer confirmação pela proveniência. Triães identifica o original como terracota; a ficha do bronze fala num modelo de gesso.</p>
+       <p class="open"><b class="label">Em aberto</b>A identidade visual entre 34 e 284 é directa; o que falta reconstruir é a cadeia técnica terracota → eventual molde/gesso → bronze de 1958. A equivalência com o título do manifesto de 1923, <em>Velha atando a liga</em>, continua muito provável, mas requer confirmação pela proveniência.</p>
       </div>
-      <p class="work-sources"><a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/309497?tipo=OBJ" target="_blank" rel="noopener">RAIZ/MNSR 284</a> · <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener">Paula Triães, 2022, p. 206</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k9776785t/f441.item" target="_blank" rel="noopener">Bottin 1914 — Costilhes</a> · Ofício FBAUP n.º 368</p>
+      <p class="work-sources"><a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/309497?tipo=OBJ" target="_blank" rel="noopener">RAIZ/MNSR 284</a> · <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener">Paula Triães, 2022, p. 205 — MNSR 34</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k9776785t/f441.item" target="_blank" rel="noopener">Bottin 1914 — Costilhes</a> · Ofício FBAUP n.º 368</p>
      </div>
     </article>
 
@@ -1242,7 +1326,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
   <section class="works-cluster" id="obras-mercado" aria-labelledby="obras-mercado-title">
    <header class="works-cluster-head">
     <span class="works-cluster-no">V</span>
-    <div><h3 id="obras-mercado-title">Obras reaparecidas no mercado</h3><p>Um gesso assinado e datado e um bronze atribuído ao escultor: dois registos comerciais com graus de certeza diferentes e paradeiro actual desconhecido.</p></div>
+    <div><h3 id="obras-mercado-title">Obras reaparecidas no mercado</h3><p>Um gesso assinado e datado, um bronze e um grupo em gesso patinado atribuídos ao escultor: três registos comerciais com graus de certeza diferentes e paradeiro actual desconhecido.</p></div>
    </header>
    <div class="works-list">
     <article class="work-card" id="obra-figura-feminina-1915">
@@ -1257,11 +1341,12 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
       <dl class="work-facts"><div><dt>Material</dt><dd>Gesso</dd></div><div><dt>Data</dt><dd>1915</dd></div><div><dt>Altura</dt><dd>64 cm</dd></div><div><dt>Venda</dt><dd>2011 · 600 €</dd></div></dl>
       <div class="work-copy">
        <p class="fact"><b class="label">Facto</b>A Cabral Moncada catalogou a peça no Leilão 124, lote 128, como <em>Figura feminina</em>: gesso assinado e datado de 1915, com 64 cm. Estimada em 400–600 €, foi vendida por 600 €.</p>
+       <p class="reading"><b class="label">Proveniência provável</b>Um catálogo da Trocadéro de 10-12-2010 inclui <em>Figura feminina</em>, de Alves de Sousa, com 62 cm, no lote 1051 e base de 50 €. Título, autor, material implícito, escala e proximidade temporal favorecem a identidade com o lote vendido pela Cabral Moncada sete semanas depois, mas a diferença de 2 cm e a falta de cotejo fotográfico mantêm a ligação como provável.</p>
        <p class="reading"><b class="label">Leitura</b>A mulher velada leva a mão direita ao peito e segura uma palma na esquerda. A palma pode evocar martírio, vitória, memória ou luto; o gesto e o véu favorecem uma leitura alegórica ou funerária, mas não fixam uma personagem.</p>
        <p class="correction-note"><b class="label">Cautela</b>Não existe base para chamar à figura <em>Eurídice</em>. Também não parece ser um estudo para a <em>Pátria</em> no vértice do projecto do Marquês de Pombal: nessa maqueta, a alegoria ergue o braço direito e segura um grande escudo ou atributo à esquerda, uma solução incompatível com a mulher velada, a mão no peito e a palma desta peça.</p>
-       <p class="open"><b class="label">Em aberto</b>Faltam o título original, a proveniência anterior a 2011, a identidade do comprador e o paradeiro actual. A imagem do leilão é, por enquanto, o principal registo público da obra.</p>
+       <p class="open"><b class="label">Em aberto</b>Faltam o título original, a confirmação de que os dois lotes são o mesmo objecto, a identidade do comprador de 2011 e o paradeiro actual. A imagem da Cabral Moncada é, por enquanto, o principal registo público da obra.</p>
       </div>
-      <p class="work-sources"><a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Cabral Moncada — Leilão 124, lote 128</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">Catálogo do leilão</a> · <a href="https://archive.org/download/ocasodomonumento00arro/ocasodomonumento00arro.pdf" target="_blank" rel="noopener">António Arroyo — maqueta do Monumento a Pombal, p. 27</a></p>
+      <p class="work-sources"><a href="https://livrozilla.com/doc/1110749/catalogo_leilao-001_-10-dez" target="_blank" rel="noopener">Trocadéro — catálogo de 10-12-2010</a> · <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Cabral Moncada — Leilão 124, lote 128</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">Catálogo do leilão</a> · <a href="https://archive.org/download/ocasodomonumento00arro/ocasodomonumento00arro.pdf" target="_blank" rel="noopener">António Arroyo — maqueta do Monumento a Pombal, p. 27</a></p>
      </div>
     </article>
 
@@ -1283,6 +1368,109 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
       <p class="work-sources"><a href="https://www.bayeusubastas.com/docs/pdfs_subastas/CATALOGO133.pdf" target="_blank" rel="noopener">Bayeu Subastas — catálogo 133, pp. 22–23</a> · <a href="https://www.invaluable.com/auction-lot/alves-de-sousa-vilar-de-andorinho-vila-nova-de-ga-124-c-eb2455d9c7" target="_blank" rel="noopener">Invaluable — lote e resultado</a></p>
      </div>
     </article>
+
+    <article class="work-card" id="obra-grupo-p55-2015">
+     <div class="work-media">
+      <figure class="ph work-shot"><img loading="lazy" decoding="async" width="1300" height="974" src="gallery/f/02246.jpg" alt="Grupo em gesso patinado de uma mulher protegendo uma figura mais pequena, atribuído comercialmente a Alves de Sousa"><figcaption>Grupo em gesso patinado atribuído a Alves de Sousa · P55, lote 99, 2015. Imagem preservada no acervo.</figcaption></figure>
+     </div>
+     <div class="work-body">
+      <div class="work-kicker">18 · Grupo histórico · atribuição comercial</div>
+      <h4>Grupo de mãe e filho — possível estudo para a Ponte das Barcas</h4>
+      <p class="work-subtitle">Um gesso não assinado, apresentado no mercado como estudo para o Monumento da Guerra Peninsular.</p>
+      <div class="work-badges"><span class="new-badge">Mercado · 2015</span><span class="hypothesis-badge">Autoria não confirmada</span></div>
+      <dl class="work-facts"><div><dt>Material</dt><dd>Gesso patinado</dd></div><div><dt>Assinatura</dt><dd>Não assinado</dd></div><div><dt>Dimensões</dt><dd>27,5 × 42,5 × 19,5 cm</dd></div><div><dt>Resultado</dt><dd>Não vendido</dd></div></dl>
+      <div class="work-copy">
+       <p class="fact"><b class="label">Facto</b>A P55 — Second Hand Luxury apresentou a peça em 24 de Setembro de 2015, lote 99, com estimativa de 150–195 €, pequenas falhas e a menção expressa «atribuído a». O agregado Invaluable marca o lote como <em>passed</em>, sem adjudicação.</p>
+       <p class="reading"><b class="label">Leitura</b>Uma mulher drapeada inclina-se e protege uma figura menor sobre uma base rochosa. A leiloeira relacionou a composição com o desastre da Ponte das Barcas e com os grupos do Monumento da Boavista.</p>
+       <p class="open"><b class="label">Em aberto</b>A associação temática é plausível, mas não substitui assinatura, proveniência, fotografia antiga ou correspondência. Não se sabe onde a peça se encontra depois do leilão não concretizado.</p>
+      </div>
+      <p class="work-sources"><a href="https://www.invaluable.com/auction-lot/alves-de-sousa-1884-1922-99-c-5c64e119a4" target="_blank" rel="noopener">P55/Invaluable — lote 99</a> · <a href="https://www.invaluable.com/artist/alves-de-sousa-antonio-hrk9wr1szi/sold-at-auction-prices/" target="_blank" rel="noopener">índice de leilões</a></p>
+     </div>
+    </article>
+   </div>
+  </section>
+
+  <section class="works-cluster" id="obras-novos-rastos" aria-labelledby="obras-novos-rastos-title">
+   <header class="works-cluster-head">
+    <span class="works-cluster-no">VI</span>
+    <div><h3 id="obras-novos-rastos-title">Reservas, fotografias e paradeiros interrompidos</h3><p>Duas peças do MNSR recuperadas por publicação, um grupo separado entre Porto e Paris e um retrato cujo último testemunho localizado é de 1946.</p></div>
+   </header>
+   <div class="works-list">
+    <article class="work-card" id="obra-busto-homem-186">
+     <div class="work-media">
+      <div class="work-document" role="img" aria-label="Ficha documental do Busto de homem, MNSR 186 Esc"><small>Objecto localizado · MNSR</small><strong>Busto de homem</strong><span>186 Esc. · Paris, 1909 · gesso</span></div>
+     </div>
+     <div class="work-body">
+      <div class="work-kicker">19 · Retrato · MNSR 186 Esc.</div>
+      <h4>Busto de homem</h4>
+      <p class="work-subtitle">Um gesso de Paris que pode corresponder ao retrato anónimo do Salon de 1910.</p>
+      <div class="work-badges"><span class="new-badge">Localização recuperada</span><span class="hypothesis-badge">Possível Salon 1910</span></div>
+      <dl class="work-facts"><div><dt>Inventário</dt><dd>186 Esc.</dd></div><div><dt>Material</dt><dd>Gesso</dd></div><div><dt>Data</dt><dd>Paris, 1909</dd></div><div><dt>Dimensões</dt><dd>85 × 60,5 × 44 cm</dd></div></dl>
+      <div class="work-copy">
+       <p class="fact"><b class="label">Facto</b>A publicação municipal identifica o busto no MNSR, reproduz a assinatura e data «Alves de Souza / Paris / 1909» e fornece material e medidas. O objecto não surge entre os quinze resultados do filtro público RAIZ pelo autor.</p>
+       <p class="reading"><b class="label">Ligação</b>No Salon de 1910, Alves de Sousa apresentou apenas <em>Portrait de M. X…; buste plâtre</em>. O busto 186 coincide em material, anonimato, lugar e cronologia.</p>
+       <p class="open"><b class="label">Em aberto</b>Sem fotografia do Salon, dimensões na ficha de 1910 ou proveniência de entrada, a identidade permanece hipótese. O <em>Portrait de M. X…</em> de 1913, descrito como gesso patinado, pode ser outro objecto ou a reapresentação do mesmo.</p>
+      </div>
+      <p class="work-sources"><a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 204</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k49796r/f450.item" target="_blank" rel="noopener">Salon de 1910, n.º 3249</a></p>
+     </div>
+    </article>
+
+    <article class="work-card" id="obra-procissao-fome-28">
+     <div class="work-media">
+      <div class="work-document" role="img" aria-label="Ficha documental de Procissão da Fome, MNSR 28 Esc"><small>Objecto localizado · MNSR</small><strong>Procissão da Fome</strong><span>28 Esc. · terracota</span></div>
+     </div>
+     <div class="work-body">
+      <div class="work-kicker">20 · Realismo social · MNSR 28 Esc.</div>
+      <h4>Procissão da Fome</h4>
+      <p class="work-subtitle">Uma obra autónoma, não um título alternativo de <em>Vítimas da Miséria</em>.</p>
+      <div class="work-badges"><span class="new-badge">Localização recuperada</span><span class="correction-badge">Identidade corrigida</span></div>
+      <dl class="work-facts"><div><dt>Inventário</dt><dd>28 Esc.</dd></div><div><dt>Material</dt><dd>Terracota</dd></div><div><dt>Data</dt><dd>c. 1909–1913</dd></div><div><dt>Dimensões</dt><dd>39 × 23,3 × 32,5 cm</dd></div></dl>
+      <div class="work-copy">
+       <p class="fact"><b class="label">Facto</b><em>Património de Gaia no Mundo</em> publica a peça como objecto do MNSR, com inventário, material, medidas e fotografia. O n.º 28 distingue-a materialmente de <em>Vítimas da Miséria</em>, MNSR 37 Esc.</p>
+       <p class="reading"><b class="label">Leitura</b>A obra prolonga o programa social iniciado no Porto: fome e marcha colectiva substituem o episódio isolado por uma condição pública e repetida.</p>
+       <p class="open"><b class="label">Em aberto</b>Faltam a data exacta, inscrições publicadas, proveniência detalhada e a relação com os dezassete objectos comprados à família em 1922. A cronologia Paris 1909–1913 provém de <em>O Tripeiro</em>, não de data gravada conhecida.</p>
+      </div>
+      <p class="work-sources"><a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, p. 206</a> · <em>O Tripeiro</em>, 1946, pp. 213–214</p>
+     </div>
+    </article>
+
+    <article class="work-card" id="obra-edipo-antigona">
+     <div class="work-media">
+      <figure class="ph work-shot"><img loading="lazy" decoding="async" width="480" height="330" src="assets/paris/menestrel-1913-critique-alves-detail.jpg" alt="Recorte de Le Ménestrel de 1913 que menciona Édipo e Antígona de Alves de Sousa no Grand Palais"><figcaption>Testemunho de presença, não fotografia da obra: <em>Le Ménestrel</em>, 07-06-1913, coloca o bronze na nave do Grand Palais.</figcaption></figure>
+     </div>
+     <div class="work-body">
+      <div class="work-kicker">21 · Grupo mitológico · Porto e Paris</div>
+      <h4>Édipo e Antígona em Colono</h4>
+      <p class="work-subtitle">Uma composição com pelo menos dois objectos: gesso escolar e bronze de Salon.</p>
+      <div class="work-badges"><span class="new-badge">Cadeia separada</span><span class="hypothesis-badge">Bronze provavelmente Chagas</span></div>
+      <dl class="work-facts"><div><dt>Gesso</dt><dd>Escola do Porto, 1911–1913</dd></div><div><dt>Bronze</dt><dd>Salon SAF, 1913</dd></div><div><dt>N.º Salon</dt><dd>3111</dd></div><div><dt>Paradeiro</dt><dd>Ambos por localizar</dd></div></dl>
+      <div class="work-copy">
+       <p class="fact"><b class="label">Facto</b>Em 26-12-1911, o escultor perguntou se as maquetes de <em>Orphée</em>, <em>Esquisse</em> e <em>Oedipe</em> tinham chegado em bom estado ao Porto. Em Abril de 1913, o exemplar da Escola ainda podia ser mostrado por José de Brito. Separadamente, o livret do Salon descreve o n.º 3111 como «groupe bronze» e <em>Le Ménestrel</em> confirma-o instalado no Grand Palais.</p>
+       <p class="reading"><b class="label">Proveniência provável</b>As cartas documentam uma fundição em curso para João Chagas imediatamente antes do Salon e nenhum outro bronze concluído. É, por isso, muito provável que o exemplar exposto fosse o do ministro.</p>
+       <p class="open"><b class="label">Em aberto</b>O gesso deve ser procurado nos inventários históricos e reservas da FBAUP; o bronze, nos inventários privados e sucessórios de João e Maria Teresa Chagas. O Fundo João Chagas, criado a partir de imóveis em 1941, não prova a posse da escultura.</p>
+      </div>
+      <p class="work-sources"><a href="https://gallica.bnf.fr/ark:/12148/bpt6k98117334/f457.item" target="_blank" rel="noopener">Salon de 1913, n.º 3111</a> · <a href="https://gallica.bnf.fr/ark:/12148/bpt6k5615944j/f2.item" target="_blank" rel="noopener"><em>Le Ménestrel</em>, 07-06-1913</a> · correspondência FIMS/MSMS 1187, 26-12-1911, 27-02, 03-04 e 27-04-1913</p>
+     </div>
+    </article>
+
+    <article class="work-card" id="obra-maria-teresa-chagas">
+     <div class="work-media">
+      <figure class="ph work-shot"><img loading="lazy" decoding="async" width="975" height="1300" src="gallery/f/01098.jpg" alt="Página de O Tripeiro de 1946 com fotografia do busto em gesso de D. Maria Teresa Chagas por Alves de Sousa"><figcaption><em>D. Maria Tereza Chagas</em>, busto em gesso por Alves de Sousa · reprodução em <em>O Tripeiro</em>, 1946; fotografia creditada a Américo T. Lopes.</figcaption></figure>
+     </div>
+     <div class="work-body">
+      <div class="work-kicker">22 · Retrato · último rasto em 1946</div>
+      <h4>Busto de D. Maria Teresa Chagas</h4>
+      <p class="work-subtitle">Modelado em Paris em 1910 e conhecido por uma fotografia publicada trinta e seis anos depois.</p>
+      <div class="work-badges"><span class="new-badge">Obra acrescentada</span><span class="evidence-badge">Carta + imprensa</span></div>
+      <dl class="work-facts"><div><dt>Material</dt><dd>Gesso</dd></div><div><dt>Data</dt><dd>1910</dd></div><div><dt>Retratada</dt><dd>Maria Teresa Chagas</dd></div><div><dt>Paradeiro</dt><dd>Desconhecido</dd></div></dl>
+      <div class="work-copy">
+       <p class="fact"><b class="label">Facto</b>Em 08-03-1910, Alves de Sousa escreveu que dava os últimos retoques no busto de «Madame Chagas» e deixaria o gesso nessa semana. Em 1946, <em>O Tripeiro</em> reproduziu a obra com autoria, material, nome da retratada e crédito fotográfico.</p>
+       <p class="reading"><b class="label">Último rasto</b>A publicação prova que uma imagem do busto estava acessível em 1946; não permite datar a fotografia nem afirmar onde o objecto se encontrava nesse ano.</p>
+       <p class="open"><b class="label">Em aberto</b>Não foi localizada incorporação museológica ou venda. A pista mais promissora é o inventário sucessório de Maria Teresa Chagas e a documentação doméstica do Estoril; a data exacta da sua morte deve primeiro ser confirmada no registo civil.</p>
+      </div>
+      <p class="work-sources"><a href="gallery/f/01098.jpg" target="_blank" rel="noopener"><em>O Tripeiro</em>, 1946 — fac-símile do acervo</a> · correspondência FIMS/MSMS 1187, 08-03-1910</p>
+     </div>
+    </article>
    </div>
   </section>
 
@@ -1291,10 +1479,10 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
    <article><h3>A miséria como programa continuado</h3><p>Fome, mendicidade, trabalho e infância de rua atravessam a produção desde 1905. O alinhamento das peças revela uma linha social persistente, não episódios isolados.</p></article>
    <article><h3>Orfeu como laboratório</h3><p>Os quatro estudos testam a inclinação, a marcha, o gesto da cabeça e a posição da lira. Alves de Sousa concentra a tragédia no corpo isolado; as cartas provam que o grande gesso ainda avançava em 1912–1913, mas não permitem ordenar cronologicamente as pequenas variantes.</p></article>
    <article><h3>O catálogo como palimpsesto</h3><p>Títulos deslocados, números de modelo duplicados, fundições confundidas com originais e materiais divergentes mostram que estudar a obra implica também reconstruir a história dos inventários.</p></article>
-   <article><h3><span class="new-badge">Novo detalhe</span> Como funcionava o Fundo João Chagas</h3><p>A doação de Maria Teresa Chagas, em 1941, destinou ao MNSR o rendimento líquido de um imóvel no Estoril para aquisições e melhoramentos. Entre 1950 e 1960, o Museu adquiriu mais de 150 obras através do Fundo. Em Dezembro de 1958, o Orçamento do Estado registava-o como receita consignada, artigo 270.º, com 92.400$ — prova de actividade financeira nesse ano, não de que essa verba concreta pagou os bronzes de Alves de Sousa. <a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/304857?tipo=OBJ" target="_blank" rel="noopener">RAIZ — Fundo João Chagas</a> · <a href="https://mnsr.museusemonumentospt.pt/wp-content/uploads/2023/06/DossierPlaneamentoVisitaLivre_VF.pdf" target="_blank" rel="noopener">MNSR — dossier, p. 15</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1958/12/27802.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-12-1958, p. 1528</a>.</p></article>
+   <article><h3><span class="new-badge">Novo detalhe</span> Como funcionava o Fundo João Chagas</h3><p>A doação de Maria Teresa Chagas, em 1941, destinou ao MNSR o rendimento líquido de bens imóveis, designadamente um prédio na Avenida Nice, no Estoril, para aquisições e melhoramentos. Não foi uma doação do recheio artístico e não prova a entrada do bronze de <em>Édipo</em> ou do busto da doadora. Entre 1950 e 1960, o Museu adquiriu mais de 150 obras através do Fundo. Em Dezembro de 1958, o Orçamento do Estado registava-o como receita consignada, artigo 270.º, com 92.400$ — prova de actividade financeira nesse ano, não de que essa verba concreta pagou os bronzes de Alves de Sousa. <a href="https://debates.parlamento.pt/catalogo/r2/dan/01/02/03/100/1941-02-17?sft=true" target="_blank" rel="noopener">Diário das Sessões, 17-02-1941</a> · <a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/304857?tipo=OBJ" target="_blank" rel="noopener">RAIZ — Fundo João Chagas</a> · <a href="https://mnsr.museusemonumentospt.pt/wp-content/uploads/2023/06/DossierPlaneamentoVisitaLivre_VF.pdf" target="_blank" rel="noopener">MNSR — dossier, p. 15</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1958/12/27802.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-12-1958, p. 1528</a>.</p></article>
    <article><h3>O que ainda falta sobre as fundições</h3><p>As fichas públicas não identificam fundidor, oficina, número de exemplares, moldes sobreviventes ou custo por peça. O próximo alvo documental é a correspondência expedida do MNSR entre 1953 e 1958, acompanhada pelas contas e facturas do Fundo João Chagas.</p></article>
   </div>
-  <p class="works-next"><strong>Capítulo em crescimento.</strong> Este núcleo de dezassete obras será alargado às peças monumentais e às conhecidas apenas por fotografia ou documento — entre elas <em>Escravo romano sucumbindo ao veneno</em>, o <em>Orfeu</em> monumental, <em>Procissão da Fome</em>, <em>Édipo e Antígona</em>, <em>Regresso do Calvário</em> e os retratos parisienses. As novas inclusões deverão conservar a mesma separação entre prova, leitura e hipótese.</p>
+  <p class="works-next"><strong>Capítulo em crescimento.</strong> Este núcleo de vinte e duas obras ou composições será alargado às peças monumentais e às conhecidas apenas por fotografia ou documento — entre elas <em>Escravo romano sucumbindo ao veneno</em>, o <em>Orfeu</em> monumental, <em>Regresso do Calvário</em>, o retrato parisiense de 1913 e as obras escolares ainda sem ficha material. As novas inclusões conservarão a mesma separação entre prova, leitura e hipótese.</p>
  </section>
 
  <section class="arq" id="arq-historia"><h2>A biografia, capítulo a capítulo</h2><p class="arq-intro">A biografia documental completa, em prosa corrida, narrada carta a carta a partir da correspondência do escultor. Seis capítulos; cada um cita a fonte de cada facto. Clique para ler.</p><h1>A história de António Alves de Sousa, contada pelos seus documentos</h1>
@@ -2757,7 +2945,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 <p><strong>3.2 Catálogo do Museu Nacional Soares dos Reis (<code>descricoes-Soares-dos-Reis.odt</code>).</strong> O núcleo central da obra conservada inclui vários modelos antigos que só foram <strong>fundidos em bronze postumamente, em 1957–1958, através do Fundo João Chagas</strong>, criado com a doação de Maria Teresa Chagas em 1941. O cruzamento ficha a ficha mostrou que a transcrição de trabalho misturava, por vezes, a data do modelo, a data da fundição e texto copiado entre registos.</p>
 <p><span class="correction-badge">Síntese corrigida</span> <em>O Miserável</em> (267 Esc.) tem modelo assinado e datado de 1908 e bronze de 1957; <em>O que terei de passar</em> (291 Esc.) não conserva data original confirmada e o bronze é de 1958; <em>Vítimas da Miséria</em> é o gesso patinado 37 Esc., assinado em Paris em 1909, e não «37/287». As fichas de <em>Desespero</em> (282 Esc.) e <em>Orfeu</em> (292 Esc.) associam ambas obras ao gesso n.º 27: é uma contradição do inventário público, ainda sem resolução. O conjunto de <em>Orfeu</em> compreende hoje quatro estudos ou variações no MNSR — 279, 287, 288 e 292 Esc. — além da estátua monumental da FBAUP. O n.º 287 conserva o título histórico <em>Quebrando as algemas</em>, mas a iconografia e a bibliografia recente favorecem a sua leitura como estudo para <em>Orfeu</em>. Integram ainda o núcleo <em>Garoto dos jornais</em> (281), <em>Avant l'opération</em> (283), <em>Estudo de figura feminina</em> (284), <em>Baccante</em> (285), <em>Suzanne Bouré</em> (286), o busto de Rodolfo Pinto do Couto (90) e <em>O Ferreiro</em> (169). Ver as imagens, medidas, fontes e graus de certeza no novo capítulo <a href="#obras-conhecidas"><strong>Obras conhecidas</strong></a>.</p>
 <p><strong>3.3 Lista de espólio da FBAUP (1923) (<code>lista-chegada-Paris-Livro8.odt</code>).</strong> Ofício n.º 368 (20-10-1923, director <strong>Guedes de Oliveira</strong>) à Alfândega do Porto, enumerando o espólio parisiense: bustos de senhora e de homem, <em>Orfeu</em> e variantes, <em>Eurídice</em>, <em>O Remesso</em>, <em>Diógenes</em>, <em>Velha atando a liga</em>, <em>Avant l'Opération</em>, <em>Vendedores de jornaes</em>, <em>S. Sebastião</em> (baixo-relevo). Documenta a <strong>chegada física do espólio</strong> e a sua <strong>isenção alfandegária</strong> como obra de aluno bolseiro.</p>
-<p><strong>3.4 «Obras no mundo» (<code>obras-no-mundo.docx</code>).</strong> Mapeamento (com referências web) de obras em França ou criadas em Paris: <em>Regresso do Calvário</em> (1909, paradeiro desconhecido), <em>Procissão da Fome</em>, <em>Desespero</em>, <em>Garoto dos Jornais</em>, <em>Édipo e Antígona</em>, <em>Bacante</em>, busto de <em>Suzanne B.</em>, <strong>Orfeu (FBAUP)</strong>, <em>Cristo preso à coluna</em> (1911), busto de <em>Pinto de Couto</em>, <strong>Busto da República</strong> (oferecido em 1913 à Legação/Embaixada de Portugal em Paris, onde permanece), <strong>busto de Madame Chagas</strong>, o <strong>conjunto do Monumento da Boavista</strong> e a <strong>maqueta do Marquês de Pombal</strong> (2.º lugar, 1914). Útil para localização e para o objectivo de <strong>digitalização 3D</strong> (público no monumento; restrito na Embaixada e na FBAUP).</p>
+<p><strong>3.4 «Obras no mundo» (<code>obras-no-mundo.docx</code>).</strong> Mapeamento (com referências web) de obras em França ou criadas em Paris: <em>Regresso do Calvário</em> (<span class="correction-badge">corrigido</span> Paris, 1910; hoje na colecção de escultura da FIMS), <em>Procissão da Fome</em> (MNSR 28 Esc.), <em>Desespero</em>, <em>Garoto dos Jornais</em>, <em>Édipo e Antígona</em> (gesso escolar e bronze do Salon separados), <em>Bacante</em>, busto de <em>Suzanne B.</em>, <strong>Orfeu (FBAUP)</strong>, <em>Cristo preso à coluna</em> (1911, pista sem ficha material), busto de <em>Pinto de Couto</em>, <strong>Busto da República</strong> (oferecido em 1913 à Legação/Embaixada de Portugal em Paris; localização actual a reconfirmar), <strong>busto de Madame Chagas</strong>, o <strong>conjunto do Monumento da Boavista</strong> e a <strong>maqueta do Marquês de Pombal</strong> (2.º lugar, 1914). Útil para localização e para o objectivo de <strong>digitalização 3D</strong>, mas as localizações herdadas deste documento devem ser confrontadas com inventários actuais.</p>
 <p><strong>3.5 Os dois catálogos de estampas/cenas (<code>catalog-estampas.json</code>).</strong> São catálogos de <strong>recriação por IA</strong> (estética Belle Époque sépia / atelier de gesso «non-finito» à Rodin), cada item ancorado numa <strong>citação datada</strong>:
 - <strong><code>correspondencia/catalog-estampas.json</code> — 48 cenas</strong> do mundo do escultor, com <code>source</code> citando cartas e datas: capa do Monumento; retratos (Alves de Sousa, Marques da Silva, Júlia); o concurso de 1908; a viagem e chegada a Paris (Jan 1909); Injalbert; Louvre/Carpeaux; Versalhes; Rouen; Luxembourg; Sarah Bernhardt; Luna Park (29-5-1909); Notre-Dame; a maquette à noite (Nov 1909); a partida da Gare d'Orléans (30-11-1909); o leão e a águia (Barbedienne); o triunfo (5-3-1910); a admissão à École (Mai 1910); a primeira pedra (5-7-1909) e a execução material das fundações (1912) <span class="correction-badge">Cronologia corrigida</span>; o Orfeu (1912); Trocadéro/Rodin (1913); a colónia portuguesa de Montparnasse; <strong>Germaine / Saint-Pair-sur-Mer</strong>; a Grande Guerra (1914); Ville d'Avray (1916); Sospel (1917); o rompimento (1918); a morte (1922); o monumento sem escultor (1951).
 - <strong><code>symbolos/catalog-estampas.json</code> — 60 cenas</strong> das <strong>esculturas e <em>assumptos</em></strong> (Pietà 1909; Péricles e Fídias; ninfas e Orfeu; Édipo e Antígona; <em>Oreste endormi</em>; S. Sebastião; <em>Chute d'Icare</em>; Salomé; Caim e Abel; Prosérpina; <em>Vítimas da Miséria</em>; <em>Avant l'Opération</em>; etc.), espelhando o índice do caderno (§3.1).</p>
@@ -2829,7 +3017,7 @@ target="_blank" rel="noopener"><em>Diário de João Chagas</em>, vol. II, entrad
 9. <strong>Carta colectiva dos pedreiros</strong> (23-2-1910) e o <strong>convite oficial</strong> para a primeira pedra (Junho de 1909, papel do Ministério da Guerra, antes catalogado como 22-6-1911) — cotejar com a reportagem fotográfica da <em>Ilustração Portugueza</em> de 19-7-1909.
 10. <strong>Fotografias de arquivo</strong>: maqueta do Marquês de Pombal (FIMS_MSMS_Foto3802_142, 1914); fotografias da maquette «Povo e Tropa»; <em>Caridade</em> dedicada por Teixeira Lopes (1905).</p>
 <p>Obras a fotografar/3D (para o livro-homenagem):
-11. <strong>Conjunto do Monumento da Boavista</strong> (público), <strong>Orfeu</strong> (FBAUP), <strong>Busto da República</strong> (Embaixada de Paris), e o núcleo do <strong>MNSR</strong> (gessos originais + bronzes do Fundo João Chagas); a <strong>maqueta gigante do Porto</strong> guardada em caixas no <strong>quartel da Serra do Pilar</strong>.</p>
+11. <strong>Conjunto do Monumento da Boavista</strong> (público), <strong>Orfeu</strong> (FBAUP), <strong>Busto da República</strong> (destino histórico: Legação/Embaixada em Paris; presença actual a reconfirmar), e o núcleo do <strong>MNSR</strong> (gessos originais + bronzes do Fundo João Chagas); a <strong>maqueta gigante do Porto</strong> guardada em caixas no <strong>quartel da Serra do Pilar</strong>.</p>
 <hr>
 <p><em>Ficheiro: <code>historia/06-documentacao-de-epoca-e-o-monumento.md</code>. Fontes citadas no corpo. Capítulo factual destinado a sustentar os capítulos narrativos. Todas as grafias originais pré-1911 preservadas nas citações.</em></p></div></details></section><section class="arq" id="arq-notas"><h2>Método e questões em aberto</h2><p class="arq-intro">O método com que este arquivo data, prova e delimita o que afirma — e as questões que permanecem por resolver contra os documentos originais.</p><h3 style="font-size:21px;color:var(--accent);margin-top:6px;font-weight:600;">Questões em aberto</h3><p>O arquivo distingue rigorosamente o que está provado por documento primário do que provém de fontes secundárias. Permanecem por confirmar, contra os originais:</p><ul><li><strong>O dia e a causa da morte (Março de 1922)</strong> — o <em>local</em> (Vilar de Andorinho) e o <em>mês</em> (Março de 1922) estão hoje bem sustentados: obituários de Março de 1922, a lápide, <em>O Tripeiro</em>, a memória da filha e a tradição da certidão convergem. Resta fixar o <strong>dia</strong> — 5 de Março (certidão) <em>vs.</em> 6 de Março (lápide/enterro) — e a <strong>causa</strong>: o único documento clínico (certificado do Dr. Letulle, 1917) atesta <strong>tuberculose pulmonar</strong>, e é a única versão que os documentos e a bibliografia sustentam: a alternativa «<em>sífilis cerebral</em>» consta apenas de uma cronologia compilada pela família (que diz citar a certidão de óbito, nunca vista) — <strong>nenhum documento clínico nem livro deste acervo a regista</strong>, e a ficha da U.Porto dá «tísica». Só a certidão de óbito n.º 506/1922 resolve. <em>A antiga versão «16 de Setembro, Paris» foi posta de lado por falta de suporte documental.</em></li><li><strong>A divisa da maqueta</strong> — «Povo e Tropa» <em>vs.</em> «Poros e Tropa» (leitura do scan).</li><li><strong>O estado civil de Germaine e Alves de Sousa</strong> — o assento de óbito francês de 1919 dá Germaine como «<em>célibataire</em>», ao passo que Alves de Sousa se declarou «<em>viúvo</em>» num contrato de Estado de 1921. O registo civil contemporâneo contradiz essa declaração posterior; não foi localizado assento de casamento e a evidência actual favorece a inexistência de matrimónio legal. <span class="correction-badge">Correcção</span></li><li><strong>Não confundir</strong> o Monumento da Boavista (Porto, Alves de Sousa) com o monumento de Lisboa / Campo Grande (irmãos Oliveira Ferreira).</li><li><strong>«Alves de Sousa Júnior»</strong> — provável duplicação do mesmo aluno no inventário Alumni, a confirmar nos livros de matrícula.</li><li><strong>Estátua parisiense n.º 205</strong> — falta localizar a peça ou demonstrar qualquer relação com o gesso 99.Esc.74.</li><li><strong><em>Vítimas da Miséria</em></strong> — distinguir a remessa de 1909–1910, o envio a Júlia em 1913 e o gesso adquirido pelo MNSR à família em 1922.</li><li><strong><em>Velha atando a liga</em></strong> — confirmar pela proveniência se a figura marcada por G. Costilhes é a obra enumerada no Ofício n.º 368.</li><li><strong>Rua e Praceta Escultor Alves de Sousa</strong> — confirmar no cadastro municipal se são dois espaços distintos ou designações articuladas.</li></ul><h3 style="font-size:21px;color:var(--accent);margin-top:30px;font-weight:600;">Como se datam os documentos sem data</h3><p>Nem sempre uma data manuscrita é de fiar — a letra apaga-se, engana, ou falta de todo. Nesses casos, data-se o documento pelo que os <strong>correios</strong> nele imprimiram, pois o selo e o carimbo datam-se por si. Um postal com a marca «<strong>F.M.</strong>» — a franquia militar, instituída em Agosto de 1914 — não pode ser de 1912, por muito que a leitura da data o sugira; um carimbo de «<strong>Porto Maurizio</strong>» prova, sozinho, que a peça é anterior a 1923. A análise carimbo a carimbo, caso a caso, está na <em>investigação documental</em>.</p><p>Há ainda um princípio que governa os registos civis: quando o <strong>acto</strong> — o assento que o funcionário lavra no dia do facto — e o <strong>índice</strong> — a <em>table décennale</em>, a lista alfabética compilada anos depois — discordam, vale a data do acto. Por isso fixamos o nascimento de <strong>Caïus</strong> a 3 de Fevereiro de 1914 (reconhecido só em 1917), o de <strong>Hydra</strong> a 5 de Julho de 1918 (declarado a 20) e a morte de <strong>Germaine</strong> a 30 de Janeiro de 1919 (transcrita a 15 de Abril). O facto antes do seu registo: um só critério dá unidade a três datas que de outro modo pareceriam em conflito.</p><h3 style="font-size:21px;color:var(--accent);margin-top:30px;font-weight:600;">Os padrinhos de Rodin</h3><p>Alves de Sousa nunca escreveu a Auguste Rodin: era um jovem pensionista, sem peso para corresponder com o maior escultor vivo. E, no entanto, toda a escada que o levou à École consta do fichário de correspondentes de Rodin. O mestre <strong>Injalbert</strong>, o director <strong>Léon Bonnat</strong> e o ministro de Portugal, o conde de <strong>Souza Roza</strong> — os três degraus que lhe abriram a porta — escreveram, cada um por si, ao mestre de Meudon. Ele não conheceu Rodin; os seus padrinhos, sim. Ficou sempre à distância de uma carta — e de um nome que faltava nessa lista.</p><h3 style="font-size:21px;color:var(--accent);margin-top:30px;font-weight:600;">Fontes</h3><p>O arquivo reconstitui-se a partir de fontes primárias — a correspondência do fundo Marques da Silva, os dossiês da École des Beaux-Arts, os registos civis franceses, a revista <em>Arte</em>, a imprensa de época e o espólio fotográfico de família. A <strong>legenda de fontes completa</strong>, documento a documento e com cada cota identificada, vive nas secções <em>Fontes primárias</em> e <em>investigação documental</em>, mais abaixo.</p><h3 style="font-size:21px;color:var(--accent);margin-top:30px;font-weight:600;">Uma presença internacional ainda rara</h3><p>As autoridades reconhecem-no: a Wikidata, a alemã GND, a francesa IdRef, o Musée d'Orsay e o dicionário AKL fixam-lhe o nome, a profissão e as datas. A presença internacional da obra, porém, continua rara. Europeana, Joconde e Wikimedia Commons não guardam fotografias das suas esculturas, e não foi localizada obra sua nos catálogos de coleções francesas consultados. O aparecimento de <em>Cabeza de joven</em> num leilão de Madrid em 2025 obriga a corrigir a antiga conclusão de que a obra «não circula»: ficou documentada pelo menos uma venda, no mercado espanhol, de uma peça atribuída ao escultor. A maior parte do corpus conhecido permanece concentrada no MNSR, na FBAUP e no Monumento da Boavista.</p></section><section class="arq" id="arq-primarias"><h2>Fontes primárias — cronologia, retrato e catálogo de obras</h2><p class="arq-intro">A espinha factual do arquivo, sem narrativa: a cronologia ancorada apenas em documentos verídicos, o retrato pessoal que separa o provado do indício, e o catálogo de todas as obras conhecidas.</p><details><summary>Cronologia só de fontes primárias (1884–1921)</summary><div class="doc"><h1>Cronologia de António Alves de Sousa — só fontes primárias</h1>
 <blockquote>
@@ -3421,8 +3609,9 @@ revista <em>Arte</em> (período) · <code>[Inv. FBAUP]</code> inventário da Fac
   descartada</strong> por falta de qualquer suporte documental — resultou da confusão com o <strong>espólio arrolado em Paris</strong> (não
   com a morte). Ver <span class="xref">pedido-certidao-obito-gaia</span> e, para a exposição narrativa, o cap. «A morte» de
   <span class="xref">05-1918-1928-rompimento-morte-e-ecos</span>.</li>
-<li><strong>Espólio (17 obras) no Museu Soares dos Reis</strong> — atribuição de fonte secundária (<em>O Tripeiro</em>,
-  1946); a confirmar. Ver <span class="xref">paradeiro-das-obras</span>.</li>
+<li><strong>Espólio (17 objectos) adquirido pelo Estado</strong> — a aquisição está confirmada pelo despacho de
+  <strong>17 de Agosto de 1922</strong>; <em>O Tripeiro</em> (1946) fornece a lista histórica. Falta reconciliar, peça a peça,
+  esses 17 objectos com os inventários actuais do Museu Nacional de Soares dos Reis. Ver <span class="xref">paradeiro-das-obras</span>.</li>
 <li><strong>Projecto do «Padrão da Flandres»</strong> e o regresso/recaída de 1919–1921 — sem documento primário
   directo além das cartas; não se fixam como factos datados.</li>
 </ul>
@@ -3762,7 +3951,7 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 <td>—</td>
 <td>esquisso gesso, <strong>1910</strong> (Paris)</td>
 <td>placa «Paris 1910»</td>
-<td>A · foto do espólio; liga ao <em>concours</em> da École (1909)</td>
+<td><strong>FIMS · colecção de escultura</strong>; oferta documentada a Júlia, enviada para o Porto em Julho de 1910 e exposta com o n.º 185 na 19.ª Exposição escolar; liga ao <em>concours</em> da École de 1909</td>
 </tr>
 <tr>
 <td>10</td>
@@ -3776,20 +3965,29 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 <tr>
 <td>11</td>
 <td><strong>Édipo e Antígona em Colono</strong> (<em>Œdipe et Antigone à Colone</em>)</td>
+<td>inv. por localizar; gesso na Escola em 1911–1913</td>
 <td>—</td>
-<td>—</td>
-<td><strong>Salon SAF 1913, nº 3111, «groupe bronze»</strong></td>
-<td>—</td>
-<td>A · <em>O Tripeiro</em> + <strong>DOCUMENTADO</strong>: livret SAF 1913 (<code>bpt6k98117334</code>) + crítica <em>Le Ménestrel</em> 7-6-1913 (<code>bpt6k5615944j</code>) <span class="xref">salao-artistes-francais-1910-1913</span></td>
+<td>maquete/gesso enviado ao Porto em <strong>1911</strong>; bronze no Salon SAF 1913, nº 3111</td>
+<td>pelo menos dois objectos: gesso escolar + «groupe bronze»</td>
+<td>Gesso: último rasto na Escola/FBAUP em Abril de 1913. Bronze: Grand Palais em Junho de 1913, muito provavelmente a encomenda de João Chagas; paradeiro posterior desconhecido. Livret SAF 1913 (<code>bpt6k98117334</code>) + <em>Le Ménestrel</em> 7-6-1913 (<code>bpt6k5615944j</code>) + cartas FIMS</td>
 </tr>
 <tr>
 <td>11&nbsp;bis</td>
-<td><strong>Portrait de M. X…</strong> (busto/retrato anónimo)</td>
+<td><strong>Portrait de M. X…</strong> (busto/retrato anónimo de 1910)</td>
+<td>—</td>
+<td>possível 186 Esc.</td>
+<td><strong>Salon SAF 1910, nº 3249, «buste plâtre»</strong></td>
+<td>último rasto seguro: Grand Palais, 1910</td>
+<td>DOCUMENTADO no livret. <span class="hypothesis-badge">Hipótese</span> O <em>Busto de homem</em> 186 Esc., gesso assinado em Paris e datado de 1909, é candidato plausível; falta prova material.</td>
+</tr>
+<tr>
+<td>11&nbsp;ter</td>
+<td><strong>Portrait de M. X…</strong> (retrato anónimo de 1913)</td>
 <td>—</td>
 <td>—</td>
-<td><strong>Salon SAF 1910 (nº 3249, gesso) e 1913 (nº 3110, plâtre patiné)</strong></td>
-<td>—</td>
-<td>DOCUMENTADO: livrets SAF 1910/1913; encomenda particular anonimizada</td>
+<td><strong>Salon SAF 1913, nº 3110, «plâtre patiné»</strong></td>
+<td>último rasto seguro: Grand Palais, 1913</td>
+<td>DOCUMENTADO no livret. Pode ser outro retrato ou o gesso de 1910 patinado e reapresentado; não fundir as duas entradas sem prova.</td>
 </tr>
 <tr>
 <td>12</td>
@@ -3838,12 +4036,12 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 </tr>
 <tr>
 <td>17</td>
-<td><strong>Estudo de figura feminina</strong></td>
+<td><strong>Mulher na sua toilette / Estudo de figura feminina</strong> <small>(provável <em>Velha atando a liga</em>)</small></td>
 <td>—</td>
-<td>284 Esc</td>
-<td>modelo sem data; marca do moldador G. Costilhes liga uma versão a Paris</td>
-<td>bronze <strong>1958</strong></td>
-<td>M · provável <em>Mulher na sua toilette</em> / <em>Velha atando a liga</em>; conflito entre terracota e gesso nas fontes</td>
+<td><strong>34 Esc</strong> (terracota) · <strong>284 Esc</strong> (bronze)</td>
+<td>composição sem data; marca do moldador G. Costilhes liga a terracota a Paris</td>
+<td>terracota 31 × 14,2 × 12,5 cm; bronze póstumo <strong>1958</strong>, 30,5 × 12,5 × 12 cm</td>
+<td>M · dois objectos localizados da mesma composição. Falta reconstruir a cadeia terracota → eventual gesso/molde → bronze; a ligação ao título <em>Velha atando a liga</em> do Ofício 368 continua provável</td>
 </tr>
 <tr>
 <td>18</td>
@@ -3883,12 +4081,12 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 </tr>
 <tr>
 <td>22</td>
-<td><strong>Mãe e filho</strong> (<em>Desastre da Ponte das Barcas</em>)</td>
+<td><strong>Grupo de mãe e filho</strong> <small>(atribuído; possível <em>Desastre da Ponte das Barcas</em>)</small></td>
 <td>—</td>
 <td>—</td>
-<td>—</td>
-<td>—</td>
-<td>A · memórias/foto; não catalogado</td>
+<td>data desconhecida</td>
+<td>gesso patinado, 27,5 × 42,5 × 19,5 cm; não assinado</td>
+<td><span class="hypothesis-badge">Atribuição comercial</span> P55, lote 99, 24-09-2015, não vendido; ver L3. A semelhança temática com o Monumento não confirma autoria.</td>
 </tr>
 <tr>
 <td>23</td>
@@ -3899,12 +4097,39 @@ de época (revista <em>Arte</em> / foto); <strong>Mon</strong> = monumento/obra 
 <td>gesso</td>
 <td>A · foto do espólio</td>
 </tr>
+<tr>
+<td>24</td>
+<td><strong>Busto de homem</strong></td>
+<td>—</td>
+<td><strong>186 Esc</strong></td>
+<td><strong>Paris, 1909</strong></td>
+<td>gesso, 85 × 60,5 × 44 cm; assinado e datado</td>
+<td>M · publicado em <em>Património de Gaia no Mundo</em>, p. 204. <span class="hypothesis-badge">Hipótese</span> possível <em>Portrait de M. X…</em> do Salon de 1910</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>Procissão da Fome</strong></td>
+<td>—</td>
+<td><strong>28 Esc</strong></td>
+<td>Paris, c. <strong>1909–1913</strong> segundo <em>O Tripeiro</em></td>
+<td>terracota, 39 × 23,3 × 32,5 cm</td>
+<td>M · publicada com inventário próprio em <em>Património de Gaia no Mundo</em>, p. 206. <span class="correction-badge">Correcção</span> É objecto distinto de <em>Vítimas da Miséria</em>, 37 Esc.</td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>Busto de D. Maria Teresa Chagas</strong></td>
+<td>—</td>
+<td>—</td>
+<td><strong>Paris, 1910</strong></td>
+<td>gesso; medidas desconhecidas</td>
+<td>A · carta de 08-03-1910 + fotografia publicada por <em>O Tripeiro</em> em 1946; paradeiro actual desconhecido</td>
+</tr>
 </tbody>
 </table>
 <h3 id="mercado-l1">Peças aparecidas no mercado</h3>
-<p>Os dois registos documentam circulação comercial, mas têm estatutos diferentes. A <em>Cabeza de joven</em>
+<p>Os três registos documentam circulação comercial, mas têm estatutos diferentes. A <em>Cabeza de joven</em>
 continua a ser uma atribuição comercial sem assinatura publicada; a <em>Figura feminina</em> é descrita pela
-leiloeira como assinada e datada, embora a reprodução disponível não permita conferir directamente esses sinais.</p>
+leiloeira como assinada e datada; e o grupo P55 foi expressamente apresentado como «atribuído a», sem assinatura.</p>
 <table>
 <thead>
 <tr>
@@ -3927,13 +4152,23 @@ proveniência desconhecidas. <a href="#descoberta-mercado">Ver fotografia e font
 <tr>
 <td>L2</td>
 <td><strong>Figura feminina</strong><br>Gesso, 64 cm; assinada e datada de 1915 segundo a ficha oficial</td>
-<td>Cabral Moncada, Lisboa, leilão 124, <strong>31-01-2011</strong>, lote 128<br>Estimativa: 400–600 €</td>
+<td>Possível aparição anterior: Trocadéro, <strong>10-12-2010</strong>, lote 1051, 62 cm, base 50 €.<br>Cabral Moncada, Lisboa, leilão 124, <strong>31-01-2011</strong>, lote 128, 64 cm<br>Estimativa: 400–600 €</td>
 <td><strong>600 €</strong>, resultado publicado pela leiloeira</td>
 <td><strong>Autoria fortemente sustentada pela ficha.</strong> Falta uma fotografia legível da assinatura e da data.
-<span class="correction-badge">Data corrigida</span> <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">catálogo</a>.</td>
+<span class="hypothesis-badge">Proveniência provável</span> A coincidência Trocadéro → CML é forte, mas a diferença de 2 cm e a falta de cotejo fotográfico impedem fechá-la. <a href="https://livrozilla.com/doc/1110749/catalogo_leilao-001_-10-dez" target="_blank" rel="noopener">Trocadéro</a> · <a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Ficha e resultado CML</a>.</td>
+</tr>
+<tr>
+<td>L3</td>
+<td><strong>Grupo de mãe e filho</strong><br>Gesso patinado, 27,5 × 42,5 × 19,5 cm; não assinado</td>
+<td>P55 — Second Hand Luxury, <strong>24-09-2015</strong>, lote 99<br>Estimativa: 150–195 €</td>
+<td><strong>Não vendido</strong> (<em>passed</em>)</td>
+<td><strong>Atribuição comercial de confiança baixa/média.</strong> A leiloeira propôs um estudo para o Monumento da Guerra Peninsular e o desastre da Ponte das Barcas; faltam assinatura, proveniência e documento de época. <a href="https://www.invaluable.com/auction-lot/alves-de-sousa-1884-1922-99-c-5c64e119a4" target="_blank" rel="noopener">Ficha do lote</a>.</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p><span class="correction-badge">Atribuição falsa excluída</span> <em>Salvamento de Luísa Todi</em> aparece associado a Alves de Sousa em agregadores e anúncios recentes, mas o catálogo primário da Leiloeira São Domingos identifica o lote 223 como obra de <strong>Joaquim Gonçalves (1863–1912)</strong>. Não integra este corpus. <a href="https://www.leiloeirasaodomingos.pt/storage/app/public/leiloes/normal/2026.115.pdf" target="_blank" rel="noopener">Catálogo 115, lote 223</a>.</p>
+</blockquote>
 <blockquote>
 <p><strong>Desambiguação de mercado.</strong> O perfil agregador do Invaluable mistura este escultor com uma peça de ourivesaria atribuída a um homónimo de cronologia incompatível e com dois óleos de Celestino Alves. Por isso, o total de «cinco lotes vendidos» não representa o corpus de António Alves de Sousa. <a href="https://www.invaluable.com/artist/alves-de-sousa-antonio-hrk9wr1szi/" target="_blank" rel="noopener">Ver o índice contaminado</a>.</p>
 </blockquote>
@@ -3987,7 +4222,7 @@ de jornaes, S. Sebastião (baixo-relevo)</em>».</p>
 <td>D4</td>
 <td><strong>Velha atando a liga</strong></td>
 <td>título no Ofício + possível objecto fotografado</td>
-<td><span class="new-badge">Novo</span><strong>Identificação provável, não definitiva:</strong> a figura de mulher idosa inclinada para ajustar a liga, publicada em <em>Património de Gaia no Mundo</em>, corresponde ao título e conserva a marca «G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV». Costilhes é o moldador, não o autor. <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener">Ver p. 206</a>; falta confirmar a proveniência do objecto.</td>
+<td><span class="new-badge">Novo</span><strong>Objecto localizado, título histórico provável:</strong> a terracota MNSR 34 Esc., <em>Mulher na sua toilette</em>, mostra a figura idosa inclinada para ajustar a liga e conserva a marca «G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV». Costilhes é o moldador, não o autor. <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener">Ver p. 205</a>; falta confirmar que este é o mesmo objecto enumerado em 1923 como <em>Velha atando a liga</em>.</td>
 </tr>
 <tr>
 <td>D5</td>
@@ -4005,9 +4240,11 @@ de jornaes, S. Sebastião (baixo-relevo)</em>».</p>
 </table>
 <blockquote>
 <p><strong>Já no catálogo (não duplicados):</strong> do mesmo Ofício constam ainda <strong>Orfeu e variantes</strong> (= #10),
-<strong>Avant l'Opération</strong> (= #16) e <strong>bustos de senhora e de homem</strong> (genéricos; cobertos por #6 <em>Pinto do
-Couto</em>, #11&nbsp;bis <em>Portrait de M. X…</em>, #12 <em>Suzanne Bouré</em>). Para esses, o Ofício 368 vale como <strong>fonte
-documental adicional</strong> (prova da chegada física do espólio em 1923), não como obra nova.</p>
+<strong>Avant l'Opération</strong> (= #16) e <strong>bustos de senhora e de homem</strong>. Estes últimos são descrições genéricas:
+podem relacionar-se com #6 <em>Pinto do Couto</em>, #11 bis/ter <em>Portrait de M. X…</em>, #12 <em>Suzanne Bouré</em> ou #24
+<em>Busto de homem</em>, mas o Ofício não fornece nomes, medidas ou fotografias que permitam a equivalência. Prova apenas
+que bustos não individualizados chegaram fisicamente no espólio de 1923; não prova que qualquer retrato dos Salons estivesse
+entre eles.</p>
 </blockquote>
 <h3>Obras conhecidas só por menção na correspondência (fundo MSMS 1187)</h3>
 <blockquote>
@@ -4101,6 +4338,8 @@ reauditável. Absorve <span class="xref">paradeiro-das-obras</span>.</p>
 <li><strong>15 obras</strong> sob o nome dele (super-categoria Arte / Escultura).</li>
 <li><strong>Nota de método:</strong> a pesquisa por texto livre «Alves de Sousa» no RAIZ só devolve <strong>1 quadro de 1857 alheio</strong>; as obras dele afloram <strong>apenas pelo filtro de Autores</strong>. O ficheiro <code>fontes/inventaire_201612.pdf</code> <strong>não tem relação</strong> com este espólio — é o catálogo da biblioteca da <strong>Société d'Archéologie d'Avranches</strong>.</li>
 <li>O <strong>gesso-modelo 27 Esc.</strong> <strong>não</strong> está entre os 15 resultados do filtro de autor. As fichas 282 e 292 associam-no, respectivamente, a <em>Desespero</em> e a <em>Orfeu</em>, duas obras materialmente incompatíveis. O cruzamento demonstra a contradição, mas não permite escolher qual ficha está errada.</li>
+<li><span class="new-badge">Registos associados fora do filtro</span> Uma publicação municipal de 2022 reproduz três objectos do MNSR que a lista de quinze não devolve: <strong>28 Esc., <em>Procissão da Fome</em></strong> (terracota, 39 × 23,3 × 32,5 cm); <strong>34 Esc., <em>Mulher na sua toilette</em></strong> (terracota, 31 × 14,2 × 12,5 cm); e <strong>186 Esc., <em>Busto de homem</em></strong> (gesso, 85 × 60,5 × 44 cm, Paris, 1909). <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener"><em>Património de Gaia no Mundo</em>, pp. 204–206</a>.</li>
+<li><strong>Consequência:</strong> o núcleo MNSR conhecido compreende pelo menos <strong>18 objectos documentados</strong>, não apenas os quinze devolvidos pela autoridade de autor. A pesquisa pública é um índice, não o inventário completo.</li>
 </ul>
 <h3>Ficha de detalhe — Orfeu, 292 Esc MNSR (verbatim)</h3>
 <ul>
@@ -4111,9 +4350,10 @@ reauditável. Absorve <span class="xref">paradeiro-das-obras</span>.</p>
 <hr>
 <h2>Reconciliação dos números (a pergunta «quantas obras há?»)</h2>
 <ul>
-<li><strong><em>O Tripeiro</em> (1946) dizia 17</strong> trabalhos no MNSR. O <strong>RAIZ regista hoje 15</strong> sob o nome dele, <strong>+5</strong> na FBAUP.</li>
-<li><strong>15 + 5 = 20 registos de inventário</strong>, mas não necessariamente vinte composições sem relação. A família de <em>Orfeu</em> inclui o gesso monumental 99.Esc.72 na FBAUP e quatro estudos ou variações em bronze no MNSR (279, 287, 288 e 292). São <strong>cinco objectos catalogados</strong>, não cinco exemplares idênticos nem uma única peça repetida. O total muda conforme se contam objectos, variantes, composições ou obras públicas.</li>
-<li>Os títulos de <em>O Tripeiro</em> que <strong>não</strong> afloram no RAIZ com esse nome — <em>Procissão da Fome</em> e <em>Œdipe et Antigone</em> — não devem ser absorvidos por semelhança temática. <em>Édipo e Antígona em Colono</em> está documentado no Salon de 1913; <em>Procissão da Fome</em> pode relacionar-se com <em>Vítimas da Miséria</em>, mas a identidade não está provada. Podem ser obras, versões ou títulos ainda não digitalizados.</li>
+<li>O despacho de <strong>17-08-1922</strong> e <em>O Tripeiro</em> documentam a compra de <strong>17 objectos</strong> à família. O filtro RAIZ devolve hoje <strong>15 fichas</strong> sob a autoridade do autor, às quais se juntam pelo menos três objectos publicados fora desse filtro (28, 34 e 186 Esc.) e cinco registos FBAUP.</li>
+<li>Estas grandezas <strong>não podem ser somadas como um inventário histórico simples</strong>: os dezassete dizem respeito a uma aquisição de 1922; os quinze resultados RAIZ incluem bronzes póstumos de 1957–1958 e omitem modelos ou peças sem autoria indexada; e a FBAUP conserva remessas escolares independentes.</li>
+<li>A família de <em>Orfeu</em> inclui o gesso monumental 99.Esc.72 na FBAUP e quatro estudos ou variações em bronze no MNSR (279, 287, 288 e 292). São <strong>cinco objectos catalogados</strong>, não cinco exemplares idênticos nem uma única peça repetida. O total muda conforme se contam objectos, variantes, composições ou obras públicas.</li>
+<li><span class="correction-badge">Correcção</span> <em>Procissão da Fome</em> já não é um título por absorver em <em>Vítimas da Miséria</em>: é a terracota MNSR <strong>28 Esc.</strong>, enquanto <em>Vítimas</em> é o gesso <strong>37 Esc.</strong>. <em>Édipo e Antígona</em> continua ausente do filtro, mas as cartas deslocam a busca do gesso para os inventários históricos da FBAUP.</li>
 </ul>
 <hr>
 <h2>Ligações não-óbvias que só aparecem com a tabela junta</h2>
@@ -4132,18 +4372,29 @@ de douleur</em>» (1909). Quatro obras, cinco anos, <strong>um arquétipo</stron
 <h3>O5. A espinha <strong>miserabilista</strong> atravessa Porto→Paris sem corte</h3>
 <p><strong>Mulher do Povo</strong> (1905, Porto) → <strong>Vítimas da miséria</strong> (37, 1909, Paris) → <strong>O Miserável</strong> (267) →
 <strong>Garoto dos jornais</strong> (281) → <strong>O que terei de passar</strong> (291). O programa social <strong>não muda</strong> ao mudar de país — só ganha escala parisiense. <em>(Interpretação.)</em> <span class="correction-badge">Correcção</span> O n.º 287 foi retirado desta sequência: apesar do título histórico <em>Quebrando as algemas</em>, a obra pertence iconograficamente ao laboratório de <em>Orfeu</em>.</p>
-<h3>O6. O <strong>Fundo João Chagas</strong> é o que torna <em>visível</em> metade do catálogo</h3>
-<p><strong>Doze</strong> das 15 obras do MNSR são fundições póstumas documentadas de <strong>1957–1958</strong>, custeadas pelo fundo criado a partir da doação de Maria Teresa Chagas (1941). O busto de Pinto do Couto é também bronze, mas a data e as circunstâncias da sua fundição permanecem por documentar. Sem esse legado, o núcleo de bronzes do MNSR seria muito menor. João Chagas é o <strong>mesmo</strong> político que o escultor conheceu <strong>vivo em Paris</strong>
-(visita ao ateliê, 1912). Um círculo de <strong>46 anos</strong> (1912→1958) — ou de <strong>36</strong>, se contado da morte do
-escultor (1922) à fundição (1958) — fecha-se sobre a própria obra. Ver <span class="xref">ligacoes-cruzadas</span> A1.</p>
-<p><span class="new-badge">Novo contexto</span> A doação consistia no <strong>rendimento líquido de um imóvel no Estoril</strong>, destinado a aquisições e melhoramentos do Museu. Sob Salvador Barata Feyo (1950–1960), o MNSR incorporou pequenos esboços de gesso e mandou passá-los a bronze «com o fim de salvar da acção do tempo» as esculturas em gesso. O Museu adquiriu nesse decénio mais de 150 obras através do Fundo. A série de Alves de Sousa encaixa documentalmente nesta política geral, embora faltem ainda as ordens, facturas e o nome do fundidor de cada peça. Em Dezembro de 1958, o <em>Diário do Governo</em> registava o Fundo como receita consignada, artigo 270.º, no valor de <strong>92.400$</strong>; o número demonstra actividade financeira no ano das fundições, mas não identifica o custo ou a origem do pagamento de cada bronze. <a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/304857?tipo=OBJ" target="_blank" rel="noopener">RAIZ — Fundo João Chagas</a> · <a href="https://run.unl.pt/server/api/core/bitstreams/baacfdf1-0174-431a-8dd5-72cc805a218f/content" target="_blank" rel="noopener">Dicionário de Museologia, p. 112</a> · <a href="https://mnsr.museusemonumentospt.pt/wp-content/uploads/2023/06/DossierPlaneamentoVisitaLivre_VF.pdf" target="_blank" rel="noopener">MNSR — dossier de visita</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1958/12/27802.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-12-1958, p. 1528</a>.</p>
+<h3>O6. O <strong>Fundo João Chagas</strong> preservou o núcleo póstumo de bronzes</h3>
+<p><strong>Doze</strong> dos 15 registos devolvidos pelo filtro RAIZ são fundições póstumas de <strong>1957–1958</strong>. As fichas
+associam essa campanha ao Fundo João Chagas, criado a partir da doação de bens imóveis de Maria Teresa Chagas em 1941;
+faltam, porém, as ordens e facturas individuais que demonstrem o financiamento de cada peça. O busto de Pinto do Couto é
+também bronze, mas a data e as circunstâncias da sua fundição permanecem por documentar. O nome do Fundo recorda o mesmo
+político que Alves de Sousa conheceu em Paris, mas João Chagas não foi o financiador pessoal das fundições. Ver
+<span class="xref">ligacoes-cruzadas</span> A1. <span class="correction-badge">Relação corrigida</span></p>
+<p><span class="new-badge">Novo contexto</span> A doação consistia no <strong>rendimento líquido de bens imóveis</strong>, designadamente um prédio na Avenida Nice, no Estoril, destinado a aquisições e melhoramentos do Museu. Não incluía um inventário ou doação do recheio artístico; por isso, não prova que o bronze de <em>Édipo</em> ou o busto de Maria Teresa tenham entrado no Museu. Sob Salvador Barata Feyo (1950–1960), o MNSR incorporou pequenos esboços de gesso e mandou passá-los a bronze «com o fim de salvar da acção do tempo» as esculturas em gesso. O Museu adquiriu nesse decénio mais de 150 obras através do Fundo. A série de Alves de Sousa encaixa documentalmente nesta política geral, embora faltem ainda as ordens, facturas e o nome do fundidor de cada peça. Em Dezembro de 1958, o <em>Diário do Governo</em> registava o Fundo como receita consignada, artigo 270.º, no valor de <strong>92.400$</strong>; o número demonstra actividade financeira no ano das fundições, mas não identifica o custo ou a origem do pagamento de cada bronze. <a href="https://debates.parlamento.pt/catalogo/r2/dan/01/02/03/100/1941-02-17?sft=true" target="_blank" rel="noopener">Diário das Sessões, 17-02-1941</a> · <a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/304857?tipo=OBJ" target="_blank" rel="noopener">RAIZ — Fundo João Chagas</a> · <a href="https://run.unl.pt/server/api/core/bitstreams/baacfdf1-0174-431a-8dd5-72cc805a218f/content" target="_blank" rel="noopener">Dicionário de Museologia, p. 112</a> · <a href="https://mnsr.museusemonumentospt.pt/wp-content/uploads/2023/06/DossierPlaneamentoVisitaLivre_VF.pdf" target="_blank" rel="noopener">MNSR — dossier de visita</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1958/12/27802.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-12-1958, p. 1528</a>.</p>
 <hr>
+<h2>Pistas institucionais ainda sem equivalência fechada</h2>
+<ul>
+<li><strong><em>Cristo preso à coluna</em> (1911):</strong> a página biográfica da Universidade do Porto associa o título ao percurso do escultor, mas ainda não foi localizada ficha material, inventário ou fotografia que permita identificá-lo com <em>S. Sebastião</em>, <em>Desespero</em> ou outra peça conhecida. Mantém-se como título autónomo a investigar.</li>
+<li><strong><em>A Mãe de Jesus Cristo</em>:</strong> surge na mesma síntese institucional. Não deve ser automaticamente fundida com <em>A Mãe de Cristo e as Santas Mulheres no Regresso do Calvário</em>, hoje localizada na colecção de escultura da FIMS; só a ficha original ou uma imagem comparável poderá demonstrar se é abreviatura do mesmo título ou outra obra.</li>
+</ul>
+<p class="src"><a href="https://sigarra.up.pt/up/pt/p/antigos%20estudantes%20ilustres%20-%20ant%C3%B3nio%20alves%20de%20sousa" target="_blank" rel="noopener">Universidade do Porto — António Alves de Sousa</a>.</p>
 <h2>O que falta para fechar o catálogo (pistas)</h2>
 <ul>
 <li><strong>Datas de criação dos modelos dos bronzes do MNSR:</strong> as fichas dão frequentemente apenas o ano da <strong>fundição</strong>. É necessário localizar os gessos correspondentes — n.º 30 para o Orfeu 287, n.º 55 para o Orfeu 288 e «S/n H» para o n.º 291 — e resolver a contradição que associa o modelo n.º 27 simultaneamente a <em>Desespero</em> e ao Orfeu 292.</li>
 <li><strong>Medidas e material</strong> de #4, #5, #9, #11, #22, #23 (só conhecidas por reprodução) — procurar em
   catálogos do MNSR/FBAUP e na imprensa de arte do Porto (1908-1913).</li>
-<li><strong>Distinguir «Procissão da Fome» de «Vítimas da miséria»</strong> e localizar <strong>«Œdipe et Antigone»</strong>, documentado no Salon de 1913 mas ausente do RAIZ, através do exemplar de <em>O Tripeiro</em>, dos catálogos de exposição e das fotos do espólio.</li>
+<li><strong>Completar a ficha de <em>Procissão da Fome</em>, 28 Esc.:</strong> consultar o livro de inventário, a proveniência de entrada, inscrições e datação; a distinção material de <em>Vítimas da Miséria</em>, 37 Esc., está agora resolvida.</li>
+<li><strong>Localizar os dois <em>Édipo e Antígona</em>:</strong> procurar o gesso enviado em 1911–1912 nas reservas e inventários históricos da FBAUP (cotas 193, 213 e 250) e o bronze do Salon nos inventários domésticos e sucessórios de João e Maria Teresa Chagas.</li>
+<li><strong>Inventário sucessório de Maria Teresa Chagas:</strong> confirmar primeiro a data de morte no assento e localizar depois o processo de Cascais/Estoril, pista comum para o bronze de <em>Édipo</em> e para o busto em gesso reproduzido em 1946.</li>
 <li><strong>Identificar o item 205 de 1910–1911</strong>: comparar a «estátua a gesso» feita na École com a ficha de incorporação, medidas e eventual fotografia da FBAUP 99.Esc.74; a equivalência é hoje apenas hipótese.</li>
 <li><strong>Fixar a proveniência de <em>Vítimas da Miséria</em></strong>: distinguir a remessa de 1909–1910, o baixo-relevo enviado a Júlia em 1913 e o gesso comprado pelo MNSR à família em 1922.</li>
 <li><strong>Confirmar <em>Velha atando a liga</em></strong>: seguir a proveniência da figura com a marca do moldador G. Costilhes até ao Ofício n.º 368 de 1923.</li>
@@ -31955,8 +32206,10 @@ temporais</strong> (a família guardava correspondência até 1922-1925), <stron
 <strong>Conde de Souza Roza</strong> (Ministro) e <strong>Bartolomeu Ferreira</strong> (Legação) <strong>abrem-lhe a carreira</strong> (1909);
 <strong>João Chagas</strong> (político) cruza-o a meio (ateliê, 1912); e <strong>Dr. Bettencourt Rodrigues</strong> (médico-diplomata),
 a par dos médicos <strong>Dr. Letulle</strong>/<strong>Dr. Oliveira</strong>/<strong>Dr. Beusaude</strong>, acompanha-o no <strong>declínio</strong> (1916-17).
-A mesma colónia que o <strong>lança</strong> vem a <strong>assisti-lo doente</strong> — e, pelo Fundo João Chagas, a <strong>fundir-lhe os
-bronzes</strong> em 1958 (<span class="xref">paradeiro-das-obras</span>). Um único círculo nacional <strong>abre, ampara e perpetua</strong> a obra.</p>
+A mesma rede que o <strong>lança</strong> vem a <strong>assisti-lo doente</strong>. Décadas depois, já num contexto museológico
+distinto, o <strong>Fundo João Chagas</strong> financia aquisições e melhoramentos do MNSR e é associado pelas fichas às
+fundições póstumas de 1957–1958 (<span class="xref">paradeiro-das-obras</span>). Não foi a «colónia portuguesa» que mandou
+fundir os bronzes, nem o nome do Fundo prova uma continuidade pessoal do círculo parisiense. <span class="correction-badge">Correcção</span></p>
 <h3>N10. Auguste Leroux — o professor partilhado que liga o escultor à pintora «amiga»</h3>
 <p>Registo da École (Reg-Arts): <strong>Geneviève Marie Louise Grenthe</strong> (n. 10-11-1890, <strong>Pontoise</strong>) inscreve-se
 em <strong>secção pintura a 10-Mai-1912</strong>, <strong>matrícula 216</strong>, tendo por garantes <strong>Ferdinand Humbert</strong>, <strong>Auguste
@@ -31967,7 +32220,7 @@ mestre Auguste Leroux</strong> — a via mais provável de como se conheceram. E
 Germaine: a Grenthe <strong>é</strong> aluna de pintura documentada; a <strong>Germaine Lechartier não tem qualquer registo na
 École</strong> (era <strong>costureira</strong>, certidão de Caïus 1914). Ver <span class="xref">retrato-pessoal</span> (profissão de Germaine).</p>
 <h3>N11. G. Costilhes — um vestígio da rede técnica de moldagem</h3>
-<p><span class="new-badge">Novo</span> A figura publicada em <em>Património de Gaia no Mundo</em>, muito provavelmente relacionada com <em>Velha atando a liga</em>, traz na base «<strong>G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV</strong>». A marca documenta o <strong>atelier de moldagem</strong> associado ao objecto, não uma co-autoria. Também não prova, sem documentação de encomenda, que Alves de Sousa conhecesse ou contratasse pessoalmente Costilhes. É uma ligação técnica provável, sujeita à confirmação da proveniência da peça. <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener">Fonte visual, p. 206</a>.</p>
+<p><span class="new-badge">Novo</span> A figura publicada em <em>Património de Gaia no Mundo</em>, muito provavelmente relacionada com <em>Velha atando a liga</em>, traz na base «<strong>G. COSTILHES / MOULEUR Statuaire / Atelier / 10 Impasse de la Gaîté, PARIS XIV</strong>». A marca documenta o <strong>atelier de moldagem</strong> associado ao objecto, não uma co-autoria. Também não prova, sem documentação de encomenda, que Alves de Sousa conhecesse ou contratasse pessoalmente Costilhes. É uma ligação técnica provável, sujeita à confirmação da proveniência da peça. <a href="https://pt.slideshare.net/slideshow/pacug2livropdf/256491483" target="_blank" rel="noopener">Fonte visual, p. 205</a>.</p>
 <p><span class="new-badge">Confirmação parisiense</span> O Bottin regista «<strong>Costilhes, imp. de la Gaîté, 8 et 10</strong>» entre os <em>mouleurs-figuristes</em> em 1914 e 1919. Isto confirma profissão e morada da marca; não resolve o primeiro nome por trás da inicial «G.» nem autoriza confundi-lo com o pintor André Eugène Costilhes. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k9776785t/f441.item" target="_blank" rel="noopener">Bottin 1914</a> · <a href="https://gallica.bnf.fr/ark:/12148/bd6t5337919s/f231.item" target="_blank" rel="noopener">Bottin 1919</a> · <a href="#actualizacao-paris-2026-07-15">fac-símile e análise</a>.</p>
 <h2>3. Armadilhas de homonímia (vários com o mesmo apelido — não confundir)</h2>
 <ul>
@@ -32944,7 +33197,7 @@ como esperado, na faixa de <strong>1909</strong> (Page_240, a tal marcada «a pa
 <h2>Ligações</h2>
 <ul>
 <li><span class="xref">ecole-aj52-340</span> — o processo escolar oficial que esta pauta corrobora.</li>
-<li><span class="xref">retrato-pessoal</span> — formação em Paris (ateliê Injalbert, 1907-1913).</li>
+<li><span class="xref">retrato-pessoal</span> — formação em Paris (ateliê Injalbert, 1909-1913).</li>
 <li><span class="xref">pistas-a-verificar</span> — §4 (listas do atelier Injalbert): agora <strong>lidas</strong>.</li>
 </ul></div></details><details><summary>Ligações cruzadas entre documentos (análise) — relações difíceis de ver a olho nu</summary><div class="doc"><h1>Ligações cruzadas entre documentos (análise) — relações difíceis de ver a olho nu</h1>
 <blockquote>
@@ -32958,11 +33211,12 @@ os documentos que a sustentam. Registo vivo; cresce a cada passagem do loop.</p>
 <h3>A1. O círculo João Chagas — da amizade em Paris ao bronze póstumo</h3>
 <ul>
 <li>O escultor <strong>conviveu com João Chagas em Paris</strong> (Carta 093; ver <span class="xref">retrato-pessoal</span>).</li>
-<li>Os <strong>bronzes das suas obras no MNSR foram fundidos em 1958 pelo «Fundo João Chagas»</strong> — fundo criado
-  por <strong>doação de 1941 de Maria Teresa Chagas, viúva de João Pinheiro Chagas</strong> (ficha de detalhe do
-  «Orfeu 292», <span class="xref">paradeiro-das-obras</span>).</li>
-<li><strong>Relação:</strong> o político que ele conheceu vivo em Paris é, <strong>36 anos depois e por via da viúva</strong>, o
-  financiador dos bronzes que perpetuam a sua escultura. Um arco que nenhuma ficha isolada mostra.</li>
+<li>Doze bronzes hoje devolvidos pelo filtro RAIZ foram fundidos postumamente em <strong>1957–1958</strong>; várias fichas,
+  entre elas a do <em>Orfeu</em> 292, associam a operação ao <strong>Fundo João Chagas</strong>, criado a partir da doação
+  de bens imóveis de <strong>Maria Teresa Chagas</strong> ao Estado em 1941 (<span class="xref">paradeiro-das-obras</span>).</li>
+<li><strong>Relação corrigida:</strong> o nome do político que Alves de Sousa conheceu em Paris foi perpetuado no Fundo
+  museológico constituído pela viúva. João Chagas não foi o financiador pessoal das fundições, e faltam ainda ordens e
+  facturas individuais que reconstruam a passagem de cada modelo a bronze.</li>
 </ul>
 <h3>A2. O trio de escultores do Porto e a entrada conjunta na École</h3>
 <ul>
@@ -33163,7 +33417,7 @@ imagem <code>NatividadeP.jpg</code> + detalhe <code>assinatura.jpg</code>, repro
 </ul></div></details><details><summary>Paradeiro das obras de Alves de Sousa — [ARQUIVADO / FUNDIDO]</summary><div class="doc"><h1>Paradeiro das obras de Alves de Sousa — [ARQUIVADO / FUNDIDO]</h1>
 <blockquote>
 <p><strong>Este conteúdo foi unificado em <span class="xref">catalogo-unificado-obras</span> (29-06-2026).</strong>
-A tabela-mestra de obras, os números de inventário FBAUP (99.Esc.70–74) e MNSR/RAIZ (15 obras),
+A tabela-mestra de obras, os números de inventário FBAUP (99.Esc.70–74) e os 15 resultados do filtro de autor MNSR/RAIZ,
 as consultas de catálogo vivas (FBAUP <code>museus.up.pt/fbaup</code> e RAIZ <code>raiz.museusemonumentos.pt</code>,
 autor id 60061, ambas verificadas 26-06-2026), as dimensões do <em>Orfeu</em> (140×230×180 cm), a
 localização da maqueta da Boavista (edifício de S. Lázaro) e o historial da ficha 292 (Fundo João
@@ -33302,12 +33556,14 @@ e de <code>fontes/Obras/inserção urbana da estátua.pdf</code>:</p>
   Antonio Alves», Villa Nova de Gaya, 9-Jan-1884, 6 Place de l'Odéon, <strong>entrada 16-Fev-1909</strong>. (O
   n.º de matrícula do ateliê cai na sombra da dobra — ilegível.)</li>
 </ul>
-<h2>4-bis. Paradeiro das obras — FBAUP confirmado, MNSR por confirmar</h2>
+<h2>4-bis. Paradeiro das obras — FBAUP e filtro MNSR/RAIZ confirmados</h2>
 <p>Ver <span class="xref">paradeiro-das-obras</span>. ✅ <strong>AMBOS CONFIRMADOS</strong> (26-06-2026). A <strong>FBAUP</strong> tem <strong>5 obras</strong> no
-catálogo online (99.Esc.70-74). O <strong>Museu Nacional Soares dos Reis</strong> tem <strong>15 obras</strong> confirmadas no
-catálogo nacional <strong>RAIZ</strong> (ex-<strong>MatrizNet</strong>, <code>raiz.museusemonumentos.pt</code>), filtro de autor «Sousa,
-António Alves de» — gessos originais + <strong>bronzes fundidos em 1958 via Fundo João Chagas</strong>. Deixou de
-ser indício. <em>(O <code>fontes/inventaire_201612.pdf</code> </em><em>não</em><em> reconcilia nada — é o catálogo da biblioteca
+catálogo online (99.Esc.70-74). O filtro de autor «Sousa, António Alves de» do catálogo nacional <strong>RAIZ</strong>
+(ex-<strong>MatrizNet</strong>, <code>raiz.museusemonumentos.pt</code>) devolve <strong>15 fichas</strong> — gessos originais +
+<strong>bronzes fundidos em 1958 via Fundo João Chagas</strong>. <span class="correction-badge">Actualização</span> Uma publicação
+municipal documenta ainda os MNSR 28, 34 e 186 fora desse filtro; o núcleo institucional conhecido tem, portanto,
+pelo menos <strong>18 objectos</strong>, sem que este total possa ser confundido com a aquisição histórica de 17 objectos em 1922.
+<em>(O <code>fontes/inventaire_201612.pdf</code> </em><em>não</em><em> reconcilia nada — é o catálogo da biblioteca
 da Société d'Archéologie d'Avranches, erro de pista já corrigido.)</em></p>
 <h2>5. Iconografia já recuperada (feito)</h2>
 <ul>
@@ -34200,12 +34456,13 @@ de escultura. As entradas «Alves»/«Souza» são <strong>homónimos</strong> (
   restantes acertos são homónimos (escultor <em>Amândio de Sousa</em>, basílica de Fátima, etc.). <strong>Sem fotografia de
   obra sua.</strong></li>
 <li><strong>POP / Joconde</strong> (catálogo coletivo dos <strong>museus de França</strong>) — busca «Alves de Sousa/Souza» = <strong>sem
-  notícia</strong>. Nenhum museu francês detém (ou catalogou em Joconde) obra dele — apesar dos registos do Salon e da
-  ENSBA. Fecha a frente da <strong>posse museológica francesa</strong>.</li>
+  notícia</strong>. <span class="correction-badge">Formulação corrigida</span> Não foi localizada ficha sob as grafias pesquisadas;
+  o resultado negativo não prova que nenhum museu francês conserve uma obra sob título genérico, atribuição diferente,
+  depósito ou registo ainda não digitalizado. A frente da <strong>posse museológica francesa</strong> permanece aberta.</li>
 <li><strong>AKL Online</strong> (a entrada existe, ID 10051427) permanece <strong>inacessível por automação</strong> (paywall/bot-wall De
   Gruyter, HTTP 202 vazio) — só por acesso institucional (browser do utilizador).</li>
-<li>Os resultados negativos no French Sculpture Census, Europeana, Commons e catálogos de museus continuam
-  válidos para <strong>coleções institucionais</strong>. Já não podem ser generalizados ao mercado: o lote 124 da Bayeu,
+<li>Os resultados negativos no French Sculpture Census, Europeana, Commons e catálogos de museus são válidos apenas
+  para <strong>os catálogos digitais, campos e grafias consultados</strong>. Já não podem ser generalizados ao mercado: o lote 124 da Bayeu,
   em Madrid, documenta em 2025 uma peça atribuída ao escultor e a respetiva fotografia.</li>
 </ul>
 <h2>Significado para «obras pelo mundo»</h2>
@@ -34372,7 +34629,7 @@ estrangeiro»). Texto, verbatim:</p>
 <p>«Concorrentes foram apenas dois: os srs. <strong>António Alves de Sousa</strong> e <strong>Rodolfo Pinto do Couto</strong>…
 Deu o júri preferência ao primeiro dos candidatos, o snr. António Alves de Sousa.»</p>
 </blockquote>
-<p>Ou seja: <strong>foi com esta escultura que ganhou a bolsa que o levou a Paris</strong> (~1907-1908). Liga-se
+<p>Ou seja: <strong>foi com esta escultura que ganhou a bolsa que o levou a Paris</strong> (1908). Liga-se
 diretamente ao registo dele como escultor em Paris (Annuaire 1912, 52 rue Vercingétorix) e à
 formação nos ateliers de Injalbert e Victor Laloux.</p>
 <p><strong>Factos (primários):</strong> autoria, títulos das obras, o concurso de pensionista (2 candidatos, júri
@@ -35032,7 +35289,7 @@ foram assinaladas como <code>[REFERÊNCIA]</code>. Os ganhos documentais abaixo 
 <h2>Obras documentadas (1.ª vaga)</h2>
 <ul>
 <li><em>A Mãe de Cristo e as Santas Mulheres no Regresso do Calvário</em> — esquisso em gesso, <strong>1910</strong>, «Paris» (placa).</li>
-<li><em>Orfeu</em>; busto/alegoria da <strong>República</strong>; <em>Édipo e Antígona em Colono</em>; <em>Procissão da Fome / Vítimas da Miséria</em>; <em>O Ferreiro</em>; <em>Desespero</em>; <em>Cabeça do Artista</em>; <em>Escravo romano sucumbindo ao veneno</em>; <em>Mãe e filho (Desastre da Ponte das Barcas)</em>; <em>Prisão do mendigo</em> (gesso, 1907); busto de <strong>Suzanne Bouré</strong> (1919).</li>
+<li><em>Orfeu</em>; busto/alegoria da <strong>República</strong>; <em>Édipo e Antígona em Colono</em>; <em>Procissão da Fome</em> (MNSR 28 Esc.); <em>Vítimas da Miséria</em> (MNSR 37 Esc.); <em>O Ferreiro</em>; <em>Desespero</em>; <em>Cabeça do Artista</em>; <em>Escravo romano sucumbindo ao veneno</em>; grupo atribuído de <em>Mãe e filho</em> (mercado, 2015); <em>Prisão do mendigo</em> (gesso, 1907); busto de <strong>Suzanne Bouré</strong> (1919).</li>
 <li><strong>Lápides dos talhões portugueses</strong> — cemitérios militares da Grande Guerra de <strong>Richebourg e Boulogne-sur-Mer</strong> (granito do Porto, «efeito de cruzeiro»; <strong>1921, com Sousa Lopes</strong>, contrato de 22-8-1921). <em>(Não confundir com o «Mémorial portugais» do Cemitério Oriental de Boulogne — esse é do arquitecto </em><em>Pierre Drobecq</em><em>, inaugurado em 1938; o «1916–1918» gravado é a datação da guerra, não da obra.)</em></li>
 <li>Projeto final (inacabado): <strong>Padrões / Monumentos da Grande Guerra na Flandres</strong>.</li>
 <li><strong>Monumento aos Heróis da Guerra Peninsular</strong> (Boavista): no soco do plinto, <strong>quatro datas</strong> da Guerra Peninsular em algarismos romanos em relevo (fonte primária: Carta 241, FIMS_MSMS_1595) — uma delas lida numa foto de 2019 como «MDCCCVIII» (1808), <strong>leitura provisória de baixa resolução, VIII/IX por confirmar</strong>; ver nota de correção 2026-06-29 em <code>g4_aa.md</code>. Leão de Portugal a esmagar a águia; autoria gravada «Escultor António Alves de Sousa / Arquitecto José Marques da Silva».</li>
@@ -41583,7 +41840,7 @@ são material novo a integrar quando os temas forem revisitados.</p>
 <p><strong>Evidência:</strong>
 - <code>analises/correspondencia/cartas/084_1913-04-27_1187.md</code> — «communicar-lhe a expedição do baixo-relevo 'Victimas da Miseria' e levar ás mãos de V. Ex.a o certificado do Consulado de Paris que o isentará de direitos… remetto incluso… duas facturas referentes ao caixilho e embalagem» — envio pessoal a Júlia em Abril de 1913.
 - <code>fontes/Obras/A Mãe de Cristo e as Santas Mulheres no Regresso do Calvário esquisso 1910.txt</code> — «Hoje, tal como o painel 184, Vítimas da Miséria, outro esquisso em gesso do mesmo autor, pertence à coleção de escultura da Fundação Marques da Silva» — um «Vítimas da Miséria» exposto em 1910 (n.º 184) e hoje na FIMS.
-- <code>historia/catalogo-unificado-obras.md</code> — a antiga entrada nº 8 fundia provisoriamente <em>Vítimas da miséria</em> e <em>Procissão da Fome</em> e só registava o MNSR 37. <span class="correction-badge">Correcção</span> Essa hipótese foi retirada da tabela-mestra: a notícia sobre o painel n.º 184 da FIMS e o envio de 1913 exigem distinguir títulos, objectos e movimentos de proveniência até surgirem medidas e fotografias comparáveis.
+- <code>historia/catalogo-unificado-obras.md</code> — a antiga entrada nº 8 fundia provisoriamente <em>Vítimas da miséria</em> e <em>Procissão da Fome</em> e só registava o MNSR 37. <span class="correction-badge">Correcção actualizada</span> A separação ficou materialmente confirmada: <em>Procissão da Fome</em> é a terracota MNSR 28 Esc., publicada com medidas e fotografia; <em>Vítimas da Miséria</em> é o gesso 37 Esc. O painel n.º 184 da FIMS e o envio de 1913 continuam a exigir o estudo de versões e movimentos de proveniência dentro do título <em>Vítimas</em>.
 - <code>analises/correspondencia/cartas/089_1913-06-10_1187.md</code> — Júlia «realisou uma carta com um cheque para pagar as despezas do bairro-relevo» — confirma que o exemplar de 1913 era encomenda/presente do circuito privado Júlia, não envio institucional.</p>
 <h3>23. O esquisso «Regresso do Calvário» tem paradeiro: coleção de escultura da FIMS — e a proveniência é a oferta documentada a Júlia <em>(confiança: media)</em></h3>
 <p>A ficha nº 9 do catálogo-mestre («A Mãe de Cristo e as Santas Mulheres no Regresso do Calvário», esquisso gesso 1910) tem paradeiro «—», mas o percurso completo do objeto reconstrói-se cruzando três documentos: (1) na Carta 262 o próprio escreve «O esquisso que apresentei a este concurso é aquelle baixo-relevo que offereci a V Exª intitulado 'Regresso do Calvario'» — a prova do concours de 8-3-1909 (6.º em 11) foi oferecida a Júlia; (2) o texto do acervo sobre a peça diz que veio «por caminho de ferro para o Porto, em julho de 1910», foi exposta com o n.º 185 na 19.ª Exposição escolar de 1909-1910 (com mais três peças do autor) e «pertence à coleção de escultura da Fundação Marques da Silva»; (3) o postal do período estudantil (scan 0640) documenta a obrigação regulamentar de enviar «nos ultimos dias de Dezembro proximo alguns trabalhos do 1.º anno». A presença na FIMS (e não na FBAUP, como os envios oficiais do pensionato) explica-se precisamente por a peça ser presente pessoal a Júlia.</p>
@@ -41599,7 +41856,7 @@ são material novo a integrar quando os temas forem revisitados.</p>
 - <code>analises/correspondencia/cartas/083_1913-04-03_1187.md</code> — «Elle [Lemos] que vá ter com o nosso amigo José de Brito e que lhe peça que lhe mostre o exemplar que enviei para a Escola o anno passado» — em Abril de 1913 o exemplar do grupo estava fisicamente na Escola do Porto, ao cuidado de José de Brito.
 - <code>historia/catalogo-unificado-obras.md</code> — O Ofício 368 (1923) não lista nenhum Œdipe entre o espólio chegado de Paris; e a nota de pistas em aberto regista «a ausência do 'Oedipe' no RAIZ» como problema por resolver.</p>
 <h3>25. O bronze «Œdipe et Antigone à Colone» do Salon de 1913 (n.º 3111) é, com grande probabilidade, o exemplar fundido para João Chagas <em>(confiança: alta)</em></h3>
-<p>O único bronze do grupo existente (ou em fundição) na primavera de 1913 era o da encomenda de João Chagas — logo o «groupe bronze» exposto no Grand Palais (livret SAF 1913, n.º 3111) e elogiado pelo Le Ménestrel a 7-6-1913 é o exemplar do ministro (ou o próprio vazamento em curso para ele). Cronologia fechada: 27-Fev-1913, Chagas encomenda o grupo, e o escultor, sem meios, adia o «meu bronze do mesmo grupo» que sonha oferecer a Júlia («n'este momento não me é possivel fazel-o por falta de meios monetarios»); 3-Abr-1913, o fundidor («o mais barato de Paris») tem em mãos «o trabalho do grupo destinado ao nosso ministro» e o de Júlia ainda nem foi encomendado (aguarda cotação do «Lemos das Penezas»); 27-Abr-1913, «sempre mandei duas obras, sendo uma d'ellas o grupo de 'Oedipe et Antigone'» ao Salon. Consequência para o rasto da obra: o paradeiro deste bronze deve procurar-se no espólio de João Chagas / Fundo João Chagas (o mesmo que em 1958 fundiu os bronzes do MNSR).</p>
+<p>O único bronze do grupo documentado como existente (ou em fundição) na primavera de 1913 era o da encomenda de João Chagas — logo o «groupe bronze» exposto no Grand Palais (livret SAF 1913, n.º 3111) e comentado pelo <em>Le Ménestrel</em> a 7-6-1913 é, com grande probabilidade, o exemplar do ministro (ou o próprio vazamento em curso para ele). Cronologia fechada: 27-Fev-1913, Chagas encomenda o grupo, e o escultor, sem meios, adia o «meu bronze do mesmo grupo» que sonha oferecer a Júlia («n'este momento não me é possivel fazel-o por falta de meios monetarios»); 3-Abr-1913, o fundidor («o mais barato de Paris») tem em mãos «o trabalho do grupo destinado ao nosso ministro» e o de Júlia ainda nem foi encomendado (aguarda cotação do «Lemos das Penezas»); 27-Abr-1913, «sempre mandei duas obras, sendo uma d'ellas o grupo de 'Oedipe et Antigone'» ao Salon. Consequência para o rasto da obra: o paradeiro deste bronze deve procurar-se nos papéis, inventários domésticos e sucessórios de João e Maria Teresa Chagas. O Fundo João Chagas, constituído a partir de bens imóveis em 1941, não é prova de posse ou transmissão da escultura.</p>
 <p><strong>Evidência:</strong>
 - <code>analises/correspondencia/cartas/082_1913-02-27_1187.md</code> — «[Encommen]dou-me o meu grupo 'd'Oedipe et Antigone à Colone'… Como é para elle, [irei] cobrar sómente o custo da fundição. Tambem já pensei em offerecer… meu bronze do mesmo grupo… n'este momento não me é possivel fazel-o por falta de meios monetarios».
 - <code>analises/correspondencia/cartas/083_1913-04-03_1187.md</code> — «A fundição do grupo que prometti a V. Ex.a importa em 400 francos conforme… a carta que me enviou o fundidor com trabalho do grupo destinado ao nosso ministro… Se o mandar executar já só nos custará 375 francos, visto juntar-se ao do ministro» — a 3-Abr-1913 só o bronze de Chagas estava em produção.
@@ -46584,7 +46841,7 @@ fichas <code>historia/</code> ligadas.</p>
 </table>
 <h2>B. RAIZ / MatrizNet (DGPC) — <code>raiz/</code></h2>
 <p>Catálogo nacional <strong>RAIZ — Bens Culturais Online</strong> (<code>raiz.museusemonumentos.pt</code>). Fonte
-<strong>institucional primária</strong> que confirma as <strong>15 obras do escultor no MNSR</strong> (filtro de autor
+<strong>institucional primária</strong> que devolve <strong>15 fichas do escultor no MNSR</strong> (filtro de autor
 «Sousa, António Alves de», id 60061). Detalhe-tipo: registo <strong>292 Esc MNSR</strong> (<code>DetalhesObra?id=309505</code>),
 que documenta a fundição em bronze de <strong>1958 via Fundo João Chagas</strong>. Transcrição completa em
 <code>historia/paradeiro-das-obras.md</code>.</p></div></details><details><summary>RAIZ / MatrizNet (DGPC) — captura do acervo do MNSR (26-06-2026)</summary><div class="doc"><h1>RAIZ / MatrizNet (DGPC) — captura do acervo do MNSR (26-06-2026)</h1>
@@ -46592,7 +46849,7 @@ que documenta a fundição em bronze de <strong>1958 via Fundo João Chagas</str
 Museus e Monumentos de Portugal). Pesquisa filtrada pelo <strong>autor «Sousa, António Alves de»</strong> (id
 interno 60061). Captura fiel do que o catálogo mostrava nesta data. Análise/contexto em
 <code>historia/paradeiro-das-obras.md</code>.</p>
-<p><span class="correction-badge">Nota editorial</span> A tabela seguinte preserva deliberadamente os títulos e as datas tal como apareciam no RAIZ em 26-06-2026. Não representa a síntese crítica actual: «1957/1958» é a data das fundições, «Susanne» deve ler-se <em>Suzanne</em> segundo a inscrição, e o título histórico do n.º 287, <em>Quebrando as algemas</em>, é hoje confrontado com a reidentificação forte como estudo para <em>Orfeu</em>. Ver <a href="#obras-conhecidas">Obras conhecidas</a>.</p>
+<p><span class="correction-badge">Nota editorial</span> A tabela seguinte preserva deliberadamente os quinze resultados do filtro de autor, com os títulos e as datas tal como apareciam no RAIZ em 26-06-2026. Não representa a síntese crítica actual: uma publicação municipal documenta ainda os MNSR 28, 34 e 186 fora desse filtro; «1957/1958» é a data das fundições; «Susanne» deve ler-se <em>Suzanne</em> segundo a inscrição; e o título histórico do n.º 287, <em>Quebrando as algemas</em>, é hoje confrontado com a reidentificação forte como estudo para <em>Orfeu</em>. Ver <a href="#obras-conhecidas">Obras conhecidas</a>.</p>
 <h2>As 15 obras listadas (autor = Sousa, António Alves de · todas no MNSR)</h2>
 <table>
 <thead>
