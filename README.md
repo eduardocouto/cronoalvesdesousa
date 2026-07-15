@@ -3,10 +3,24 @@
 Cronologia e acervo documental ilustrado da vida e obra do escultor português **António Alves de Sousa**, publicados como página estática em GitHub Pages.
 
 - Entrada do site: `index.html`.
-- Imagens do capítulo «Obras conhecidas»: `assets/obras-conhecidas/` — 16 obras e 22 imagens analisadas.
+- Imagens do capítulo «Obras em destaque»: `assets/obras-conhecidas/` — 16 obras e 22 imagens analisadas.
 - Fac-símiles do dossiê «Paris: ateliers, Salons e redes»: `assets/paris/` — 12 páginas e recortes documentais.
 - Galeria documental: `gallery/`.
 - Fontes: correspondência FIMS, dossiês da École des Beaux-Arts, registos civis, imprensa de época, catálogos institucionais e espólio fotográfico de família.
+
+## Organização da página
+
+A entrada pública está separada do arquivo profundo:
+
+- visão geral com seis portas de entrada;
+- navegação principal por Vida, Obras, Investigação, Fontes e Galeria;
+- quatro resultados recentes visíveis, com os restantes recolhidos;
+- cinco núcleos de obras abertos a pedido;
+- arquivo integral agrupado por finalidade;
+- pesquisa local nos títulos, resumos e acordeões do arquivo;
+- documentos legados preservados, mas assinalados quando contêm conclusões entretanto corrigidas.
+
+Todos os identificadores e ligações internas anteriores foram preservados.
 
 O capítulo distingue factos documentados, leituras visuais e hipóteses. As duas imagens comparativas ou provenientes do mercado agora acrescentadas têm a origem indicada na própria ficha:
 
