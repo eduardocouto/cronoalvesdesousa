@@ -58,28 +58,6 @@ a{color:var(--accent);}
 .phrow.cols1 .ph img{height:auto;max-height:520px;object-fit:contain;}
 .ph figcaption{font-size:13px;color:var(--muted);margin-top:7px;line-height:1.4;}
 
-/* DESCOBERTA DE MERCADO */
-.market-find{padding:42px 0;background:#e9ddc7;border-bottom:1px solid var(--line);scroll-margin-top:14px;}
-.market-grid{display:grid;grid-template-columns:minmax(190px,280px) minmax(0,1fr);gap:36px;align-items:center;}
-.market-figure.ph{padding:12px;background:#fff;box-shadow:0 10px 30px rgba(58,39,22,.16);}
-.market-figure.ph img{height:auto;max-height:430px;object-fit:contain;background:#fff;}
-.market-find .kicker{color:#725620;}
-.market-copy h2{font-size:clamp(25px,4vw,36px);line-height:1.17;margin:.15em 0 .45em;font-weight:600;}
-.market-copy>p{max-width:710px;}
-.market-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:20px 0 16px;border-top:1px solid #c9b78f;border-bottom:1px solid #c9b78f;}
-.market-facts div{padding:12px 12px 11px 0;}
-.market-facts dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#554c3e;}
-.market-facts dd{margin:2px 0 0;font-size:16px;font-weight:600;}
-.market-note{font-size:14px;line-height:1.5;color:#4f4638;background:#f7f0e2;border-left:3px solid var(--gold);padding:10px 13px;margin:16px 0;}
-.market-links{font-size:14px;}
-.market-links a{font-weight:600;}
-@media(max-width:680px){
- .market-find{padding:30px 0;}
- .market-grid{grid-template-columns:1fr;gap:22px;}
- .market-figure.ph{max-width:260px;margin:0 auto;}
- .market-facts{grid-template-columns:1fr 1fr;}
-}
-
 /* ACTUALIZAÇÃO DA INVESTIGAÇÃO */
 .research-update{padding:48px 0 52px;background:#f8f2e7;border-bottom:1px solid var(--line);scroll-margin-top:14px;}
 .research-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-bottom:22px;}
@@ -471,7 +449,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
  <div class="hero-status">Arquivo público · investigação em curso · actualizado em 15 Jul. 2026</div>
  <nav class="hero-links" aria-label="Atalhos principais">
   <a href="#visao-geral">Começar pela visão geral</a>
-  <a href="#obras-conhecidas">Explorar 16 obras</a>
+  <a href="#obras-conhecidas">Explorar 17 obras</a>
   <a href="#arquivo-integral">Consultar o arquivo integral</a>
  </nav>
 </header>
@@ -493,7 +471,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
 
   <div class="portal-grid">
    <a class="portal-card" href="#obras-conhecidas">
-    <span class="portal-count">16 obras · 22 imagens analisadas</span><strong>Obras em destaque</strong>
+    <span class="portal-count">17 obras · 23 imagens analisadas</span><strong>Obras em destaque</strong>
     <p>Catálogo crítico ilustrado, dividido por cinco núcleos e com factos, leituras e dúvidas separados.</p>
     <span class="portal-go">Abrir o catálogo →</span>
    </a>
@@ -528,36 +506,6 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
    <div class="reading-path"><b>Síntese · 5–10 minutos</b><span>Visão geral, catálogo de obras e resultados recentes.</span></div>
    <div class="reading-path"><b>Estudo · por tema</b><span>Biografia, Paris, leituras cruzadas e contexto histórico.</span></div>
    <div class="reading-path"><b>Fonte integral · consulta</b><span>Cartas, transcrições, proveniência, inventários e galeria.</span></div>
-  </div>
- </div>
-</section>
-
-<section class="market-find" id="descoberta-mercado" aria-labelledby="market-title">
- <div class="wrap market-grid">
-  <figure class="ph market-figure">
-   <img src="assets/cabeca-de-jovem-bayeu.jpg" width="146" height="302"
-    alt="Cabeça em bronze patinado intitulada Cabeza de joven e atribuída a Alves de Sousa">
-   <figcaption><span lang="es">«Cabeza de joven»</span>, bronze patinado, 32 cm sem a peanha. Fotografia extraída do catálogo da Bayeu Subastas, lote 124.</figcaption>
-  </figure>
-  <div class="market-copy">
-   <div class="kicker">Peça aparecida no mercado · 2025</div>
-   <h2 id="market-title"><span lang="es">«Cabeza de joven»</span>: um bronze atribuído a Alves de Sousa</h2>
-   <p>A Bayeu Subastas apresentou esta cabeça de jovem em Madrid, em 10 de junho de 2025. O lote acrescenta
-   um aparecimento em leilão verificável ao percurso público das esculturas atribuídas ao artista.
-   O catálogo estimou-a em 200–300 €; o Invaluable assinala-a como vendida, com resultado de 250 €.</p>
-   <dl class="market-facts">
-    <div><dt>Leilão</dt><dd>10 jun. 2025</dd></div>
-    <div><dt>Lote</dt><dd>124</dd></div>
-    <div><dt>Altura</dt><dd>32 cm</dd></div>
-    <div><dt>Resultado</dt><dd>250 €</dd></div>
-   </dl>
-   <p class="market-note"><strong>Limite da prova:</strong> trata-se de uma atribuição comercial. Sem fotografias da
-   assinatura, marcas de fundição, proveniência ou data de fundição, o anúncio não basta para confirmar a
-   autoria nem para relacionar a peça com uma cabeça já documentada no espólio.</p>
-   <p class="market-links"><a href="https://www.bayeusubastas.com/docs/pdfs_subastas/CATALOGO133.pdf"
-    target="_blank" rel="noopener">Catálogo da Bayeu, pp. 22–23 (PDF)</a> ·
-    <a href="https://www.invaluable.com/auction-lot/alves-de-sousa-vilar-de-andorinho-vila-nova-de-ga-124-c-eb2455d9c7"
-    target="_blank" rel="noopener">Registo do lote e resultado</a></p>
   </div>
  </div>
 </section>
@@ -922,14 +870,14 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
  <section class="works-chapter" id="obras-conhecidas" aria-labelledby="works-title">
   <header class="works-head">
    <div class="kicker">Catálogo crítico · primeiro núcleo ilustrado</div>
-   <div><span class="new-badge">Novo capítulo</span><span class="evidence-badge">16 obras fotografadas</span></div>
+   <div><span class="new-badge">Novo capítulo</span><span class="evidence-badge">17 obras fotografadas</span></div>
    <h2 id="works-title">Obras em destaque</h2>
-   <p class="works-deck">Este capítulo reúne dezasseis obras de Alves de Sousa e cruza a leitura directa das imagens com os inventários do Museu Nacional Soares dos Reis, a documentação da FBAUP, a correspondência do escultor, a lista do espólio chegado de Paris em 1923 e os registos do mercado de arte. Distingue a data do modelo da data das fundições póstumas e separa, em cada ficha, o que está documentado, o que resulta da leitura da obra e o que continua por esclarecer. Uma estampa histórica aparece apenas como termo de comparação.</p>
+   <p class="works-deck">Este capítulo reúne dezassete obras de Alves de Sousa — incluindo peças atribuídas no mercado, sempre identificadas como tal — e cruza a leitura directa das imagens com os inventários do Museu Nacional Soares dos Reis, a documentação da FBAUP, a correspondência do escultor, a lista do espólio chegado de Paris em 1923 e os registos de leilão. Distingue a data do modelo da data das fundições póstumas e separa, em cada ficha, o que está documentado, o que resulta da leitura da obra e o que continua por esclarecer. Uma estampa histórica aparece apenas como termo de comparação.</p>
   </header>
 
   <div class="works-stats" aria-label="Resumo do núcleo estudado">
-   <div><strong>16</strong><span>obras estudadas</span></div>
-   <div><strong>22</strong><span>imagens analisadas</span></div>
+   <div><strong>17</strong><span>obras estudadas</span></div>
+   <div><strong>23</strong><span>imagens analisadas</span></div>
    <div><strong>4</strong><span>variações de Orfeu</span></div>
    <div><strong>1957–58</strong><span>fundições póstumas</span></div>
   </div>
@@ -941,7 +889,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
    <a href="#obras-orfeu">O laboratório de Orfeu</a>
    <a href="#obras-corpo-moderno">Trabalho, rua e corpo moderno</a>
    <a href="#obras-retrato-intimo">Retrato íntimo</a>
-   <a href="#obras-mercado">Reaparição no mercado</a>
+   <a href="#obras-mercado">Reaparições no mercado</a>
   </nav>
 
   <div class="works-method" aria-label="Convenção editorial das fichas">
@@ -1294,7 +1242,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
   <section class="works-cluster" id="obras-mercado" aria-labelledby="obras-mercado-title">
    <header class="works-cluster-head">
     <span class="works-cluster-no">V</span>
-    <div><h3 id="obras-mercado-title">Uma obra reaparecida no mercado</h3><p>Um gesso de 1915 documentado por leilão, mas ainda sem título histórico, proveniência anterior ou localização presente.</p></div>
+    <div><h3 id="obras-mercado-title">Obras reaparecidas no mercado</h3><p>Um gesso assinado e datado e um bronze atribuído ao escultor: dois registos comerciais com graus de certeza diferentes e paradeiro actual desconhecido.</p></div>
    </header>
    <div class="works-list">
     <article class="work-card" id="obra-figura-feminina-1915">
@@ -1316,6 +1264,25 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
       <p class="work-sources"><a href="https://www.cml.pt/en/auctions/2011/auction124/single-session%21start%3D144" target="_blank" rel="noopener">Cabral Moncada — Leilão 124, lote 128</a> · <a href="https://catalogos.cdn.cml.pt/pdfs/2011/leilao124.pdf" target="_blank" rel="noopener">Catálogo do leilão</a> · <a href="https://archive.org/download/ocasodomonumento00arro/ocasodomonumento00arro.pdf" target="_blank" rel="noopener">António Arroyo — maqueta do Monumento a Pombal, p. 27</a></p>
      </div>
     </article>
+
+    <article class="work-card" id="descoberta-mercado">
+     <div class="work-media">
+      <figure class="ph work-shot"><img loading="lazy" decoding="async" width="146" height="302" src="assets/cabeca-de-jovem-bayeu.jpg" alt="Cabeça em bronze patinado intitulada Cabeza de joven e atribuída a Alves de Sousa"><figcaption><span lang="es">«Cabeza de joven»</span>, bronze patinado, 32 cm sem a peanha · Bayeu Subastas, lote 124.</figcaption></figure>
+     </div>
+     <div class="work-body">
+      <div class="work-kicker">17 · Cabeça · atribuição comercial</div>
+      <h4><span lang="es">«Cabeza de joven»</span>: um bronze atribuído a Alves de Sousa</h4>
+      <p class="work-subtitle">Uma peça vendida em Madrid em 2025, cuja autoria ainda não está documentalmente confirmada.</p>
+      <div class="work-badges"><span class="new-badge">Mercado · 2025</span><span class="hypothesis-badge">Atribuição por confirmar</span></div>
+      <dl class="work-facts"><div><dt>Material</dt><dd>Bronze patinado</dd></div><div><dt>Data</dt><dd>Não indicada</dd></div><div><dt>Altura</dt><dd>32 cm sem peanha</dd></div><div><dt>Venda</dt><dd>2025 · 250 €</dd></div></dl>
+      <div class="work-copy">
+       <p class="fact"><b class="label">Facto</b>A Bayeu Subastas apresentou a cabeça em Madrid, em 10 de Junho de 2025, como lote 124. O catálogo estimou-a em 200–300 €; o Invaluable regista a venda por 250 €.</p>
+       <p class="reading"><b class="label">Atribuição</b>A ficha comercial associa a peça a Alves de Sousa. O aparecimento em leilão é verificável e documenta a circulação de uma obra atribuída ao escultor, mas não confirma por si só a autoria.</p>
+       <p class="open"><b class="label">Em aberto</b>Faltam fotografias da assinatura, marcas de fundição, proveniência, data de modelação ou fundição, identidade do comprador e localização presente. Também não está demonstrada qualquer relação com uma cabeça já documentada no espólio.</p>
+      </div>
+      <p class="work-sources"><a href="https://www.bayeusubastas.com/docs/pdfs_subastas/CATALOGO133.pdf" target="_blank" rel="noopener">Bayeu Subastas — catálogo 133, pp. 22–23</a> · <a href="https://www.invaluable.com/auction-lot/alves-de-sousa-vilar-de-andorinho-vila-nova-de-ga-124-c-eb2455d9c7" target="_blank" rel="noopener">Invaluable — lote e resultado</a></p>
+     </div>
+    </article>
    </div>
   </section>
 
@@ -1327,7 +1294,7 @@ iframe[src*="poly.cam"]{min-width:0!important;max-width:100%!important;}
    <article><h3><span class="new-badge">Novo detalhe</span> Como funcionava o Fundo João Chagas</h3><p>A doação de Maria Teresa Chagas, em 1941, destinou ao MNSR o rendimento líquido de um imóvel no Estoril para aquisições e melhoramentos. Entre 1950 e 1960, o Museu adquiriu mais de 150 obras através do Fundo. Em Dezembro de 1958, o Orçamento do Estado registava-o como receita consignada, artigo 270.º, com 92.400$ — prova de actividade financeira nesse ano, não de que essa verba concreta pagou os bronzes de Alves de Sousa. <a href="https://raiz.museusemonumentos.pt/DetalhesObra/Index/304857?tipo=OBJ" target="_blank" rel="noopener">RAIZ — Fundo João Chagas</a> · <a href="https://mnsr.museusemonumentospt.pt/wp-content/uploads/2023/06/DossierPlaneamentoVisitaLivre_VF.pdf" target="_blank" rel="noopener">MNSR — dossier, p. 15</a> · <a href="https://files.diariodarepublica.pt/gratuitos/1s/1958/12/27802.pdf" target="_blank" rel="noopener"><em>Diário do Governo</em>, 23-12-1958, p. 1528</a>.</p></article>
    <article><h3>O que ainda falta sobre as fundições</h3><p>As fichas públicas não identificam fundidor, oficina, número de exemplares, moldes sobreviventes ou custo por peça. O próximo alvo documental é a correspondência expedida do MNSR entre 1953 e 1958, acompanhada pelas contas e facturas do Fundo João Chagas.</p></article>
   </div>
-  <p class="works-next"><strong>Capítulo em crescimento.</strong> Este núcleo de dezasseis obras será alargado às peças monumentais e às conhecidas apenas por fotografia ou documento — entre elas <em>Escravo romano sucumbindo ao veneno</em>, o <em>Orfeu</em> monumental, <em>Procissão da Fome</em>, <em>Édipo e Antígona</em>, <em>Regresso do Calvário</em> e os retratos parisienses. As novas inclusões deverão conservar a mesma separação entre prova, leitura e hipótese.</p>
+  <p class="works-next"><strong>Capítulo em crescimento.</strong> Este núcleo de dezassete obras será alargado às peças monumentais e às conhecidas apenas por fotografia ou documento — entre elas <em>Escravo romano sucumbindo ao veneno</em>, o <em>Orfeu</em> monumental, <em>Procissão da Fome</em>, <em>Édipo e Antígona</em>, <em>Regresso do Calvário</em> e os retratos parisienses. As novas inclusões deverão conservar a mesma separação entre prova, leitura e hipótese.</p>
  </section>
 
  <section class="arq" id="arq-historia"><h2>A biografia, capítulo a capítulo</h2><p class="arq-intro">A biografia documental completa, em prosa corrida, narrada carta a carta a partir da correspondência do escultor. Seis capítulos; cada um cita a fonte de cada facto. Clique para ler.</p><h1>A história de António Alves de Sousa, contada pelos seus documentos</h1>

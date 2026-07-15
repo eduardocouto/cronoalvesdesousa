@@ -3,7 +3,7 @@
 Cronologia e acervo documental ilustrado da vida e obra do escultor português **António Alves de Sousa**, publicados como página estática em GitHub Pages.
 
 - Entrada do site: `index.html`.
-- Imagens do capítulo «Obras em destaque»: `assets/obras-conhecidas/` — 16 obras e 22 imagens analisadas.
+- Imagens do capítulo «Obras em destaque»: `assets/obras-conhecidas/` e `assets/cabeca-de-jovem-bayeu.jpg` — 17 obras e 23 imagens analisadas.
 - Fac-símiles do dossiê «Paris: ateliers, Salons e redes»: `assets/paris/` — 12 páginas e recortes documentais.
 - Galeria documental: `gallery/`.
 - Fontes: correspondência FIMS, dossiês da École des Beaux-Arts, registos civis, imprensa de época, catálogos institucionais e espólio fotográfico de família.
@@ -22,9 +22,10 @@ A entrada pública está separada do arquivo profundo:
 
 Todos os identificadores e ligações internas anteriores foram preservados.
 
-O capítulo distingue factos documentados, leituras visuais e hipóteses. As duas imagens comparativas ou provenientes do mercado agora acrescentadas têm a origem indicada na própria ficha:
+O capítulo distingue factos documentados, leituras visuais, atribuições comerciais e hipóteses. As três imagens comparativas ou provenientes do mercado agora acrescentadas têm a origem indicada na própria ficha:
 
 - `figura-feminina-1915-cabral-moncada.jpg`: Cabral Moncada Leilões, Leilão 124 (2011), lote 128;
+- `cabeca-de-jovem-bayeu.jpg`: Bayeu Subastas, catálogo 133 (2025), lote 124;
 - `gervex-avant-operation-estampa-paris-musees.jpg`: Musée Carnavalet / Paris Musées, domínio público (CC0), usada apenas para comparação iconográfica.
 
 As imagens do dossiê parisiense têm a proveniência e a licença indicadas nas legendas:
