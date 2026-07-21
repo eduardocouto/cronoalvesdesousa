@@ -789,39 +789,34 @@ section.arq>ol a strong,section.arq>ol a b{ color:inherit !important; }
 
 @media(max-width:700px){
 
-  /* --- 1. Navegação: UMA linha compacta, links em fita deslizante --- */
+  /* --- 1. Navegação: duas linhas centradas, os seis links completos --- */
   .site-nav-inner{
     flex-wrap:nowrap !important;
-    min-height:50px !important;
-    padding:0 0 0 14px !important;
-    gap:12px !important;
+    min-height:0 !important;
+    padding:6px 8px !important;
+    gap:0 !important;
     align-items:center !important;
   }
-  .site-brand{ font-size:14px !important; white-space:nowrap; }
+  /* a marca sai da barra em ecrã estreito: o nome está no hero, logo abaixo */
+  .site-brand{ display:none !important; }
   .site-links{
     display:flex !important;
-    flex-wrap:nowrap !important;
-    gap:0 !important;
-    overflow-x:auto !important;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none !important;
-    /* esvanecimento nas pontas: mostra que há mais para deslizar */
-    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12px,#000 calc(100% - 26px),transparent 100%);
-    mask-image:linear-gradient(90deg,transparent 0,#000 12px,#000 calc(100% - 26px),transparent 100%);
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    width:100%;
+    gap:0 2px !important;
+    overflow:visible !important;
   }
-  .site-links::-webkit-scrollbar{ display:none; }
   .site-links a{
     flex:none !important;
     font-size:11px !important;
-    letter-spacing:.08em !important;
-    padding:16px 9px 13px !important;
-    border-bottom-width:3px !important;
+    letter-spacing:.05em !important;
+    padding:7px 8px 5px !important;
+    border-bottom-width:2px !important;
   }
-  /* espaço no fim da fita para o último link sair do esvanecimento */
-  .site-links::after{ content:""; flex:none; width:26px; }
   /* âncoras voltam a aterrar abaixo da barra compacta */
-  html{ scroll-padding-top:58px; }
-  [id], section.arq[id]{ scroll-margin-top:58px !important; }
+  html{ scroll-padding-top:72px; }
+  [id], section.arq[id]{ scroll-margin-top:72px !important; }
 
   /* --- 2. Hero: mais contido, ornamento fora do caminho do texto --- */
   .hero{ padding:34px 18px 30px !important; }
